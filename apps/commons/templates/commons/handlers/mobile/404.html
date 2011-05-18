@@ -1,29 +1,8 @@
-{% extends "mobile/page.html" %}
-{% set pagetitle = _('Firefox Spark') %}
-{% set logged_in = request.user.is_authenticated() %}
-{% set body_id = 'home' %}
-
-{% if logged_in %}
-{% set scripts = ('menu',) %}
-{% set body_class = 'error404' %}
-{% else %}
-{% set hide_menu = True %}
-{% set body_class = 'logged-out error404' %}
-{% endif %}
-
-
 {% block pagecontent %}
-<div class="section">
-    <h3>{{ _('Whoops!') }}</h3>
-    <p class="sans">{{ _("It looks like the page you were looking for doesn't exist.") }}</p>
-</div>
-<hr>
-<div class="cta">
-    {% if logged_in %}
-    <a href="{{ url('mobile.home') }}">{{ _('Go to My Spark') }}</a>
-    {% else %}
-    <a href="{{ url('mobile.home') }}">{{ _('Go to the homepage') }}</a>
-    {% endif %}
-</div>
-<hr>
+{{ _('Whoops!') }}
+<h3>{{ _('Error 404') }}</h3>
+<p>
+    {{ _("It looks like the page you were looking for doesn't exist.") }} 
+    <a href="">{{ _('Go to the homepage') }} ></a>
+</p>
 {% endblock %}
