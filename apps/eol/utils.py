@@ -35,5 +35,5 @@ LEVEL = _lazy(u'Level %(num)d')
 
 # Social network messages
 
-TWITTER = _lazy(u"#Spark Winners Announced! Check out the game's results & infographics")
-FACEBOOK = _lazy(u"Want to learn more about Firefox for Android and the results of the Spark game? Check out the game's results & infographics!")
+TWITTER = _lazy(u"#Spark Winners Announced! Check out the game's results and infographics")
+FACEBOOK = _lazy(u"Want to learn more about Firefox for Android and the Spark game? Check out the game's results and infographics!")
