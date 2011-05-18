@@ -1,0 +1,28 @@
+{% extends 'desktop/base.html' %}
+
+{% block content %}
+
+{{ _('Spark powered by Firefox for mobile.') }}
+
+{{ _('Spark is now over. Thanks to all participants!') }}
+{{ _("Check out the game's results & learn more about Firefox for Android.") }}
+
+{{ _('See the complete <em>Game Results</em>') }}
+{{ _('Take a look inside <em>Firefox <span>for</span> Android</em>') }}
+
+
+{% include "eol/desktop/header.html" %}
+
+{% include "eol/desktop/spark/menu.html" %}
+{% include "eol/desktop/spark/sharing.html" %}
+{% include "eol/desktop/spark/around.html" %}
+{% include "eol/desktop/spark/hall.html" %}
+
+{% include "eol/desktop/firefox/addons.html" %}
+{% include "eol/desktop/firefox/overview.html" %}
+{% include "eol/desktop/firefox/sync.html" %}
+{% include "eol/desktop/firefox/various.html" %}
+
+{% include "eol/desktop/footer.html" %}
+
+{% endblock %}

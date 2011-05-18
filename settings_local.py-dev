@@ -1,0 +1,61 @@
+# This is a local settings example file for development.
+
+from settings import *
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+        'OPTIONS': {
+            'init_command': 'SET storage_engine=InnoDB',
+            'charset' : 'utf8',
+            'use_unicode' : True,
+        },
+        'TEST_CHARSET': 'utf8',
+        'TEST_COLLATION': 'utf8_general_ci',
+    },
+}
+
+ADMINS = (
+    ('Dev admin', 'admin@localhost')
+)
+
+MIDDLEWARE_CLASSES = (
+    'commons.middleware.LocaleURLMiddleware',
+    'commons.middleware.Forbidden403Middleware',
+    'commons.middleware.RemoveSlashMiddleware',
+    
+    'django.middleware.common.CommonMiddleware',
+    'mobility.middleware.DetectMobileMiddleware', # Needed in dev environment only
+    'mobility.middleware.XMobileMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+
+    'commonware.middleware.FrameOptionsHeader',
+)
+
+MANAGERS = ADMINS
+
+DEBUG = True
+TEMPLATE_DEBUG = True
+
+INTERNAL_IPS = ('127.0.0.1',)
+
+SESSION_COOKIE_SECURE = False
+
+# Email backend
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+if DEBUG:
+    # Zeus populates X-Mobile in staging and production
+    # Add DetectMobileMiddleware for mobile development.
+    mwc = MIDDLEWARE_CLASSES
+    xmobile = mwc.index('mobility.middleware.XMobileMiddleware')
+    detect = ('mobility.middleware.DetectMobileMiddleware',)
+    MIDDLEWARE_CLASSES = mwc[:xmobile] + detect + mwc[xmobile:]

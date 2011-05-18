@@ -1,0 +1,54 @@
+# This is a local settings example file for stage/prod instances.
+
+import datetime
+
+from settings import *
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+        'OPTIONS': {
+            'init_command': 'SET storage_engine=InnoDB',
+            'charset' : 'utf8',
+            'use_unicode' : True,
+        },
+        'TEST_CHARSET': 'utf8',
+        'TEST_COLLATION': 'utf8_general_ci',
+    },
+}
+
+ADMINS = (
+    # ('<insert admin name>', '<insert admin email address>'),
+)
+
+MANAGERS = ADMINS
+
+DEBUG = False
+TEMPLATE_DEBUG = False
+
+
+# Addresses email comes from
+DEFAULT_FROM_EMAIL = '<insert email here>'
+
+
+# Responsys ID
+RESPONSYS_ID = '<insert Responsys production key>'
+
+
+# Uncomment on stage
+#KNOWN_LANGUAGES = KNOWN_LANGUAGES_STAGE
+
+
+# Facebook App ID
+FB_APP_ID = 100139296738213
+
+
+# Uncomment and update with stage/prod settings if necessary
+#MEDIA_URL = '/media/'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
