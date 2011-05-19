@@ -31,8 +31,14 @@
         {% endif %}
 	</head>
 	
-	<body>
-		{% block content %}{% endblock %}
+	<body class="home">
+	    <div id="wrapper">
+	        {% include "eol/desktop/header.html" %}
+		    
+		    {% block content %}{% endblock %}
+            
+            {% include "eol/desktop/footer.html" %}
+	    </div>
 
         {% if not debug %}
             {% include "includes/webtrends.html" %}

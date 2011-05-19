@@ -1,0 +1,45 @@
+#firefox-content {
+    height:600px;
+    clear:both;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    margin-top:-650px;
+}
+
+#layers {
+    width:305px;
+    height:600px;
+    position:relative;
+}
+
+#layers li {
+    width:305px;
+    height:185px;
+    position:absolute;
+    top:218px;
+    opacity:0;
+    left:0;
+}
+
+#layer-1 {
+    background:url('../img/layers.png') no-repeat 0 0;
+    z-index:40;
+}
+
+#layer-2 {
+    background:url('../img/layers.png') no-repeat 0 -200px;
+    z-index:30;
+}
+
+#layer-3 {
+    background:url('../img/layers.png') no-repeat 0 -400px;
+    z-index:20;
+}
+
+#layer-4 {
+    background:url('../img/layers.png') no-repeat 0 -600px;
+    z-index:10;
+}
+
+#firefox-content {
+    display:none;
+}

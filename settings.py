@@ -143,7 +143,14 @@ def JINJA_CONFIG():
 MINIFY_BUNDLES = {
     'css': {
         'desktop': (
-            'css/screen.css',
+            'css/reset.css',
+            'css/base.css',
+            'css/home.css',
+            'css/fonts.css',
+            'css/spark.css',
+            'css/spark-1.css',
+            'css/firefox.css',
+            'css/transitions.css',
         ),
         'mobile': (
             'css/mobile.css',

@@ -1,0 +1,155 @@
+#spark-1 {
+    text-align:center;
+}
+
+#spark-1 .block {
+    float:left;
+}
+
+#spark-1 .block-1 {
+    width:250px;
+    text-align:center;
+}
+
+#spark-1 .block-1 .number {
+    float:left;
+    margin-bottom:20px;
+    padding-left:5px;
+}
+
+#spark-1 .block-1 .big-text {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:72px;
+    display:block;
+}
+
+#spark-1 .block-1 .small-text {
+    text-transform:uppercase;
+    color:#ede0ab;
+    font-size:14px;
+}
+
+#total-shares-img {
+    background-position:0 0;
+    height:115px;
+    width:157px;
+    display:block;
+    margin:20px 0 0;
+    clear:left;
+}
+
+#spark-1 .block-2 {
+    width:250px;
+}
+
+#spark-1 .block-2 strong {
+    color:#ede0ab;
+    text-transform:uppercase;
+    display:block;
+    font-size:14px;
+    font-style:normal;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    line-height:150%;
+}
+
+#spark-1 .block-2 .title {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+}
+
+#spark-1 .block-2 .trigger {
+    height:30px;
+    width:30px;
+    margin:30px auto;
+    background:#ccc;
+    position:relative;
+    text-align:center;
+}
+
+#spark-1 .tooltip {
+    padding:10px 20px;
+    background:#222;
+    border:1px solid #bbb;
+    display:none;
+    position:absolute;
+    top:20px;
+    left:50%;
+}
+
+#spark-1 .trigger:hover .tooltip {
+    display:block;
+}
+
+#spark-1 .block-3 {
+    clear:both;
+    margin-top:60px;
+    text-transform:uppercase;
+    color:#ede0ab;
+    font-size:14px;
+    text-align:left;
+    margin-bottom:60px;
+}
+
+#share-history-graph {
+    width:500px;
+    background:#444;
+    height:120px;
+    margin-top:10px;
+}
+
+#spark-1 .block-4 {
+    clear:left;
+    width:250px;
+}
+
+#spark-1 .block-4, #spark-1 .block-5 {
+    float:left;
+    font-size:36px;
+    color:#ddd;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+}
+
+#spark-1 .block-4 .number, #spark-1 .block-5 .number {
+    float:left;
+}
+
+#spark-1 .block-4 span, #spark-1 .block-5 span {
+    float:left;
+    margin-left:10px;
+    font-family:'Georgia', 'Times New Roman', serif;
+    font-style:italic;
+    font-size:14px;
+    text-align:left;
+    line-height:120%;
+}
+
+#spark-1 .block-4 span em, #spark-1 .block-5 span em {
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    font-style:normal;
+    text-transform:uppercase;
+    display:block;
+    color:#ede0ab;
+    
+}
+
+#twitter-shares-img, #facebook-shares-img {
+    float:left;
+}
+
+#twitter-shares-img.sprite {
+    width:56px;
+    height:42px;
+    background-position:-250px 0;
+}
+
+#facebook-shares-img.sprite {
+    width:45px;
+    height:43px;
+    background-position:-200px 0;
+}
+
+#spark-1 .block-5 {
+    width:220px;
+    border-left:1px solid #444;
+    padding-left:29px;
+}

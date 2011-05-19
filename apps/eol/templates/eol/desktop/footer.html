@@ -1,22 +1,45 @@
-{# L10n: Placed above Twitter and Facebook sharing buttons. #}
-{{ _('Share This') }}
-
-{# L10n: Title above the newsletter sign up input field. #}
-{{ _('Stay Updated') }}
-{{ _('Be the first to hear the latest news about Firefox for mobile.') }}
-{{ _('Your Email Address') }}
-
-{# L10n: Title above a sentence inviting users to visit Spark with their mobile. #}
-{{ _('Go Mobile') }}
-{{ _('Visit <span>spark.mozilla.org</span> with your mobile') }}
-
-
-{{ _('Privacy Policy') }}
-{{ _('Legal Notices') }}
-{{ _('Report Trademark Abuse') }}
-
-
-{% trans noted_url='http://www.mozilla.com/en-US/about/legal.html#site', license_url='http://creativecommons.org/licenses/by-sa/3.0/' %}
-Except where otherwise <a href="{{ noted_url }}">noted</a>, content of this site is licensed under the
-<a href="{{ license_url }}">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.
-{% endtrans %}
+<footer>
+    <div class="container">
+        <div id="sharing" class="footer-section">
+            <h3>
+                {# L10n: Placed above Twitter and Facebook sharing buttons. #}
+                {{ _('Share This') }}    
+            </h3>
+            <a class="twitter-icon"></a>
+            <a class="facebook-icon"></a>
+        </div>
+        <div id="newsletter" class="footer-section">
+            <h3>
+                {# L10n: Title above the newsletter sign up input field. #}
+                {{ _('Stay Updated') }}
+            </h3>
+            <form>
+                <span style="display:none">
+                    {{ _('Be the first to hear the latest news about Firefox for mobile.') }}
+                </span>
+                <input type="email" placeholder="{{ _('Your Email Address') }}">
+                <input type="submit" class="submit" value="">
+            </form>
+        </div>
+        <div id="go-mobile" class="footer-section">
+            <h3>
+                {# L10n: Title above a sentence inviting users to visit Spark with their mobile. #}
+                {{ _('Go Mobile') }}
+            </h3>
+            {{ _('Visit <span>spark.mozilla.org</span> with your mobile') }}
+        </div>
+        <aside>
+            <ul>
+                <li><a href="">{{ _('Privacy Policy') }}</a></li>
+                <li><a href="">{{ _('Legal Notices') }}</a></li>
+                <li><a href="">{{ _('Report Trademark Abuse') }}</a></li>
+            </ul>
+            <p>
+                {% trans noted_url='http://www.mozilla.com/en-US/about/legal.html#site', license_url='http://creativecommons.org/licenses/by-sa/3.0/' %}
+                Except where otherwise <a href="{{ noted_url }}">noted</a>, content of this site is licensed under the
+                <a href="{{ license_url }}">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.
+                {% endtrans %}
+            </p>
+        </aside>
+    </div>
+</footer>

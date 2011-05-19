@@ -1,0 +1,38 @@
+#home {
+    opacity:1;
+}
+
+#spark-content {
+    opacity:0;
+    pointer-events:none;
+}
+
+body section {
+    -moz-transition:0.5s all ease;
+}
+
+.block {
+    -moz-transition:0.5s all ease;
+    opacity:1;
+    position:relative;
+}
+
+#layers li {
+    -moz-transition:0.5s top cubic-bezier(0.8,0,0.2,1), 0.5s opacity linear, 0.2s left ease;
+}
+
+#phone-wrapper {-moz-transition:0.5s opacity ease;}
+.firefox #phone-wrapper {opacity:0;}
+.firefox #layers li {opacity:1;}
+.firefox #layer-1 {top:0px;}
+.firefox #layer-2 {top:120px;}
+.firefox #layer-3 {top:240px;}
+.firefox #layer-4 {top:360px;}
+
+.firefox #home {
+    pointer-events:none;
+}
+
+.firefox #layers li:hover {
+    left:20px;
+}

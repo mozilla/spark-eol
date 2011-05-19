@@ -1,0 +1,88 @@
+#spark-content {
+    height:600px;
+    clear:both;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    margin-top:-650px;
+}
+
+#spark-content aside {
+    float:left;
+    width:280px;
+    text-align:center;
+    padding-right:10px;
+}
+
+#spark-content aside header {
+    text-transform:uppercase;
+}
+
+#spark-content aside header h1 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:60px;
+    text-shadow:2px -1px 0px #302f2e, 3px -2px #777;
+}
+
+#spark-content aside header .small-text {
+    display:block;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    font-size:18px;
+    color:#ede0ab;
+    text-shadow:none;
+}
+
+#spark-content aside {
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+}
+
+#spark-content aside p {
+    font-size:14px;
+    line-height:120%;
+    color:#bbb;
+    margin-top:20px;
+}
+
+#spark-content aside nav {
+    margin-top:30px;
+    border-top:1px solid #444;
+}
+
+#spark-content aside nav li {
+    padding:20px 0;
+    text-transform:uppercase;
+    font-size:14px;
+    border-bottom:1px solid #444;
+    color:#aaa;
+    -moz-transition:0.2s all ease;
+}
+
+#spark-content aside nav li.active {
+    color:#ddd;
+    background:-moz-radial-gradient(center bottom, rgba(247,227,94,0.1) 0%, rgba(247,227,94,0.0) 30%), -moz-radial-gradient(center bottom, cover, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 60%);
+}
+
+#spark-content aside nav li em {
+    display:block;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:30px;
+    font-weight:normal;
+}
+
+#spark-content aside nav li:hover {
+    cursor:pointer;
+    background:-moz-radial-gradient(center bottom, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+    padding-left:10px;
+    color:#ddd;
+}
+
+#spark-content article {
+    float:right;
+    width:500px;
+}
+
+.trigger {
+    position:relative;
+}
+
+#spark-content .sprite {
+    background:url('../img/sprites-spark.png') no-repeat;
+}

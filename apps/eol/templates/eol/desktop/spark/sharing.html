@@ -1,21 +1,68 @@
-{# Sharing the Spark #}
+<article id="spark-1">
+    <div class="block block-1 trigger">
+        <div class="number">
+            <span class="big-text">132,850</span>
+            <span class="small-text">
+                {# L10n: Preceded by the number of shares. #}
+                {{ _('Total Shares') }}
+            </span>
+        </div>
+        <div class="sprite" id="total-shares-img"></div>
+        <div class="tooltip">
+            <span>49% <strong>Lorem Ipsum</strong></span>
+        </div>
+    </div>
+    <div class="block block-2">
+        <span class="title">
+            {{ _('<em>How people shared</em> their Spark') }}
+            <div class="trigger">
+                <div class="tooltip">
+                    <span>49% <strong>Lorem Ipsum</strong></span>
+                </div>
+            </div>
+        </span>
+    </div>
+    <div class="block block-3">
+        <span class="title">
+            {{ _('<em>Shares</em> over time') }}
+        </span>
+        <div id="share-history-graph">
+            
+        </div>
+    </div>
+    <div class="block block-4">
+        <div class="sprite" id="twitter-shares-img"></div>
+        <div class="number">
+            3,189
+        </div>
+        <span>{{ _('<em>Shares</em> via Twitter') }}</span>
+    </div>
+    <div class="block block-5">
+        <div class="sprite" id="facebook-shares-img"></div>
+        <div class="number">
+        8,235
+        </div>
+        <span>{{ _('<em>Shares</em> via Facebook') }}</span>
+    </div>
+</article>
 
-{# L10n: Preceded by the number of shares. #}
-{{ _('Total Shares') }}
 
-{{ _('<em>How people shared</em> their Spark') }}
+
 
 {# Pie chart tooltips #}
+{% if False %}
 {{ _('via Twitter') }}
 {{ _('via Facebook') }}
 {{ _('via QR Code') }}
 {{ _('via Poster') }}
+{% endif %}
 
-{{ _('<em>Shares</em> over time') }}
 
-{{ _('<em>Shares</em> via Twitter') }}
-{{ _('<em>Shares</em> via Facebook') }}
+
+
 
 {# Alternate strings #}
+{% if False %}
 {{ _('Number <span>of</span> Tweets') }}
 {{ _('<em>Facebook</em> messages') }}
+{% endif %}

@@ -1,0 +1,231 @@
+html, body {
+    background:#302f2e;
+    color:#ddd;
+}
+
+#wrapper {
+    border-top:3px solid #696969;
+    background:-moz-linear-gradient(-90deg, #222 0px, #302f2e 300px);
+}
+
+.container {
+    width:860px;
+    margin:0 auto;
+}
+
+#moz-tab {
+    height:49px;
+    width:118px;
+    float:right;
+    background:url('../img/spritesheet.png') no-repeat 0 0;
+}
+
+#moz-logo {
+    height:61px;
+    width:158px;
+    margin-top:15px;
+    float:left;
+    background:url('../img/spritesheet.png') no-repeat -150px 0px;
+}
+
+#ff-download {
+    float:right;
+    clear:right;
+    margin-top:20px;
+    color:#fff;
+    background:-moz-linear-gradient(90deg, #7aad29, #a4d045), #7aad29;
+    background:-webkit-gradient(linear, center bottom, center top, from(#7aad29), to(#a4d045)), #7aad29;
+    text-decoration:none;
+    font-size:18px;
+    padding:8px 12px;
+    font-style:italic;
+    border-radius:4px;
+    min-width:250px;
+    text-shadow:0px 1px 0px #acd94d, 0px -1px 0px #6d9d2a;
+    box-shadow:0px 3px 0px #6d9d2a;
+    position:relative;
+}
+
+#ff-download:hover {
+    background:-moz-linear-gradient(90deg, #83b633, #a9d74a);
+    background:-webkit-gradient(linear, center bottom, center top, from(#83b633), to(#a9d74a));
+}
+
+#ff-download:active {
+    box-shadow:none;
+    top:3px;
+}
+
+#ff-download em {
+    font-style:normal;
+}
+
+#ff-download-copy {
+    float:right;
+    clear:right;
+    color:#aaa;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    font-size:11px;
+    margin-top:10px;
+}
+
+#ff-download-copy em {
+    color:#54b653;
+}
+
+header nav {
+    clear:both;
+    height:50px;
+    display: block;
+    padding-bottom:20px;
+}
+
+header nav a {
+    text-decoration:none;
+    color:#bbb;
+    font-size:12px;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    margin-left:20px;
+    padding:6px 9px;
+}
+
+header nav a:first-child {
+    margin-left:0px;
+}
+
+footer {
+    background:#262626;
+    overflow:auto;
+}
+
+footer .container {
+    padding:30px 0;
+}
+
+#sharing {
+    width:160px;
+}
+
+#sharing a {
+    display:inline-block;
+    height:34px;
+    width:35px;
+    background:url('../img/spritesheet.png') no-repeat;
+}
+
+#sharing .twitter-icon {
+    background-position:0px -50px;
+}
+
+#sharing .twitter-icon:hover {
+    background-position:0px -100px;
+}
+
+#sharing .facebook-icon {
+    background-position:-50px -50px;
+    margin-left:2px;
+}
+
+#sharing .facebook-icon:hover {
+    background-position:-50px -100px;
+}
+
+#newsletter {
+    width:350px;
+}
+
+#go-mobile {
+    width:350px;
+}
+
+.footer-section {
+    float:left;
+    min-width:100px;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+}
+
+.footer-section h3 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:24px;
+    color:#bbb;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+#go-mobile {
+    font-size:14px;
+}
+
+#go-mobile a {
+    text-decoration:none;
+    color:#6eb8cc;
+}
+
+#newsletter input {
+    padding:8px 10px;
+    border-radius:4px;
+    border:0;
+    background:#d2d2d2;
+    color:#777;
+    font-size:14px;
+    float:left;
+}
+
+#newsletter .submit {
+    float:left;
+    height:34px;
+    width:35px;
+    background:url('../img/spritesheet.png') no-repeat -100px -50px;
+    margin-left:8px;
+}
+
+#newsletter .submit:hover, #newsletter .submit:focus {
+    background:url('../img/spritesheet.png') no-repeat -100px -100px;
+}
+
+footer aside {
+    clear:both;
+    padding-top:50px;
+    display:block;
+    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    color:#ddd;
+    font-size:12px;
+    overflow:auto;
+}
+
+footer aside a {
+    color:inherit;
+    text-decoration:none;
+}
+
+footer aside ul {
+    float:left;
+}
+
+footer aside ul li {
+    float:left;
+    padding:0 10px;
+    border-left:1px solid #ddd;
+}
+
+footer aside ul li:first-child {
+    padding-left:0;
+    border-left:0;
+}
+
+footer aside p {
+    float:right;
+    color:#bbb;
+    font-size:10px;
+    max-width:350px;
+    line-height:150%;
+}
+
+body section {
+    padding-bottom:50px;
+}
+
+body section .container {
+    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+    overflow:auto;
+}

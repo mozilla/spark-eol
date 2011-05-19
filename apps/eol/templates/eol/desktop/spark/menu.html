@@ -1,12 +1,27 @@
-
-{{ _('Spark') }}
-{{ _('Global results') }}
-
-{% trans %}
-Spark was created to celebrate the release of Firefox for Android and encouraged sharing the browser with friends across the globe. 
-Together we helped the flame of the mobile Web glow bright. See how well everyone has performed!
-{% endtrans %}
-
-{{ _('<em>Sharing</em> the Spark') }}
-{{ _('<em>Around</em> the Globe') }}
-{{ _('<em>Hall</em> of Fame') }}
+<aside id="left-content">
+    <header>
+        <h1>
+            {{ _('Spark') }}
+            <span class="small-text">{{ _('Global results') }}</span>
+        </h1>
+    </header>
+    <p>
+        {% trans %}
+        Spark was created to celebrate the release of Firefox for Android and encouraged sharing the browser with friends across the globe. 
+        Together we helped the flame of the mobile Web glow bright. See how well everyone has performed!
+        {% endtrans %}
+    </p>
+    <nav>
+        <ul>
+            <li class="active">
+                {{ _('<em>Sharing</em> the Spark') }}
+            </li>
+            <li>
+                {{ _('<em>Around</em> the Globe') }}
+            </li>
+            <li>
+                {{ _('<em>Hall</em> of Fame') }}
+            </li>
+        </ul>
+    </nav>
+</aside>

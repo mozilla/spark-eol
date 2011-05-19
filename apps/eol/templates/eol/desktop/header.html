@@ -1,17 +1,22 @@
-
-{# Download button #}
-
-{{ _('<em>Get Firefox</em> for mobile') }}
-{{ _('Available <span>free</span> for Android and the Nokia N900') }}
-
-
-{# Navigation links #}
-
-{{ _('Back to home') }}
-{{ _('To Spark results') }}
-{{ _('Learn more about Firefox') }}
+<header>
+    <div class="container">
+        <a href="http://www.mozilla.com" id="moz-tab"></a>
+        <a href="http://www.mozilla.com" id="moz-logo"></a>
+        <a href="http://www.firefox.com/m" id="ff-download">{{ _('<em>Get Firefox</em> for mobile') }}</a>
+        <span id="ff-download-copy">{{ _('Available <span>free</span> for Android and the Nokia N900') }}</span>
+    </div>
+    <div class="container">
+        <nav>
+            <a href="/">{{ _('Back to home') }}</a>
+            <a href="#spark-content">{{ _('To Spark results') }}</a>
+            <a href="#firefox-content">{{ _('Learn more about Firefox') }}</a>
+        </nav>
+    </div>
+</header>
 
 {# Alternate strings for navigation links #}
+{% if False %}
 {{ _('Home') }}
 {{ _('Spark results') }}
 {{ _('Inside Firefox') }}
+{% endif %}
