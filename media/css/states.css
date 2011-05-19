@@ -1,0 +1,14 @@
+.home #spark-content, .home #firefox-content {
+    opacity:0;
+    pointer-events:none;
+}
+
+.spark #home, .spark #firefox-content {
+    opacity:0;
+    pointer-events:none;
+}
+
+.firefox #home, .firefox #spark-content {
+    opacity:0;
+    pointer-events:none;
+}

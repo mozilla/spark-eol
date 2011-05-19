@@ -151,6 +151,7 @@ MINIFY_BUNDLES = {
             'css/spark-1.css',
             'css/firefox.css',
             'css/transitions.css',
+            'css/states.css',
         ),
         'mobile': (
             'css/mobile.css',
