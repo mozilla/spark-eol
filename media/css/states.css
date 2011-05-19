@@ -18,6 +18,10 @@
     pointer-events:auto;
 }
 
-.spark-1 #spark-1 {
+#spark-1 .block {
+    opacity:0;
+}
+
+.spark-1 #spark-1 .block {
     opacity:1;
 }
