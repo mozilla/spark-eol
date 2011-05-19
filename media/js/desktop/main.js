@@ -18,4 +18,10 @@ $(document).ready(function() {
         $body.removeClass('home');
         $body.addClass('firefox');
     });
+    
+    $('#back-to-home').click(function() {
+        spark.hide(function() {
+            home.show();
+        });
+    });
 });
