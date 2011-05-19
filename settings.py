@@ -159,6 +159,8 @@ MINIFY_BUNDLES = {
     },
     'js': {
         'main': (
+            'js/libs/class.js',
+            'js/desktop/sections.js',
             'js/desktop/main.js',
         ),
         'pngfix': (
