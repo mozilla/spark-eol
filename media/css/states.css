@@ -1,16 +1,21 @@
-.home #spark-content, .home #firefox-content {
+#spark-content, #firefox-content, #home {
     opacity:0;
     pointer-events:none;
 }
 
-.spark #home, .spark #firefox-content {
-    opacity:0;
-    pointer-events:none;
+.home #home {
+    opacity:1;
+    pointer-events:auto;
 }
 
-.firefox #home, .firefox #spark-content {
-    opacity:0;
-    pointer-events:none;
+.firefox #firefox-content {
+    opacity:1;
+    pointer-events:auto;
+}
+
+.spark #spark-content {
+    opacity:1;
+    pointer-events:auto;
 }
 
 .spark-1 #spark-1 {
