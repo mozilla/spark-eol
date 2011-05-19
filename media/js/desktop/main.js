@@ -3,7 +3,7 @@ $(document).ready(function() {
     
     $('#spark-button').click(function() {
         $body.removeClass('home');
-        $body.addClass('spark');
+        $body.addClass('spark').addClass('spark-1');
     });
     
     $('#firefox-button').click(function() {

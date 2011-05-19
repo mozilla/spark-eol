@@ -12,3 +12,7 @@
     opacity:0;
     pointer-events:none;
 }
+
+.spark-1 #spark-1 {
+    opacity:1;
+}

@@ -42,12 +42,6 @@
                 <canvas id="spark">
                 </canvas>
                 <div id="phone">
-                    <ol>
-                        <li class="layer"></li>
-                        <li class="layer"></li>
-                        <li class="layer"></li>
-                        <li class="layer"></li>
-                    </ol>
                 </div>
             </div>
         </div>
@@ -73,10 +67,11 @@
 <section id="firefox-content">
     <div class="container">
 
-{% include "eol/desktop/firefox/addons.html" %}
-{% include "eol/desktop/firefox/overview.html" %}
-{% include "eol/desktop/firefox/sync.html" %}
-{% include "eol/desktop/firefox/various.html" %}
+{% include "eol/desktop/firefox/layers.html" %}
+{# include "eol/desktop/firefox/addons.html" #}
+{# include "eol/desktop/firefox/overview.html" #}
+{# include "eol/desktop/firefox/sync.html" #}
+{# include "eol/desktop/firefox/various.html" #}
 
     </div>
 </section>

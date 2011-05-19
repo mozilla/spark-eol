@@ -78,6 +78,7 @@
 #spark-content article {
     float:right;
     width:500px;
+    opacity:0;
 }
 
 .trigger {
@@ -86,4 +87,12 @@
 
 #spark-content .sprite {
     background:url('../img/sprites-spark.png') no-repeat;
+}
+
+#spark-content article {
+    height:600px;
+}
+
+#spark-2, #spark-3 {
+    margin-top:-600px;
 }
