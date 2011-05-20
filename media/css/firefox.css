@@ -40,3 +40,38 @@
     background:url('../img/layers.png') no-repeat 0 -600px;
     z-index:10;
 }
+
+#firefox-content nav {
+    float:left;
+}
+
+#separator {
+    float:left;
+    height:550px;
+    width:50px;
+    position:relative;
+}
+
+#separator .line {
+    float:right;
+    width:1px;
+    background:#777;
+    position:relative;
+    z-index:100;
+    height:550px;
+}
+
+#separator .arrow {
+    position:absolute;
+    width:26px;
+    height:49px;
+    right:0;
+    top:47px;
+    background:url('../img/spritesheet.png') no-repeat -350px 0px;
+    z-index:200;
+}
+
+.layer-1 #separator .arrow {top:47px;}
+.layer-2 #separator .arrow {top:165px;}
+.layer-3 #separator .arrow {top:287px;}
+.layer-4 #separator .arrow {top:407px;}

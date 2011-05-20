@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $body = $('body');
     
     var home = new Section('home');
-    home.transEndTrigger = '#home';
+    home.transEndTrigger = '#phone-wrapper';
 
     var spark = new Section('spark');
     spark.transEndTrigger = '#spark-content';

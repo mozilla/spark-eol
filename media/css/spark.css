@@ -53,7 +53,6 @@
     font-size:14px;
     border-bottom:1px solid #444;
     color:#aaa;
-    -moz-transition:0.2s all ease;
 }
 
 #spark-content aside nav li.active {

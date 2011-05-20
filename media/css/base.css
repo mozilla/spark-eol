@@ -78,19 +78,44 @@ header nav {
     height:50px;
     display: block;
     padding-bottom:20px;
+    padding-top:30px;
 }
 
 header nav a {
     text-decoration:none;
     color:#bbb;
-    font-size:12px;
-    font-family:'Museo500', Helvetica, Arial, sans-serif;
+    font-size:16px;
+    font-family:Georgia, 'Times New Roman', sans-serif;
     margin-left:20px;
     padding:6px 9px;
+    font-style:italic;
 }
 
 header nav a:first-child {
     margin-left:0px;
+}
+
+header nav a div {
+    height:29px;
+    width:28px;
+}
+
+#back-to-home div {
+    background:url('../img/spritesheet.png') no-repeat -150px -100px;
+    float:left;
+}
+
+#back-to-home:hover div {
+    background-position:-250px -100px;
+}
+
+#to-firefox-page div, #to-spark-page div {
+    background:url('../img/spritesheet.png') no-repeat -200px -100px;
+    float:right;
+}
+
+#to-firefox-page:hover div {
+    background-position:-300px -100px;
 }
 
 footer {

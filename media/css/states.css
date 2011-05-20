@@ -1,9 +1,10 @@
 #spark-content, #firefox-content, #home {
     pointer-events:none;
     z-index:100;
+    opacity:0;
 }
 
-#spark-content, #firefox-content {
+#spark-content {
     opacity:0;
 }
 
@@ -51,4 +52,48 @@
 .home #main-copy {
     top:0;
     opacity:1;
+}
+
+/* Spark Hidden State */
+#spark-content aside {
+    position:relative;
+    left:-60px;
+    opacity:0;
+}
+
+#spark-content nav li {
+    opacity:0;
+    top:-30px;
+    position:relative;
+}
+
+/* Spark Visible State */
+
+.spark #spark-content aside {
+    left:0px;
+    opacity:1;
+}
+
+.spark #spark-content nav li {
+    top:0;
+    opacity:1;
+}
+
+/* Firefox Hidden State */
+
+#layers li {
+    opacity:0;
+}
+
+/* Firefox Visible State */
+
+.firefox #phone-wrapper {opacity:0;}
+.firefox #layers li {opacity:1;}
+.firefox #layer-1 {top:0px;}
+.firefox #layer-2 {top:120px;}
+.firefox #layer-3 {top:240px;}
+.firefox #layer-4 {top:360px;}
+
+.firefox #layers li:hover {
+    left:20px;
 }
