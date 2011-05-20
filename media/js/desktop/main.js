@@ -4,7 +4,7 @@ $(document).ready(function() {
         spark = new Section('spark', '#spark-content', 'spark-1'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection;
-    
+
     // Homepage buttons
     $('#spark-button').click(function() {
         home.hide(function() {
@@ -36,4 +36,9 @@ $(document).ready(function() {
     $('#spark-content nav li:eq(2)').click(function() {
         spark.changePage('spark-3');
     });
+    
+    // Initialize CountUp widgets
+    $('.countup').each(function() {
+        new CountUp($(this));
+    })
 });

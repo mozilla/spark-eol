@@ -1,16 +1,5 @@
 var Section = null;
 
-var onTransitionEndOnce = function($element, callback) {
-    var TRANSITION_END = 'transitionend webkitTransitionEnd oTransitionEnd',
-        transitionEndWrapper = function() {
-            if(callback) {
-                callback();
-            }
-            $element.unbind(TRANSITION_END, transitionEndWrapper);
-        };
-    $element.bind(TRANSITION_END, transitionEndWrapper);
-};
-
 $(document).ready(function() {
     var $body = $('body');
     
