@@ -11,13 +11,13 @@
     text-align:center;
 }
 
-#spark-1 .block-1 .number {
+#spark-1 .block-1 div {
     float:left;
     margin-bottom:20px;
     padding-left:5px;
 }
 
-#spark-1 .block-1 .big-text {
+#spark-1 .block-1 .number {
     font-family:'LG', 'Arial Narrow', sans-serif;
     font-size:72px;
     display:block;

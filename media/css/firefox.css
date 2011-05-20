@@ -26,6 +26,10 @@
     left:0;
 }
 
+.layer:hover {
+    cursor:pointer;
+}
+
 #phone-layer-1 {
     background:url('../img/layers.png') no-repeat 0 0;
     z-index:40;
