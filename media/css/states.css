@@ -26,11 +26,11 @@
     z-index:1000;
 }
 
-#spark-1 .block {
+#spark-1 .block, #spark-2 .block, #spark-3 {
     opacity:0;
 }
 
-.spark-1 #spark-1 .block {
+.spark-1 #spark-1 .block, .spark-2 #spark-2 .block, .spark-3 #spark-3 .block {
     opacity:1;
 }
 
@@ -67,6 +67,8 @@
     position:relative;
 }
 
+#spark-2 .block-1 li {opacity:0;}
+
 /* Spark Visible State */
 
 .spark #spark-content aside {
@@ -78,6 +80,8 @@
     top:0;
     opacity:1;
 }
+
+.spark-2 #spark-2 .block-1 li {opacity:1;}
 
 /* Firefox Hidden State */
 

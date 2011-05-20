@@ -18,11 +18,11 @@ body section {
     -o-transition:0.5s top cubic-bezier(0.8,0,0.2,1), 0.5s opacity linear, 0.2s left ease;
 }
 
-#spark-1 .block-1 {-moz-transition-delay:0s;-webkit-transition-delay:0s;-o-transition-delay:0s;}
-#spark-1 .block-2 {-moz-transition-delay:0.15s;-webkit-transition-delay:0.15s;-o-transition-delay:0.15s;}
-#spark-1 .block-3 {-moz-transition-delay:0.3s;-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;}
-#spark-1 .block-4 {-moz-transition-delay:0.45s;-webkit-transition-delay:0.45s;-o-transition-delay:0.45s;}
-#spark-1 .block-5 {-moz-transition-delay:0.6s;-webkit-transition-delay:0.6s;-o-transition-delay:0.6s;}
+.spark-1 #spark-1 .block-1 {-moz-transition-delay:0s;-webkit-transition-delay:0s;-o-transition-delay:0s;}
+.spark-1 #spark-1 .block-2 {-moz-transition-delay:0.15s;-webkit-transition-delay:0.15s;-o-transition-delay:0.15s;}
+.spark-1 #spark-1 .block-3 {-moz-transition-delay:0.3s;-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;}
+.spark-1 #spark-1 .block-4 {-moz-transition-delay:0.45s;-webkit-transition-delay:0.45s;-o-transition-delay:0.45s;}
+.spark-1 #spark-1 .block-5 {-moz-transition-delay:0.6s;-webkit-transition-delay:0.6s;-o-transition-delay:0.6s;}
 
 /* home */
 #phone-wrapper {
@@ -47,6 +47,14 @@ body section {
 #spark-content nav li:nth-child(1) {-moz-transition-delay:0.25s;-webkit-transition-delay:0.25s;-o-transition-delay:0.25s;}
 #spark-content nav li:nth-child(2) {-moz-transition-delay:0.4s;-webkit-transition-delay:0.4s;-o-transition-delay:0.4s;}
 #spark-content nav li:nth-child(3) {-moz-transition-delay:0.65s;-webkit-transition-delay:0.65s;-o-transition-delay:0.65s;}
+
+#spark-2 .block-1 li {-moz-transition:0.2s opacity linear;}
+.spark-2 #spark-2 .block-1 li.one {-moz-transition-delay:0s;}
+.spark-2 #spark-2 .block-1 li.two {-moz-transition-delay:0.1s;}
+.spark-2 #spark-2 .block-1 li.three {-moz-transition-delay:0.15s;}
+.spark-2 #spark-2 .block-1 li.four {-moz-transition-delay:0.20s;}
+.spark-2 #spark-2 .block-1 li.five {-moz-transition-delay:0.25s;}
+.spark-2 #spark-2 .block-1 li.six {-moz-transition-delay:0.30s;}
 
 /* firefox */
 #separator .arrow {

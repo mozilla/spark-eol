@@ -1,0 +1,119 @@
+/*Structure*/
+
+#spark-2 .block-1 {
+    width:280px;
+    text-align:left;
+    float:left;
+}
+
+#spark-2 .block-2 {
+    float:left;
+    width:220px;
+}
+
+#spark-2 .block-3 {
+    clear:left;
+    margin-top:60px;
+    float:left;
+    width:280px;
+}
+
+#spark-2 .block-4 {
+    float:left;
+    width:220px;
+    margin-top:60px;
+}
+
+#spark-2 .block-5 {
+    clear:both;
+    padding-top:60px;
+}
+
+/*Content*/
+
+#spark-2 .title {
+    text-transform:uppercase;
+    font-size:14px;
+}
+
+#spark-2 .title em {
+    color:#ede0ab;
+}
+
+#active-cities {
+    height:125px;
+    width:108px;
+    background:url('../img/sprites-spark.png') no-repeat 0px -150px;
+    margin:20px 0 0 20px;
+}
+#active-cities ol {
+    height:68px;
+    width:70px;
+    background:url('../img/sprites-spark.png') no-repeat -200px -50px;
+    position:relative;
+    overflow:visible;
+    top:30px;
+    left:18px;
+}
+
+#active-cities ol li {
+    position:absolute;
+    height:16px;
+    width:16px;
+    background:url('../img/sprites-spark.png') no-repeat -284px -50px;
+}
+
+#active-cities ol li.active {
+    background-position:-284px -84px;
+}
+
+#active-cities li.one {top:-34px;left:29px}
+#active-cities li.two {top:-7px;left:81px}
+#active-cities li.three {top:54px;left:81px}
+#active-cities li.four {top:84px;left:29px}
+#active-cities li.five {top:54px;left:-24px}
+#active-cities li.six {top:-7px;left:-24px}
+
+#spark-2 .big-number {
+    font-size:48px;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    float:left;
+}
+
+#spark-2 .block-2 .title, #spark-2 .block-3 .title,
+#spark-2 .block-4 .title {
+    float:left;
+    font-family:'Georgia', 'Times New Roman', serif;
+    font-style:italic;
+    text-transform:none;
+    padding:8px 0 0 10px;
+}
+
+#spark-2 .block-2 .title em, #spark-2 .block-3 .title em,
+#spark-2 .block-4 .title em  {
+    display:block;
+    font-family:'Museo500', 'Trebuchet MS', Arial, sans-serif;
+    font-style:normal;
+    text-transform:uppercase;
+    padding-bottom:2px;
+}
+
+#spark-2 .block-2 canvas {
+    background:#444;
+    height:125px;
+    width:215px;
+    clear:both;
+    display:block;
+}
+
+#spark-2 .block-5 .title {
+    display:block;
+    text-align:center;
+}
+
+#active-countries {
+    margin-top:20px;
+    background:#444;
+    width:100%;
+    height:150px;
+}

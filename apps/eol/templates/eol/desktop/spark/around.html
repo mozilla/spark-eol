@@ -1,15 +1,41 @@
 {# Around the Globe #}
 <article id="spark-2">
-    {{ _('Most Sparked <em>Cities</em>') }}
+    <div class="block block-1">
+        <span class="title">{{ _('Most Sparked <em>Cities</em>') }}</span>
+        <div id="active-cities">
+            <ol>
+                <li class="one"></li>
+                <li class="two active"></li>
+                <li class="three"></li>
+                <li class="four"></li>
+                <li class="five"></li>
+                <li class="six"></li>
+            </ol>
+        </div>
+    </div>
 
-    {# L10n: Preceded by the number of continents #}
-    {{ _('<em>Continents</em> Sparked') }}
+    <div class="block block-2" id="continents">
+        {# L10n: Preceded by the number of continents #}
+        <span class="big-number">6</span><span class="title">{{ _('<em>Continents</em> Sparked') }}</span>
+        <canvas width="215" height="125">
+            
+        </canvas>
+    </div>
 
-    {# L10n: Preceded by the number of sparks #}
-    {{ _('<em>Total Sparks</em> Worldwide') }}
+    <div class="block block-3">
+        {# L10n: Preceded by the number of sparks #}
+        <span class="big-number">31,245</span><span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
+    </div>
 
-    {# L10n: Preceded by the number of countries #}
-    {{ _('<em>Countries</em> Sparked') }}
+    <div class="block block-4">
+        {# L10n: Preceded by the number of countries #}
+        <span class="big-number">162</span><span class="title">{{ _('<em>Countries</em> Sparked') }}</span>
+    </div>
 
-    {{ _('Most Active <em>Countries</em>') }}
+    <div class="block block-5">
+        <span class="title">{{ _('Most Active <em>Countries</em>') }}</span>
+        <div id="active-countries">
+            
+        </div>
+    </div>
 </article>
