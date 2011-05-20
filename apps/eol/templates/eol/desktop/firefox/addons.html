@@ -1,26 +1,71 @@
-{# L10n: Title of the page about Firefox addons for mobile. #}
-{{ _('Customize On The Go') }}
-{{ _('Customize Firefox to fit exactly the way you browse with our growing catalog of <a href="{url}">mobile add-ons</a>.')|fe(url='#') }}
+<article id="layer-2">
+    <header class="block block-1">
+        <h1>
+            {# L10n: Title of the page about Firefox addons for mobile. #}
+            {{ _('Customize On The Go') }}
+        </h1>
+        <p>
+            {{ _('Customize Firefox to fit exactly the way you browse with our growing catalog of <a href="{url}">mobile add-ons</a>.')|fe(url='#') }}
+        </p>
+    </header>
 
+    <div class="block block-2">
+        
+    </div>
+    
+    <div class="block block-3">
+        <span>
+            {{ _('<em>Hundreds of thousands</em> of Add-ons Downloaded') }}
+        </span>
+        <span class="alternate">
+            {{ _('<em>Add-ons</em> Downloaded') }}
+        </span>
+    </div>
 
-{{ _('<em>Hundreds of thousands</em> of Add-ons Downloaded') }}
+    <div class="block block-4">
+        <div class="number">167</div>
+        <span>
+            {{ _('<em>Available</em> Add-ons <span>and counting</span>') }}
+        </span>
+    </div>
 
-{{ _('<em>Add-ons</em> Downloaded')|f(num=1234567) }}
+    <div class="block block-5">
+        {{ _('Featured <em>Add-ons</em>') }}
+    </div>
 
-{{ _('<em>Available</em> Add-ons <span>and counting</span>') }}
+    <div class="block block-6">
+        {# L10n: Featured add-on name. #}
+        <div class="icon"></div>
+        <span class="title">{{ _('Personas') }}</span>
+        <p>
+            {{ _('Dress up your Firefox with thousands of cool designs from <a href="{url}">GetPersonas.com</a>.')|fe(url='#') }}
+        </p>
+    </div>
 
-{# L10n: Featured add-on name. #}
-{{ _('Personas') }}
-{{ _('Dress up your Firefox with thousands of cool designs from <a href="{url}">GetPersonas.com</a>.')|fe(url='#') }}
+    <div class="block block-7">
+        {# L10n: Featured add-on name. #}
+        <div class="icon"></div>
+        <span class="title">{{ _('HootBar') }}</span>
+        <p>
+            {{ _('Post messages to Twitter and other social networks from the Awesome Bar.') }}
+        </p>
+    </div>
 
-{# L10n: Featured add-on name. #}
-{{ _('HootBar') }}
-{{ _('Post messages to Twitter and other social networks from the Awesome Bar.') }}
+    <div class="block block-8">
+        {# L10n: Featured add-on name. #}
+        <div class="icon"></div>
+        <span class="title">{{ _('Adblock Plus') }}</span>
+        <p>
+            {{ _('Remove ads and regain control of the way you view the web.') }}
+        </p>
+    </div>
 
-{# L10n: Featured add-on name. #}
-{{ _('Adblock Plus') }}
-{{ _('Remove ads and regain control of the way you view the web.') }}
-
-{# L10n: Featured add-on name. #}
-{{ _('Phony') }}
-{{ _('View sites by masquerading as an iPhone, Android, or desktop browser.') }}
+    <div class="block block-9">
+        {# L10n: Featured add-on name. #}
+        <div class="icon"></div>
+        <span class="title">{{ _('Phony') }}</span>
+        <p>
+            {{ _('View sites by masquerading as an iPhone, Android, or desktop browser.') }}
+        </p>
+    </div>
+</article>

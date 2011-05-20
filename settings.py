@@ -156,6 +156,7 @@ MINIFY_BUNDLES = {
             'css/flags.css',
             'css/firefox.css',
             'css/firefox-1.css',
+            'css/firefox-2.css',
             'css/transitions.css',
             'css/states.css',
         ),

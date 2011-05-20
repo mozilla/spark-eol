@@ -6,9 +6,23 @@
     opacity:1;
 }
 
+#firefox-content a {
+    color:#75d0ff;
+    text-decoration:none;
+}
+
+#firefox-content a:hover {
+    color:#9edeff;
+}
+
 #firefox-content article {
     width:440px;
     float:right;
+    height:550px;
+}
+
+#layer-2, #layer-3, #layer-4 {
+    margin-top:-550px;
 }
 
 #layers {

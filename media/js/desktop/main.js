@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $body = $('body'),
         home = new Section('home', '#phone-wrapper'),
         spark = new Section('spark', '#spark-content', 'spark-1'),
-        firefox = new Section('firefox', '#firefox-content', 'layer-1'),
+        firefox = new Section('firefox', '#firefox-content', 'layer-2'),
         currentSection;
 
     // Homepage buttons
@@ -35,6 +35,20 @@ $(document).ready(function() {
     });
     $('#spark-content nav li:eq(2)').click(function() {
         spark.changePage('spark-3');
+    });
+    
+    // Firefox menu
+    $('#firefox-content #phone-layer-1').click(function() {
+        firefox.changePage('layer-1');
+    });
+    $('#firefox-content #phone-layer-2').click(function() {
+        firefox.changePage('layer-2');
+    });
+    $('#firefox-content #phone-layer-3').click(function() {
+        firefox.changePage('layer-3');
+    });
+    $('#firefox-content #phone-layer-4').click(function() {
+        firefox.changePage('layer-4');
     });
     
     // Initialize CountUp widgets

@@ -1,0 +1,92 @@
+/*Structure*/
+
+#layer-2 .block-3, #layer-2 .block-4 {
+    float:left;
+}
+
+#layer-2 .block-3, #layer-2 .block-6, #layer-2 .block-8 {
+    width:200px;
+    padding-right:40px;
+}
+
+#layer-2 .block-4, #layer-2 .block-7, #layer-2 .block-9 {
+    width:200px;
+}
+
+#layer-2 .block-5 {
+    clear:left;
+}
+
+#layer-2 .block-6, #layer-2 .block-7, #layer-2 .block-8, #layer-2 .block-9 {
+    float:left;
+}
+
+#layer-2 .block-8 {
+    clear:left;
+}
+
+#layer-2 .block-6, #layer-2 .block-7, #layer-2 .block-8, #layer-2 .block-9 {
+    margin-top:20px;
+}
+
+/*Content*/
+
+#layer-2 .block-2 {
+    height:100px;
+    background:#444;
+    margin-bottom:20px;
+}
+
+#layer-2 .block-3 span.alternate {
+    display:none;
+}
+
+#layer-2 .number {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:36px;
+    float:left;
+    margin-right:8px;
+}
+
+#layer-2 .block-3 span, #layer-2 .block-4 span {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+}
+
+#layer-2 .block-3 span em, #layer-2 .block-4 span em {
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    color:#ede0ab;
+    text-transform:uppercase;
+    font-style:normal;
+    display:block;
+    margin-bottom:2px;
+}
+
+#layer-2 .block-4 span span {
+    font-size:80%;
+    color:#bbb;
+}
+
+#layer-2 .block-5 {
+    padding:20px 0 10px;
+    text-transform:uppercase;
+}
+
+#layer-2 .title {
+    text-transform:uppercase;
+    font-family:'Museo500', 'Trebuchet MS', arial, sans-serif;
+    font-style:normal;
+    padding-top:15px;
+}
+
+#layer-2 .icon {
+    height:40px;
+    width:48px;
+    float:left;
+    background:#444;
+    margin:0 10px 10px 0;
+}
+
+#layer-2 .block p {
+    clear:left;
+}
