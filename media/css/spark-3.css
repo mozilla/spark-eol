@@ -1,0 +1,87 @@
+/*Structure*/
+
+#spark-3 .block-1 {
+    float:left;
+    width:245px;
+}
+
+#spark-3 .block-2, #spark-3 .block-3, #spark-3 .block-4 {
+    float:left;
+    width:210px;
+    margin-left:40px;
+}
+
+#spark-3 .block3, #spark-3 .block-4 {
+    margin-top:60px;
+}
+
+/*Content*/
+
+#spark-3 .title {
+    text-transform:uppercase;
+    display:block;
+    font-size:14px;
+}
+
+#spark-3 .title em {
+    color:#ede0ab;
+}
+
+#spark-3 .block-2, #spark-3 .block-3, #spark-3 .block-4 {
+    text-align:center;
+}
+
+#spark-3 .block-1 ol {
+    margin-top:20px;
+    border-top:1px solid #666;
+    font-size:13px;
+}
+
+#spark-3 .block-1 li {
+    border-bottom:1px solid #666;
+    padding:13px 0;
+}
+
+.flag {
+	width: 16px;
+	height: 11px;
+	background:url('../img/flags.png') no-repeat;
+	float:left;
+	margin:1px 10px 0 0;
+}
+
+#spark-3 .block-1 li .star {
+    height:19px;
+    width:20px;
+    background:url('../img/sprites-spark.png') no-repeat -150px -150px;
+    float:right;
+    margin:-4px 3px 0 0;
+}
+
+#spark-3 .block-1 li .shares {
+    float:right;
+}
+
+#spark-3 p {
+    margin-top:15px;
+    font-size:12px;
+    color:#bbb;
+    font-style:italic;
+    font-family:Georgia, 'Times New Roman', serif;
+    line-height:150%;
+}
+
+#spark-3 .block-2 canvas {
+    display:block;
+    margin:30px auto 0 auto;
+    width:130px;
+    height:130px;
+    background:#444;
+    margin-bottom:60px;
+}
+
+#spark-3 .big-number {
+    display:block;
+    font-size:48px;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+}
