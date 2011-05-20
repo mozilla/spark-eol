@@ -26,7 +26,7 @@
     z-index:1000;
 }
 
-#spark-1 .block, #spark-2 .block, #spark-3 {
+#spark-1 .block, #spark-2 .block, #spark-3 .block {
     opacity:0;
 }
 
