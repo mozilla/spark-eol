@@ -44,15 +44,17 @@ USE_I18N = True
 USE_L10N = True
 
 # Gettext text domain
-TEXT_DOMAIN = 'messages'
+TEXT_DOMAIN = 'results'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-US'
 
 
-KNOWN_LANGUAGES_STAGE = ('en-US', 'fr')
-KNOWN_LANGUAGES_PROD = ('en-US', 'fr')
+KNOWN_LANGUAGES_STAGE = ('en-US', 'ca', 'de', 'el', 'es', 'eu', 'fr', 'fy', 'hu',
+                         'it', 'ko', 'nl', 'pl', 'si', 'sl', 'sq', 'th', 'vi',
+                         'zh-TW')
+KNOWN_LANGUAGES_PROD = ('en-US','ca','fr','de','it','ja','pl','es','vi',)
 
 # Accepted locales
 KNOWN_LANGUAGES = KNOWN_LANGUAGES_PROD
@@ -238,7 +240,7 @@ TOWER_ADD_HEADERS = True
 # Tells the extract script what files to look for L10n in and what function
 # handles the extraction. The Tower library expects this.
 DOMAIN_METHODS = {
-    'messages': [
+    'results': [
         ('vendor/**', 'ignore'),
         ('apps/**.py',
             'tower.management.commands.extract.extract_tower_python'),
@@ -259,8 +261,6 @@ DOMAIN_METHODS = {
     #    ('media/js/mobile/*.js', 'javascript'),
     #],
 }
-
-STANDALONE_DOMAINS = ['messages']
 
 # Path to Java. Used for compress_assets.
 JAVA_BIN = '/usr/bin/java'
