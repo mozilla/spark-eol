@@ -165,6 +165,7 @@ MINIFY_BUNDLES = {
         'main': (
             'js/libs/class.js',
             'js/libs/tween.js',
+            'js/libs/minpubsub.js',
             'js/desktop/utils.js',
             'js/desktop/sections.js',
             'js/desktop/widgets.js',

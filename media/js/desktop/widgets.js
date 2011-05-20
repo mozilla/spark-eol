@@ -4,14 +4,19 @@ var Widget = Class.extend({
             $previousSibling;
             
         this.$el = $element;
+        this.pageName = $element.parent().attr('id');
         $previousSibling = this.$el.prev();
-
+        
         if($previousSibling.length > 0) {
             onTransitionEnd($previousSibling, function() {
                 self.animate();
             });
         } else {
-            self.animate();
+            subscribe("pagechange",  function(pageName) {
+                if(self.pageName === pageName) {
+                    self.animate();
+                }
+            });
         }
     },
     
