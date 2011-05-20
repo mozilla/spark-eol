@@ -6,6 +6,11 @@
     opacity:1;
 }
 
+#firefox-content article {
+    width:440px;
+    float:right;
+}
+
 #layers {
     width:305px;
     height:600px;
@@ -21,22 +26,22 @@
     left:0;
 }
 
-#layer-1 {
+#phone-layer-1 {
     background:url('../img/layers.png') no-repeat 0 0;
     z-index:40;
 }
 
-#layer-2 {
+#phone-layer-2 {
     background:url('../img/layers.png') no-repeat 0 -200px;
     z-index:30;
 }
 
-#layer-3 {
+#phone-layer-3 {
     background:url('../img/layers.png') no-repeat 0 -400px;
     z-index:20;
 }
 
-#layer-4 {
+#phone-layer-4 {
     background:url('../img/layers.png') no-repeat 0 -600px;
     z-index:10;
 }
@@ -75,3 +80,49 @@
 .layer-2 #separator .arrow {top:165px;}
 .layer-3 #separator .arrow {top:287px;}
 .layer-4 #separator .arrow {top:407px;}
+
+#firefox-content article {
+    font-size:14px;
+}
+
+#firefox-content article h1 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:48px;
+    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #666;
+    text-transform:uppercase;
+}
+
+#firefox-content header {
+    margin-bottom:40px;
+}
+
+#firefox-content header.block p {
+    font-family:'Museo500', 'Trebuchet MS', arial, sans-serif;
+    font-style:normal;
+    font-size:14px;
+    line-height:normal;
+    margin:0;
+}
+
+#firefox-content .title {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    display:block;
+    line-height:18px;
+}
+
+#firefox-content .title em {
+    font-family:'Museo500', 'Trebuchet MS', Arial, sans-serif;
+    text-transform:uppercase;
+    font-style:normal;
+    display:block;
+}
+
+#firefox-content .block p {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    color:#bbb;
+    font-size:12px;
+    line-height:133%;
+    margin-top:15px;
+}

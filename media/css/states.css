@@ -34,6 +34,14 @@
     opacity:1;
 }
 
+#layer-1 .block, #layer-2 .block, #layer-3 .block, #layer-4 .block {
+    opacity:0;
+}
+
+.layer-1 #layer-1 .block, .layer-2 #layer-2 .block, .layer-3 #layer-3 .block, .layer-4 #layer-4 .block {
+    opacity:1;
+}
+
 /* Home Hidden state */
 #phone-wrapper {
     opacity:0;
@@ -93,10 +101,10 @@
 
 .firefox #phone-wrapper {opacity:0;}
 .firefox #layers li {opacity:1;}
-.firefox #layer-1 {top:0px;}
-.firefox #layer-2 {top:120px;}
-.firefox #layer-3 {top:240px;}
-.firefox #layer-4 {top:360px;}
+.firefox #phone-layer-1 {top:0px;}
+.firefox #phone-layer-2 {top:120px;}
+.firefox #phone-layer-3 {top:240px;}
+.firefox #phone-layer-4 {top:360px;}
 
 .firefox #layers li:hover {
     left:20px;

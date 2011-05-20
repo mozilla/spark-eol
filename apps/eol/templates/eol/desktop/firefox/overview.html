@@ -1,24 +1,56 @@
-{# L10n: Title of the page giving an overview of Firefox for mobile. #}
-{{ _('Type Less, Browse More') }}
-{{ _('All the awesomeness of Firefox, packed into a mobile device.') }}
+<article id="layer-1">
+    {# L10n: Title of the page giving an overview of Firefox for mobile. #}
+    <header class="block block-1">
+        <h1>
+        {{ _('Type Less, Browse More') }}
+        </h1>
+        <p>
+            {{ _('All the awesomeness of Firefox, packed into a mobile device.') }}
+        </p>
+    
+    </header>
 
+    <div class="block block-2">
+        <div class="icon"></div>
+        <span class="title">{{ _('<em>Tabbed</em> Browsing') }}</span>
+        <p>
+            {{ _('Enjoy the convenience of tabbed browsing on your mobile device.') }}
+        </p>
+    </div>
 
-{{ _('<em>Tabbed</em> Browsing') }}
-{{ _('Enjoy the convenience of tabbed browsing on your mobile device.') }}
+    <div class="block block-3">
+        <div class="icon"></div>
+        <span class="title">{{ _('<em>One-Touch</em> Bookmarking') }}</span>
+        <p>
+            {{ _('Swipe to the left and bookmark a site you love with one touch.') }}
+        </p>
+    </div>
 
-{{ _('<em>Awesome</em> Screen') }}
-{{ _('Firefox learns your favorite sites as you browse and helps you get to them with minimal or no typing.') }}
+    <div class="block block-4">
+        <div class="icon"></div>
+        <span class="title">{{ _('<em>Awesome</em> Screen') }}</span>
+        <p>
+            {{ _('Firefox learns your favorite sites as you browse and helps you get to them with minimal or no typing.') }}
+        </p>
+    </div>
 
-{{ _('<em>One-Touch</em> Bookmarking') }}
-{{ _('Swipe to the left and bookmark a site you love with one touch.') }}
+    <div class="block block-5">
+        <div class="icon"></div>
+        <span class="title">{{ _('<em>Full Screen</em> View') }}</span>
+        <p>
+            {{ _('Firefox stays out of the way of the content you’re looking at.') }}
+        </p>
+    </div>
 
-{{ _('<em>Full Screen</em> View') }}
-{{ _('Firefox stays out of the way of the content you’re looking at.') }}
+    <div class="block block-6">
+        <div id="millions-illustration"></div>
+        <span class="title">{{ _('<em>Millions</em> of downloads') }}</span>
+        {# L10n: Download link to Firefox for mobile. Should be kept as short as possible. #}
+        <span class="cta">{{ _('Get it now') }}</span>
+    </div>
 
-
-{{ _('<em>Millions</em> of downloads') }}
-{# L10n: Download link to Firefox for mobile. Should be kept as short as possible. #}
-{{ _('Get it now') }}
-
-
-{{ _('<em>See Firefox</em> for Android in action.') }}
+    <div class="block block-7">
+        <span class="title">{{ _('<em>See Firefox</em> for Android in action.') }}</span>
+        <div class="video-thumbnail"></div>
+    </div>
+</article>
