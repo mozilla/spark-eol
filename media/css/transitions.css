@@ -18,11 +18,6 @@ body section {
     -o-transition:0.5s top cubic-bezier(0.8,0,0.2,1), 0.5s opacity linear, 0.2s left ease;
 }
 
-#phone-wrapper {
-    -moz-transition:0.5s opacity ease;
-    -webkit-transition:0.5s opacity ease;
-    -o-transition:0.5s opacity ease;
-    }
 .firefox #phone-wrapper {opacity:0;}
 .firefox #layers li {opacity:1;}
 .firefox #layer-1 {top:0px;}
@@ -43,3 +38,18 @@ body section {
 #spark-1 .block-3 {-moz-transition-delay:0.3s;-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;}
 #spark-1 .block-4 {-moz-transition-delay:0.45s;-webkit-transition-delay:0.45s;-o-transition-delay:0.45s;}
 #spark-1 .block-5 {-moz-transition-delay:0.6s;-webkit-transition-delay:0.6s;-o-transition-delay:0.6s;}
+
+/* home */
+#phone-wrapper {
+    -moz-transition:2s opacity ease;
+    -webkit-transition:0.5s opacity ease;
+    -o-transition:0.5s opacity ease;
+    }
+
+#main-copy {
+    -moz-transition:0.25s top ease, 0.25s opacity linear;
+}
+
+#home-wrapper {
+    -moz-transition:0.5s all ease;
+}

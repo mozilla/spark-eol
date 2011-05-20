@@ -1,7 +1,10 @@
 #spark-content, #firefox-content, #home {
-    opacity:0;
     pointer-events:none;
     z-index:100;
+}
+
+#spark-content, #firefox-content {
+    opacity:0;
 }
 
 .home #home {
@@ -27,5 +30,25 @@
 }
 
 .spark-1 #spark-1 .block {
+    opacity:1;
+}
+
+/* Home Hidden state */
+#phone-wrapper {
+    opacity:0;
+}
+
+#main-copy {
+    opacity:0;
+    top:-30px;
+}
+
+/* Home Visible state */
+.home #phone-wrapper {
+    opacity:1;
+}
+
+.home #main-copy {
+    top:0;
     opacity:1;
 }
