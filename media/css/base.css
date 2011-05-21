@@ -248,6 +248,7 @@ footer aside p {
 
 body section {
     padding-bottom:50px;
+    min-height:600px;
 }
 
 body section .container {

@@ -1,0 +1,76 @@
+/*Structure*/
+#layer-4 .block-3 ul {
+    float:left;
+}
+
+#layer-4 .block ul:first-child {
+    padding-right:40px;
+}
+
+#layer-4 .block ul {
+    width:200px;
+}
+
+#layer-4 .block-4 {
+    clear:left;
+    float:left;
+    width:200px;
+    padding-right:40px;
+}
+
+#layer-4 .block-5 {
+    float:left;
+    width:200px;
+}
+
+/*Content*/
+
+#layer-4 .block-2 {
+    padding-right:100px;
+    margin-bottom:20px;
+}
+
+#layer-4 .block-2 .title em {
+    display:inline;
+}
+
+#layer-4 .block-2 p {
+    margin-top:0px
+}
+
+#layer-4 .block-3 p {
+    display:none;
+}
+
+#layer-4 .block-4 .tooltips {
+    display:none;
+}
+
+#layer-4 .block-4 .title {
+    font-family:'Museo500', 'Trebuchet MS', arial, sans-serif;
+    text-transform:uppercase;
+    font-style:normal;
+}
+
+#layer-4 .block-3 ul li {
+    padding:10px 0;
+}
+
+#layer-4 .block-3 .icon {
+    height:25px;
+    width:25px;
+    margin-right:10px;
+    background:#444;
+    float:left;
+    margin-top:-5px;
+}
+
+#layer-4 .block-4, #layer-4 .block-5 {
+    margin-top:20px;
+}
+
+#cutting-edge-illu, #location-illu {
+    height:115px;
+    background:#444;
+    margin-top:10px;
+}

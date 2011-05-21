@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $body = $('body'),
         home = new Section('home', '#phone-wrapper'),
         spark = new Section('spark', '#spark-content', 'spark-1'),
-        firefox = new Section('firefox', '#firefox-content', 'layer-3'),
+        firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection;
 
     // Homepage buttons

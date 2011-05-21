@@ -18,11 +18,14 @@
 #firefox-content article {
     width:440px;
     float:right;
-    height:550px;
+    min-height:600px;
+    font-size:14px;
+    position:relative;
+    z-index:100;
 }
 
 #layer-2, #layer-3, #layer-4 {
-    margin-top:-550px;
+    margin-top:-600px;
 }
 
 #layers {
@@ -99,10 +102,6 @@
 .layer-3 #separator .arrow {top:287px;}
 .layer-4 #separator .arrow {top:407px;}
 
-#firefox-content article {
-    font-size:14px;
-}
-
 #firefox-content article h1 {
     font-family:'LG', 'Arial Narrow', sans-serif;
     font-size:48px;
@@ -143,4 +142,8 @@
     font-size:12px;
     line-height:133%;
     margin-top:15px;
+}
+
+.layer-1 #layer-1, .layer-2 #layer-2, .layer-3 #layer-3, .layer-4 #layer-4 {
+    z-index:1000;
 }
