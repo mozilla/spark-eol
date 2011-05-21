@@ -1,9 +1,11 @@
 $(document).ready(function() {
     var $body = $('body'),
         home = new Section('home', '#phone-wrapper'),
-        spark = new Section('spark', '#spark-content', 'spark-2'),
+        spark = new Section('spark', '#spark-content', 'spark-1'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection;
+
+    TWEEN.start();
 
     // Homepage buttons
     $('#spark-button').click(function() {

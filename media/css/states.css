@@ -99,6 +99,8 @@ header nav div.right {
     position:relative;
 }
 
+#spark-1 .block-1 .number {top:20px;opacity:0;}
+
 #spark-2 .block-1 li {opacity:0;}
 
 #spark-2 .block-2 li span {bottom:0;opacity:1;}
@@ -114,6 +116,8 @@ header nav div.right {
     top:0;
     opacity:1;
 }
+
+.spark-1 #spark-1 .block-1 .number {top:0;opacity:1;}
 
 .spark-2 #spark-2 .block-1 li {opacity:1;}
 
@@ -149,3 +153,5 @@ header nav div.right {
 .firefox #layers li:hover {
     left:20px;
 }
+
+.transit #spark-content article {opacity:0;}

@@ -28,7 +28,7 @@ var CountUp = Widget.extend({
         var numberStr, regexp;
         
         this._super($element);
-        this.duration = 500;
+        this.duration = 350;
         this.$number = this.$el.find('.number');
         numberStr = this.$number.text();
         this.thousandsSeparator = numberStr.indexOf(',') >= 0 ? ',': ' ';
@@ -43,7 +43,6 @@ var CountUp = Widget.extend({
                 self.$number.text(addThousandsSeparator(Math.round(counter.value), self.thousandsSeparator));
             };
         
-        TWEEN.start();
         tween = new TWEEN.Tween(counter).to({value: this.maxValue}, this.duration).onUpdate(update).start();
     }
 });

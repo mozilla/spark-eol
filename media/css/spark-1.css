@@ -21,12 +21,15 @@
     font-family:'LG', 'Arial Narrow', sans-serif;
     font-size:72px;
     display:block;
+    position:relative;
 }
 
 #spark-1 .block-1 .small-text {
     text-transform:uppercase;
     color:#ede0ab;
     font-size:14px;
+    display:block;
+    width:200px;
 }
 
 #total-shares-img {
@@ -111,6 +114,7 @@
 
 #spark-1 .block-4 .number, #spark-1 .block-5 .number {
     float:left;
+    width:55px;
 }
 
 #spark-1 .block-4 span, #spark-1 .block-5 span {

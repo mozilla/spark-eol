@@ -111,11 +111,16 @@
     text-align:center;
 }
 
-#active-countries {
-    margin-top:20px;
-    background:#444;
-    width:100%;
-    height:150px;
+#active-countries li:nth-child(1) {
+    background:url('../img/sprites-spark.png') no-repeat -200px -150px;
+}
+
+#active-countries li:nth-child(2) {
+    background:url('../img/sprites-spark.png') no-repeat -150px -300px;
+}
+
+#active-countries li:nth-child(3) {
+    background:url('../img/sprites-spark.png') no-repeat 0px -300px;
 }
 
 #spark-2 .block-1 li:hover {
@@ -159,4 +164,51 @@
     left:5px;
     position:absolute;
     bottom:0px;
+}
+
+#active-countries {
+    margin-top:20px;
+    width:100%;
+    height:150px;
+}
+
+#active-countries li {
+    float:left;
+    width:30%;
+    margin-left:3.33%;
+    background:#444;
+    height:150px;
+    text-align:center;
+    position:relative;
+}
+
+#active-countries .number {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:24px;
+    color:#eee;
+    text-shadow:0px 2px 0px rbga(0,0,0,0.25);
+    display:block;
+    margin-top:62px;
+}
+
+#active-countries li:nth-child(1) .number {margin-left:-35px;}
+#active-countries li:nth-child(2) .number {margin-left:-4px;}
+#active-countries li:nth-child(3) .number {margin-left:25px;}
+
+#active-countries .tooltip {
+    opacity:0;
+    position:absolute;
+    z-index:10000;
+    pointer-events:none;
+    bottom:-30px;
+    width:148px;
+    margin-left:-75px;
+    text-transform:uppercase;
+    font-style:normal;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+}
+
+#active-countries li:hover .tooltip {
+    opacity:1;
+    bottom:-10px;
 }

@@ -65,20 +65,40 @@
         </div>
     </div>
 
-    <div class="block block-3">
+    <div class="block block-3 countup">
         {# L10n: Preceded by the number of sparks #}
         <span class="big-number number">31,245</span><span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
     </div>
 
-    <div class="block block-4">
+    <div class="block block-4 countup">
         {# L10n: Preceded by the number of countries #}
         <span class="big-number number">162</span><span class="title">{{ _('<em>Countries</em> Sparked') }}</span>
     </div>
 
     <div class="block block-5">
         <span class="title">{{ _('Most Active <em>Countries</em>') }}</span>
-        <div id="active-countries">
-            
-        </div>
+        <ol id="active-countries">
+            <li>
+                <span class="number">#1</span>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    United States
+                </div>
+            </li>
+            <li>
+                <span class="number">#2</span>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    Germany
+                </div>
+            </li>
+            <li>
+                <span class="number">#3</span>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    India
+                </div>
+            </li>
+        </ol>
     </div>
 </article>
