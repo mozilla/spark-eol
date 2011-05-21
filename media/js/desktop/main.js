@@ -9,7 +9,6 @@ $(document).ready(function() {
 
     // Homepage buttons
     $('#spark-button').click(function() {
-        console.log('click');
         home.hide(function() {
             spark.show();
             currentSection = spark;
@@ -73,9 +72,15 @@ $(document).ready(function() {
     });
     
     // Initialize the pie chart widget
-    new PieChart('#spark-1 .block-2', 75, 75, 75, 900, [{name: 'slice1', start: -90, end: 70, color: '#ee3939'},
-                                                            {name: 'slice2', start: 70, end: 200, color: '#ec5f39'},
-                                                            {name: 'slice3', start: 200, end: 270, color: '#fbad46'}]);
+    new PieChart('#spark-1 .block-2', 75, 75, 75, 1000, [{start: -90, end: 70, color: '#ee3939'},
+                                                         {start: 70, end: 200, color: '#ec5f39'},
+                                                         {start: 200, end: 270, color: '#fbad46'}]);
+    
+    // Initialize the ring chart widget
+    new RingChart('#spark-3 .block-2', 63, 63, 50, 1000, [{start: -90, end: 45, color: '#ee3939'},
+                                                             {start: 45, end: 135, color: '#ec5f39'},
+                                                             {start: 135, end: 225, color: '#fbad46'},
+                                                             {start: 225, end: 270, color: '#f7e35f'}]);
     
     // Sharing popups
     function tweetPopup(url) {

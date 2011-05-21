@@ -61,8 +61,7 @@ var PieChart = Widget.extend({
         this.duration = duration;
         this.slices = slices;
 
-        $('#spark-1 .block-2 canvas').mousemove(function(event) {
-            console.log('prout');
+        $element.find('.breakdown').mousemove(function(event) {
             var chartPos = $(this).offset(),
                 mx = event.pageX - chartPos.left,
         	    my = event.pageY - chartPos.top,
@@ -79,9 +78,14 @@ var PieChart = Widget.extend({
         	    slice = self.slices[i];
         	    
         	    if(a > slice.start && a < slice.end) {
-        	        console.log(slice.name);
+        	        $element.find('.tooltip').removeClass('active');
+                    $element.find('li:eq('+i+') .tooltip').addClass('active');
         	    }
         	}
+        });
+        
+        $element.find('.breakdown').mouseleave(function(event) {
+            $element.find('.tooltip').removeClass('active');
         });
     },
     
@@ -114,5 +118,21 @@ var PieChart = Widget.extend({
 
         this.ctx.clearRect(0, 0, this.$canvas.width(), this.$canvas.height());
         tween = new TWEEN.Tween(piechart).to({angle: 270}, this.duration).easing(TWEEN.Easing.Quartic.EaseOut).onUpdate(update).start();
+    }
+});
+
+var RingChart = PieChart.extend({
+    init: function(divId, cx, cy, radius, duration, slices) {
+        this._super(divId, cx, cy, radius, duration, slices);
+    },
+    
+    drawSlice: function(startAngle, endAngle, color) {
+        var ctx = this.ctx;
+        ctx.strokeStyle = color;
+    	ctx.lineWidth = 15;
+    	ctx.lineCap = 'butt';
+        ctx.beginPath();
+		ctx.arc(this.cx, this.cy, this.radius, deg2rad(startAngle), deg2rad(endAngle), false);
+    	ctx.stroke();
     }
 });

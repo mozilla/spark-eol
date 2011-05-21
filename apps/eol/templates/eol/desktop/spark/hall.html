@@ -44,9 +44,37 @@
     <div class="block block-2">
         {# L10n: Title of a ring chart showing player level repartition. #}
         <span class="title">{{ _('<em>Levels</em> Breakdown') }}</span>
-        <canvas>
-            
-        </canvas>
+        <canvas width="126" height="126"></canvas>
+        <ol class="breakdown silent">
+            <li>
+                46%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    Level 1
+                </div>
+            </li>
+            <li>
+                23%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    Level 2
+                </div>
+            </li>
+            <li>
+                23%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    Level 3
+                </div>
+            </li>
+            <li>
+                8%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    Level 4
+                </div>
+            </li>
+        </ol>
     </div>
 
     <div class="block block-3 countup">
