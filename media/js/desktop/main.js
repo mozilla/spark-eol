@@ -111,4 +111,16 @@ $(document).ready(function() {
         tweetPopup(url);
         return false;
     });
+    
+    $('#layer-1 .video-thumbnail').click(function() {
+        showPlayer('firefox-video');
+    });
+    
+    $('#layer-3 .video-thumbnail').click(function() {
+        showPlayer('sync-video');
+    });
+    
+    $mask.click(function() {
+        hidePlayer();
+    });
 });

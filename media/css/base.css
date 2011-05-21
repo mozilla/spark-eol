@@ -25,11 +25,11 @@ html, body {
 }
 
 #moz-logo {
-    height:61px;
-    width:158px;
-    margin-top:15px;
+    height:83px;
+    width:216px;
+    margin-top:45px;
     float:left;
-    background:url('../img/spritesheet.png') no-repeat -150px 0px;
+    background:url('../img/spritesheet.png') no-repeat 0px -150px;
 }
 
 #ff-download {
@@ -296,5 +296,34 @@ header nav a {
 }
 
 .firefox #to-firefox-page, .spark #to-spark-page {
+    display:none;
+}
+
+#mask {
+    position:fixed;
+    height:1000px;
+    width:100%;
+    background:-moz-radial-gradient(rgba(0,0,0,0.25) 50%, rgba(0,0,0,1));
+    top:0;
+    left:0;
+    z-index:20000;
+    display:none;
+}
+
+#mask:hover {
+    cursor:pointer;
+}
+
+.popup {
+    position:fixed;
+    top:50%;
+    left:50%;
+    padding:20px;
+    background:#262626;
+    border:1px solid #555;
+    box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+    z-index:20000;
+    margin-top:-182px;
+    margin-left:-320px;
     display:none;
 }

@@ -1,0 +1,75 @@
+<div class="popup" id="firefox-video-popup">
+    <video
+        id="firefox-video"
+        width="640"
+        height="360"
+        controls="controls"
+        poster="{{ MEDIA_URL }}img/video-ph.jpg">
+
+        <source src="http://videos-cdn.mozilla.net/serv/marketing/firefox4/Mobile-launch-greatday640.webm" type="video/webm" />
+
+        <source src="http://videos-cdn.mozilla.net/serv/marketing/firefox4/Mobile-launch-greatday640.theora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" />
+
+        <source src="http://videos-cdn.mozilla.net/serv/marketing/firefox4/Mobile-launch-greatday640.mp4" type="video/mp4" />
+
+        <object type="application/x-shockwave-flash"
+            style="width: 640px; height: 388px;"
+            data="{{ MEDIA_URL}}video/playerWithControls.swf?flv=serv/marketing/firefox4/Mobile-launch-greatday640.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+
+            <param name="movie" value="{{ MEDIA_URL}}video/playerWithControls.swf?flv=serv/marketing/firefox4/Mobile-launch-greatday640.mp4&amp;autoplay=false&amp;msg=Play%20Video" />
+            <param name="wmode" value="transparent" />
+
+            <div class="video-player-no-flash">
+            <p>
+        	    This video requires a browser with support for open video:
+            </p>
+        	<ul>
+        	<li><a href="http://www.mozilla.com/firefox/">Firefox</a> 3.5 or greater</li>
+
+        	<li><a href="http://www.apple.com/safari/">Safari</a> 3.1 or greater</li>
+        	</ul>
+        	or the <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>.
+        	</div>
+
+        </object>
+
+    </video>
+</div>
+
+<div class="popup" id="sync-video-popup">
+    <video
+        id="sync-video"
+        width="640"
+        height="360"
+        controls="controls"
+        poster="{{ MEDIA_URL }}img/video-ph.jpg">
+
+        <source src="http://videos-cdn.mozilla.net/serv/air_mozilla/SyncSetupDemo_final.webm" type="video/webm" />
+
+        <source src="http://videos-cdn.mozilla.net/serv/air_mozilla/SyncSetupDemo_final.theora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" />
+
+        <source src="http://videos-cdn.mozilla.net/serv/air_mozilla/SyncSetupDemo_final.mp4" type="video/mp4" />
+
+        <object type="application/x-shockwave-flash"
+            style="width: 640px; height: 388px;"
+            data="{{ MEDIA_URL}}video/playerWithControls.swf?flv=serv/air_mozilla/SyncSetupDemo_final.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+
+            <param name="movie" value="{{ MEDIA_URL}}video/playerWithControls.swf?flv=serv/air_mozilla/SyncSetupDemo_final.mp4&amp;autoplay=false&amp;msg=Play%20Video" />
+            <param name="wmode" value="transparent" />
+
+            <div class="video-player-no-flash">
+            <p>
+        	    This video requires a browser with support for open video:
+            </p>
+        	<ul>
+        	<li><a href="http://www.mozilla.com/firefox/">Firefox</a> 3.5 or greater</li>
+
+        	<li><a href="http://www.apple.com/safari/">Safari</a> 3.1 or greater</li>
+        	</ul>
+        	or the <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>.
+        	</div>
+
+        </object>
+
+    </video>
+</div>

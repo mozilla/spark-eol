@@ -174,6 +174,7 @@ MINIFY_BUNDLES = {
             'js/desktop/utils.js',
             'js/desktop/sections.js',
             'js/desktop/widgets.js',
+            'js/desktop/popups.js',
             'js/desktop/main.js',
         ),
         'pngfix': (
