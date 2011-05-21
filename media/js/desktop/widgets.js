@@ -57,6 +57,8 @@ var PieChart = Widget.extend({
         this.ctx = this.$canvas[0].getContext("2d"),
         this.cx = cx,
         this.cy = cy,
+        this.width = this.$canvas.width(),
+        this.height = this.$canvas.height(),
         this.radius = radius,
         this.duration = duration;
         this.slices = slices;
@@ -103,6 +105,7 @@ var PieChart = Widget.extend({
         var self = this,
             piechart = {angle: -90},
             update = function() {
+                self.ctx.clearRect(0, 0, self.width, self.height);
                 for(var i = 0, nb = self.slices.length; i < nb; i++) {
                     var slice = self.slices[i];
                     
@@ -115,8 +118,7 @@ var PieChart = Widget.extend({
                     }
                 }
             };
-
-        this.ctx.clearRect(0, 0, this.$canvas.width(), this.$canvas.height());
+        
         tween = new TWEEN.Tween(piechart).to({angle: 270}, this.duration).easing(TWEEN.Easing.Quartic.EaseOut).onUpdate(update).start();
     }
 });
