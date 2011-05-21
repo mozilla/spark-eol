@@ -104,7 +104,7 @@ header nav div.right {
 #spark-2 .block-1 li {opacity:0;}
 
 #spark-2 .block-2 li span {bottom:0;opacity:1;}
-#spark-2 .block-2 li div {height:0;}
+#spark-2 .block-2 li div.bar {height:0;}
 /* Spark Visible State */
 
 .spark #spark-content aside {
@@ -123,17 +123,17 @@ header nav div.right {
 
 .spark-2 #bar-chart li span {opacity:1;}
 .spark-2 #bar-chart li:nth-child(1) span {bottom:14px;}
-.spark-2 #bar-chart li:nth-child(1) div {height:6px;}
+.spark-2 #bar-chart li:nth-child(1) div.bar {height:6px;}
 .spark-2 #bar-chart li:nth-child(2) span {bottom:32px;}
-.spark-2 #bar-chart li:nth-child(2) div {height:24px;}
+.spark-2 #bar-chart li:nth-child(2) div.bar {height:24px;}
 .spark-2 #bar-chart li:nth-child(3) span {bottom:45px;}
-.spark-2 #bar-chart li:nth-child(3) div {height:37px;}
+.spark-2 #bar-chart li:nth-child(3) div.bar {height:37px;}
 .spark-2 #bar-chart li:nth-child(4) span {bottom:66px;}
-.spark-2 #bar-chart li:nth-child(4) div {height:58px;}
+.spark-2 #bar-chart li:nth-child(4) div.bar {height:58px;}
 .spark-2 #bar-chart li:nth-child(5) span {bottom:94px;}
-.spark-2 #bar-chart li:nth-child(5) div {height:86px;}
+.spark-2 #bar-chart li:nth-child(5) div.bar {height:86px;}
 .spark-2 #bar-chart li:nth-child(6) span {bottom:103px;}
-.spark-2 #bar-chart li:nth-child(6) div {height:95px;}
+.spark-2 #bar-chart li:nth-child(6) div.bar {height:95px;}
 
 /* Firefox Hidden State */
 

@@ -79,13 +79,13 @@ header nav .left, header nav .right {
 .spark-2 #spark-2 .block-1 li.five {-moz-transition-delay:0.25s;-webkit-transition-delay:0.25s;-o-transition-delay:0.25s;}
 .spark-2 #spark-2 .block-1 li.six {-moz-transition-delay:0.30s;-webkit-transition-delay:0.30s;-o-transition-delay:0.30s;}
 
-#spark-2 .block-2 li span, #spark-2 .block-2 li div, #spark-1 .block-4, #spark-1 .block-5 {-moz-transition:0.2s all ease;}
-.spark-2 #spark-2 .block-2 li:nth-child(1) span, .spark-2 #spark-2 .block-2 li:nth-child(1) div {-moz-transition-delay:0.5s;}
-.spark-2 #spark-2 .block-2 li:nth-child(2) span, .spark-2 #spark-2 .block-2 li:nth-child(2) div {-moz-transition-delay:0.6s;}
-.spark-2 #spark-2 .block-2 li:nth-child(3) span, .spark-2 #spark-2 .block-2 li:nth-child(3) div {-moz-transition-delay:0.7s;}
-.spark-2 #spark-2 .block-2 li:nth-child(4) span, .spark-2 #spark-2 .block-2 li:nth-child(4) div {-moz-transition-delay:0.8s;}
-.spark-2 #spark-2 .block-2 li:nth-child(5) span, .spark-2 #spark-2 .block-2 li:nth-child(5) div {-moz-transition-delay:0.9s;}
-.spark-2 #spark-2 .block-2 li:nth-child(6) span, .spark-2 #spark-2 .block-2 li:nth-child(6) div {-moz-transition-delay:1s;}
+#spark-2 .block-2 li span, #spark-2 .block-2 li div.bar, #spark-1 .block-4, #spark-1 .block-5 {-moz-transition:0.2s all ease;}
+.spark-2 #spark-2 .block-2 li:nth-child(1) span, .spark-2 #spark-2 .block-2 li:nth-child(1) div.bar {-moz-transition-delay:0.5s;}
+.spark-2 #spark-2 .block-2 li:nth-child(2) span, .spark-2 #spark-2 .block-2 li:nth-child(2) div.bar {-moz-transition-delay:0.6s;}
+.spark-2 #spark-2 .block-2 li:nth-child(3) span, .spark-2 #spark-2 .block-2 li:nth-child(3) div.bar {-moz-transition-delay:0.7s;}
+.spark-2 #spark-2 .block-2 li:nth-child(4) span, .spark-2 #spark-2 .block-2 li:nth-child(4) div.bar {-moz-transition-delay:0.8s;}
+.spark-2 #spark-2 .block-2 li:nth-child(5) span, .spark-2 #spark-2 .block-2 li:nth-child(5) div.bar {-moz-transition-delay:0.9s;}
+.spark-2 #spark-2 .block-2 li:nth-child(6) span, .spark-2 #spark-2 .block-2 li:nth-child(6) div.bar {-moz-transition-delay:1s;}
 
 #spark-1 .block-1 .number {-moz-transition:0.25s all ease-in;}
 

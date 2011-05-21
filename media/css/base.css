@@ -203,11 +203,11 @@ footer aside p {
 body section {
     padding-bottom:50px;
     min-height:600px;
+    overflow:auto;
 }
 
 body section .container {
     background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
-    overflow:auto;
 }
 
 /* NAVIGATION */

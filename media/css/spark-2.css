@@ -158,13 +158,27 @@
     text-align:center;
 }
 
-#bar-chart li div {
+#bar-chart li div.bar {
     background:#69aacf;
     width:20px;
     left:5px;
     position:absolute;
     bottom:0px;
 }
+
+#bar-chart .tooltip {
+    width:119px;
+    bottom:-80px;
+    margin-left:-60px;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    text-transform:uppercase;
+    font-style:normal;
+}
+
+#bar-chart li:hover .tooltip {
+    opacity:1;
+    bottom:-60px;
+} 
 
 #active-countries {
     margin-top:20px;
@@ -207,6 +221,9 @@
     font-style:normal;
     font-family:'Museo500', 'Trebuchet MS', sans-serif;
 }
+
+#active-countries li:nth-child(1) .tooltip {left:35%;}
+#active-countries li:nth-child(3) .tooltip {left:65%;}
 
 #active-countries li:hover .tooltip {
     opacity:1;
