@@ -1,12 +1,13 @@
 $(document).ready(function() {
     var $body = $('body'),
         home = new Section('home', '#phone-wrapper'),
-        spark = new Section('spark', '#spark-content', 'spark-1'),
+        spark = new Section('spark', '#spark-content', 'spark-2'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection;
 
     // Homepage buttons
     $('#spark-button').click(function() {
+        console.log('click');
         home.hide(function() {
             spark.show();
             currentSection = spark;

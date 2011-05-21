@@ -53,17 +53,24 @@
     <div class="block block-2" id="continents">
         {# L10n: Preceded by the number of continents #}
         <span class="big-number">6</span><span class="title">{{ _('<em>Continents</em> Sparked') }}</span>
-        <canvas width="215" height="125">
-            
-        </canvas>
+        <div id="bar-chart">
+            <ol>
+                <li><span>2%</span><div></div></li>
+                <li><span>8%</span><div></div></li>
+                <li><span>12%</span><div></div></li>
+                <li><span>19%</span><div></div></li>
+                <li><span>28%</span><div></div></li>
+                <li><span>31%</span><div></div></li>
+            </ol>
+        </div>
     </div>
 
-    <div class="block block-3 countup">
+    <div class="block block-3">
         {# L10n: Preceded by the number of sparks #}
         <span class="big-number number">31,245</span><span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
     </div>
 
-    <div class="block block-4 countup">
+    <div class="block block-4">
         {# L10n: Preceded by the number of countries #}
         <span class="big-number number">162</span><span class="title">{{ _('<em>Countries</em> Sparked') }}</span>
     </div>

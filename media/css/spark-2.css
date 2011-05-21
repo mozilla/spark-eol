@@ -126,3 +126,37 @@
     bottom:-70px;
     opacity:1;
 }
+
+#bar-chart {
+    clear:both;
+    height:115px;
+}
+
+#bar-chart li {
+    font-size:12px;
+    text-align:center;
+    float:left;
+    width:30px;
+    margin-left:8px;
+    height:115px;
+    position:relative;
+}
+
+#bar-chart li:first-child {
+    margin-left:0;
+}
+
+#bar-chart li span {
+    display:block;
+    position:absolute;
+    width:30px;
+    text-align:center;
+}
+
+#bar-chart li div {
+    background:#69aacf;
+    width:20px;
+    left:5px;
+    position:absolute;
+    bottom:0px;
+}
