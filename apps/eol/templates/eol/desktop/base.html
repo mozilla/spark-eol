@@ -3,10 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		{# L10n: Page title pattern for <title> tag. #}
-		<title>{{ _('{title} | Spark powered by Firefox for mobile')|f(title=title) }}</title>
+		{# L10n: Page title #}
+		<title>{{ _('Spark powered by Firefox for mobile') }}
+		    {% if False %}
+		    {{ _('{title} | Spark powered by Firefox for mobile')|f(title=title) }}
+		    {% endif %}
+	    </title>
 		<link rel="shortcut icon" type="image/x-icon" href="{{ MEDIA_URL}}img/favicon.png">
 		<link rel="apple-touch-icon" href="{{ MEDIA_URL}}img/apple-touch-icon.png">
+        <meta property="og:title" content="{{ _('Spark powered by Firefox for mobile') }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://spark.mozilla.org/">
+
+        <meta property="og:image" content="https://demos.mozilla.org/media/img/facebook_like_500x312.png">
+        <meta property="og:site_name" content="{{ _('Spark powered by Firefox for mobile') }}">
+        <meta property="og:description"
+              content="Want to see what the Web is really capable of? Explore the Web o' Wonder demo gallery and prepare to be amazed!">
 		{% block site_css %}
 	      {{ css('desktop') }}
 	    {% endblock %}
