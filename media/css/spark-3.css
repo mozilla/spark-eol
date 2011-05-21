@@ -74,7 +74,48 @@
 #spark-3 .block-2 canvas {
     display:block;
     margin:30px auto 0 auto;
-    margin-bottom:60px;
+}
+
+#spark-3 .block-2 .tooltip {
+    width:78px;
+    margin-left:-40px;
+}
+
+#spark-3 .block-2 .breakdown li:nth-child(1) .tooltip {bottom:-10px;left:82%;}
+#spark-3 .block-2 .breakdown li:nth-child(1) .tooltip.active {bottom:10px;}
+#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip {bottom:-60px;}
+#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip.active {bottom:-40px;}
+#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip {bottom:-10px;left:17%;}
+#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip.active {bottom:10px;}
+#spark-3 .block-2 .breakdown li:nth-child(4) .tooltip {bottom:30px;left:38%;}
+#spark-3 .block-2 .breakdown li:nth-child(4) .tooltip.active {bottom:50px;}
+
+#spark-3 .block-2 .tooltip.active {
+    opacity:1;
+    bottom:0px;
+} 
+
+#spark-3 .block-2 .breakdown {
+    height:150px;
+    text-align:center;
+    margin:-126px auto 0 auto;
+    position:relative;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    color:#eee;
+    text-shadow:0px 2px 0px rgba(0,0,0,0.25);
+    width:150px;   
+}
+
+#spark-3 .block-2 .tooltip strong {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:24px;
+}
+
+#spark-3 .block-2 .tooltip span {
+    font-family:'Museo500', 'TrebuchetMS', sans-serif;
+    font-style:normal;
+    text-transform:uppercase;
+    font-size:12px;
 }
 
 #spark-3 .big-number {
