@@ -77,6 +77,8 @@
 #spark-content article {
     float:right;
     width:500px;
+    position:relative;
+    z-index:100;
 }
 
 .trigger {
@@ -93,4 +95,62 @@
 
 #spark-2, #spark-3 {
     margin-top:-600px;
+}
+
+.spark-1 #spark-1, .spark-2 #spark-2, .spark-3 #spark-3 {
+    z-index:1000;
+}
+
+/*tooltips*/
+
+#spark-content .tooltip {
+    position:absolute;
+    width:198px;
+    text-align:center;
+    font-size:12px;
+    background:#262626;
+    border:1px solid #555;
+    left:50%;
+    margin-left:-100px;
+    padding:15px 0;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    border-radius:4px;
+    z-index:10000;
+    bottom:-100px;
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    opacity:0;
+    pointer-events:none;
+}
+
+#spark-content .tooltip strong {
+    font-family:'Museo500', 'Trebuchet MS', serif;
+    text-transform:uppercase;
+    font-style:normal;
+    display:block;
+    margin-bottom:5px;
+}
+
+.tooltip .arrow.bottom {
+    width:12px;
+    height:8px;
+    background:url('../img/spritesheet.png') no-repeat -350px -100px;
+    position:absolute;
+    left:50%;
+    bottom:-8px;
+    margin-left:-6px;
+}
+
+.tooltip .arrow.top {
+    width:12px;
+    height:8px;
+    background:url('../img/spritesheet.png') no-repeat -350px -111px;
+    position:absolute;
+    left:50%;
+    top:-8px;
+    margin-left:-6px;
+}
+
+#spark-content .tooltip em {
+    text-transform:uppercase;
 }

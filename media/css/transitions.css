@@ -89,3 +89,7 @@ header nav .left, header nav .right {
     -webkit-transition:0.35s height ease 0.25s;
     -o-transition:0.35s height ease 0.25s;
 }
+
+.tooltip {
+    -moz-transition:0.2s all ease;
+}

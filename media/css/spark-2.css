@@ -117,3 +117,12 @@
     width:100%;
     height:150px;
 }
+
+#spark-2 .block-1 li:hover {
+    background-position:-284px -84px;
+}
+
+#spark-2 .block-1 li:hover .tooltip {
+    bottom:-70px;
+    opacity:1;
+}
