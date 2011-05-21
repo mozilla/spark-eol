@@ -67,7 +67,12 @@ $(document).ready(function() {
     // Initialize CountUp widgets
     $('.countup').each(function() {
         new CountUp($(this));
-    })
+    });
+    
+    // Initialize Pie chart
+    new PieChart('#spark-1 .block-2', 75, 75, 75, 900, [{name: 'slice1', start: -90, end: 70, color: '#ee3939'},
+                                                            {name: 'slice2', start: 70, end: 200, color: '#ec5f39'},
+                                                            {name: 'slice3', start: 200, end: 270, color: '#fbad46'}]);
     
     // Sharing popups
     function tweetPopup(url) {

@@ -14,6 +14,14 @@ var onTransitionEndOnce = function($element, callback) {
     $element.bind(TRANSITION_END, transitionEndWrapper);
 };
 
+var deg2rad = function(degrees) {
+    return degrees * Math.PI / 180;
+};
+
+var rad2deg = function(radians) {
+    return radians * 180 / Math.PI;
+};
+
 /**
  * Based on: http://www.mredkj.com/javascript/numberFormat.html#addcommas
  */
