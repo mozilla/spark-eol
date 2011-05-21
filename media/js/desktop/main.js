@@ -25,6 +25,16 @@ $(document).ready(function() {
             home.show();
         });
     });
+    $('#to-firefox-page').click(function() {
+        currentSection.hide(function() {
+            firefox.show();
+        });
+    });
+    $('#to-spark-page').click(function() {
+        currentSection.hide(function() {
+            spark.show();
+        });
+    });
     
     // Spark menu
     $('#spark-content nav li:eq(0)').click(function() {

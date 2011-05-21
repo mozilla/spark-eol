@@ -72,52 +72,6 @@ html, body {
 #ff-download-copy em {
     color:#54b653;
 }
-
-header nav {
-    clear:both;
-    height:50px;
-    display: block;
-    padding-bottom:20px;
-    padding-top:30px;
-}
-
-header nav a {
-    text-decoration:none;
-    color:#bbb;
-    font-size:16px;
-    font-family:Georgia, 'Times New Roman', sans-serif;
-    margin-left:20px;
-    padding:6px 9px;
-    font-style:italic;
-}
-
-header nav a:first-child {
-    margin-left:0px;
-}
-
-header nav a div {
-    height:29px;
-    width:28px;
-}
-
-#back-to-home div {
-    background:url('../img/spritesheet.png') no-repeat -150px -100px;
-    float:left;
-}
-
-#back-to-home:hover div {
-    background-position:-250px -100px;
-}
-
-#to-firefox-page div, #to-spark-page div {
-    background:url('../img/spritesheet.png') no-repeat -200px -100px;
-    float:right;
-}
-
-#to-firefox-page:hover div {
-    background-position:-300px -100px;
-}
-
 footer {
     background:#262626;
     overflow:auto;
@@ -254,4 +208,89 @@ body section {
 body section .container {
     background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
     overflow:auto;
+}
+
+/* NAVIGATION */
+
+header nav {
+    clear:both;
+    height:50px;
+    display: block;
+    padding-bottom:20px;
+    padding-top:30px;
+    line-height:26px;
+}
+
+header nav a {
+    text-decoration:none;
+    color:#bbb;
+    font-size:16px;
+    font-family:Georgia, 'Times New Roman', sans-serif;
+    margin-left:20px;
+    padding:6px 9px;
+    font-style:italic;
+}
+
+header nav a:hover {
+    cursor:pointer;
+    color:#ddd;
+}
+
+header nav a:first-child {
+    margin-left:0px;
+}
+
+header nav a div {
+    height:29px;
+    width:28px;
+}
+
+header nav .left, header nav .right {
+    width:50%;
+    float:left;
+    position:relative;
+}
+
+header nav .left {
+    left:-50px;
+}
+
+header nav .right {
+    right:-50px;
+}
+
+#back-to-home div {
+    background:url('../img/spritesheet.png') no-repeat -150px -100px;
+    float:left;
+    margin-right:10px;
+}
+
+#back-to-home:hover div {
+    background-position:-250px -100px;
+}
+
+#to-firefox-page div, #to-spark-page div {
+    background:url('../img/spritesheet.png') no-repeat -200px -100px;
+    float:right;
+    margin-left:10px;
+}
+
+#to-firefox-page:hover div {
+    background-position:-300px -100px;
+}
+
+#to-firefox-page, #to-spark-page {
+    float:right;
+}
+
+header nav a {
+    display:none;
+}
+
+.firefox #back-to-home, .spark #back-to-home, .spark #to-firefox-page, .firefox #to-spark-page {
+    display:block;
+}
+
+.firefox #to-firefox-page, .spark #to-spark-page {
+    display:none;
 }

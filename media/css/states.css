@@ -1,3 +1,27 @@
+header nav div.left, header nav.right {
+    opacity:1;
+}
+
+header nav div.left {
+    left:0;
+}
+
+header nav div.right {
+    right:0;
+}
+
+.home header nav .left, .home header nav .right {
+    opacity:0;
+}
+
+.home header nav .left {
+    left:-50px;
+}
+
+.home header nav .right {
+    right:-50px;
+}
+
 #spark-content, #firefox-content, #home {
     pointer-events:none;
     z-index:100;

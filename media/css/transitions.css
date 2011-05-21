@@ -4,6 +4,12 @@ body section {
     -o-transition:0.5s all ease;
 }
 
+header nav .left, header nav .right {
+    -moz-transition:0.5s all ease;
+    -webkit-transition:0.5s all ease;
+    -o-transition:0.5s all ease;
+}
+
 .block {
     -moz-transition:0.5s opacity linear;
     -webkit-transition:0.5s opacity linear;
