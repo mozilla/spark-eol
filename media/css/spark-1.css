@@ -60,27 +60,58 @@
     font-style:italic;
 }
 
-#spark-1 .block-2 .trigger {
-    height:30px;
-    width:30px;
-    margin:30px auto;
-    background:#ccc;
-    position:relative;
-    text-align:center;
-}
-
-#spark-1 .tooltip {
-    padding:10px 20px;
-    background:#222;
-    border:1px solid #bbb;
-    display:none;
-    position:absolute;
-    top:20px;
-    left:50%;
-}
-
-#spark-1 .trigger:hover .tooltip {
+#spark-1 .block-2 canvas {
+    clear:both;
     display:block;
+    margin:20px auto 0;
+}
+
+#spark-1 .block-2 .breakdown {
+    height:150px;
+    text-align:center;
+    margin:-150px auto 0 auto;
+    position:relative;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    color:#eee;
+    text-shadow:0px 2px 0px rgba(0,0,0,0.25);
+    width:150px;
+}
+
+#spark-1 .block-2 .breakdown li {
+    position:absolute;
+}
+
+#spark-1 .block-2 .breakdown li:nth-child(1) {
+    font-size:36px;
+    top:47px;
+    left:91px;
+}
+
+#spark-1 .block-2 .breakdown li:nth-child(2) {
+    font-size:30px;
+    top:89px;
+    left:30px;
+}
+
+#spark-1 .block-2 .breakdown li:nth-child(3) {
+    font-size:24px;
+    top:24px;
+    left:33px;
+}
+
+#spark-1 .block-2 li:hover {
+    cursor:default;
+}
+
+#spark-1 .block-2 li .tooltip {
+    width:118px;
+    margin-left:-60px;
+    bottom:-70px;
+}
+
+#spark-1 .block-2 .tooltip.active {
+    opacity:1;
+    bottom:-50px;
 }
 
 #spark-1 .block-3 {

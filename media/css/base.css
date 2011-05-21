@@ -13,6 +13,10 @@ html, body {
     margin:0 auto;
 }
 
+.clear {
+    clear:both;
+}
+
 #moz-tab {
     height:49px;
     width:118px;

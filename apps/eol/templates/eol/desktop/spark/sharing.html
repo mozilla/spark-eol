@@ -15,13 +15,31 @@
     <div class="block block-2">
         <span class="title">
             {{ _('<em>How people shared</em> their Spark') }}
-            <div class="trigger">
-                <div class="tooltip">
-                    <span>49% <strong>Lorem Ipsum</strong></span>
-                </div>
-            </div>
         </span>
         <canvas width="150" height="150"></canvas>
+        <ol class="breakdown silent">
+            <li>
+                46%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    {{ _('via Facebook') }}
+                </div>
+            </li>
+            <li>
+                34%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    {{ _('via Twitter') }}
+                </div>
+            </li>
+            <li>
+                20%
+                <div class="tooltip active">
+                    <div class="arrow top"></div>
+                    {{ _('via QR Code') }}
+                </div>
+            </li>
+        </ol>
     </div>
     <div class="block block-3">
         <span class="title">
@@ -33,14 +51,14 @@
     </div>
     <div class="block block-4 countup">
         <div class="sprite" id="twitter-shares-img"></div>
-        <div class="number">
+        <div class="number silent">
             3,189
         </div>
         <span>{{ _('<em>Shares</em> via Twitter') }}</span>
     </div>
     <div class="block block-5 countup">
         <div class="sprite" id="facebook-shares-img"></div>
-        <div class="number">
+        <div class="number silent">
             8,235
         </div>
         <span>{{ _('<em>Shares</em> via Facebook') }}</span>
@@ -52,15 +70,8 @@
 
 {# Pie chart tooltips #}
 {% if False %}
-{{ _('via Twitter') }}
-{{ _('via Facebook') }}
-{{ _('via QR Code') }}
 {{ _('via Poster') }}
 {% endif %}
-
-
-
-
 
 {# Alternate strings #}
 {% if False %}
