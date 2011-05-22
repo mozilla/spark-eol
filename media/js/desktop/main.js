@@ -85,8 +85,8 @@ $(document).ready(function() {
     
     new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 500, [0, 70, 35, 45, 87, 56, 104, 116]);
     
-    new BadgeChart('#spark-3 .block-4', 'one', 40, 40, 35, 1000, 10, [{start: -90, end: 205, color: '#ec5f39'}]);
-    new BadgeChart('#spark-3 .block-4', 'two', 40, 40, 35, 1000, 10, [{start: -90, end: 70, color: '#ec5f39'}]);
+    new BadgeChart('#spark-3 .block-4', 'one', 40, 40, 35, 1000, 10, [{start: -90, end: 205, color: '#fbad46'}]);
+    new BadgeChart('#spark-3 .block-4', 'two', 40, 40, 35, 1000, 10, [{start: -90, end: 70, color: '#fbad46'}]);
     
     // Sharing popups
     function tweetPopup(url) {
