@@ -213,3 +213,11 @@
     padding:0px 10px;
     line-height:130%;
 }
+
+#spark-3 .badge-img canvas {
+    margin-top:-70px;
+    height:80px;
+    width:80px;
+    margin-top:-5px;
+    margin-left:-5px;
+}

@@ -53,8 +53,7 @@ var PieChart = Widget.extend({
             $element = $(divId);
         
         this._super($element);
-        this.$canvas = $element.find('canvas');
-        this.ctx = this.$canvas[0].getContext("2d"),
+        this.initContext($element);
         this.cx = cx,
         this.cy = cy,
         this.width = this.$canvas.width(),
@@ -62,13 +61,24 @@ var PieChart = Widget.extend({
         this.radius = radius,
         this.duration = duration;
         this.slices = slices;
-
+        
+        this.setupHitTest($element);
+    },
+    
+    initContext: function($element) {
+        this.$canvas = $element.find('canvas');
+        this.ctx = this.$canvas[0].getContext("2d");
+    },
+    
+    setupHitTest: function($element) {
+        var self = this;
+        
         $element.find('.breakdown').mousemove(function(event) {
             var chartPos = $(this).offset(),
                 mx = event.pageX - chartPos.left,
         	    my = event.pageY - chartPos.top,
-        	    x = mx - cx,
-        	    y = -(my - cy),
+        	    x = mx - self.cx,
+        	    y = -(my - self.cy),
         	    a = rad2deg(Math.atan2(y, x)),
         	    slice;
             
@@ -124,14 +134,14 @@ var PieChart = Widget.extend({
 });
 
 var RingChart = PieChart.extend({
-    init: function(divId, cx, cy, radius, duration, slices) {
+    init: function(divId, cx, cy, radius, duration, thickness, slices) {
         this._super(divId, cx, cy, radius, duration, slices);
+        this.ctx.lineWidth = thickness;
     },
     
     drawSlice: function(startAngle, endAngle, color) {
         var ctx = this.ctx;
         ctx.strokeStyle = color;
-    	ctx.lineWidth = 15;
     	ctx.lineCap = 'butt';
         ctx.beginPath();
 		ctx.arc(this.cx, this.cy, this.radius, deg2rad(startAngle), deg2rad(endAngle), false);
@@ -139,6 +149,19 @@ var RingChart = PieChart.extend({
     }
 });
 
+var BadgeChart = RingChart.extend({
+    init: function(divId, name, cx, cy, radius, duration, thickness, slices) {
+        this.name = name;
+        this._super(divId, cx, cy, radius, duration, thickness, slices);
+    },
+    
+    initContext: function($element) {
+        this.$canvas = $element.find('li.'+this.name+' canvas');
+        this.ctx = this.$canvas[0].getContext("2d");
+    },
+    
+    setupHitTest: function() {}
+});
 
 var LineChart = Widget.extend({
     init: function(divId, width, height, color, duration, points) {
@@ -163,7 +186,7 @@ var LineChart = Widget.extend({
         	    my = event.pageY - chartPos.top,
         	    p = Math.round(mx / self.pointOffset),
         	    updateTooltip = function() {
-        	        console.log('x:'+Math.round(self.tooltip.x)+' y:'+Math.round(self.tooltip.y));
+        	        //console.log('x:'+Math.round(self.tooltip.x)+' y:'+Math.round(self.tooltip.y));
         	        // TODO: Change tooltip position
         	    };
         	
@@ -217,10 +240,14 @@ var LineChart = Widget.extend({
         
         for(var i = 0; i < nbPoints; i++) {
             var point = {value: this.height};
-            new TWEEN.Tween(point).to({value: this.height - this.points[i]}, this.duration+(i*(this.duration/nbPoints)))
-                                  .easing(TWEEN.Easing.Quartic.EaseOut)
-                                  .onUpdate(update)
-                                  .start();
+            (function(i, point) {
+                setTimeout(function() {
+                    new TWEEN.Tween(point).to({value: self.height - self.points[i]}, self.duration)
+                                          .easing(TWEEN.Easing.Quartic.EaseOut)
+                                          .onUpdate(update)
+                                          .start();
+                }, i * self.duration / nbPoints);
+            })(i, point);
             animatedPoints.push(point);
         }
     }
