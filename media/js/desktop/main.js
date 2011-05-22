@@ -30,11 +30,13 @@ $(document).ready(function() {
     $('#to-firefox-page').click(function() {
         currentSection.hide(function() {
             firefox.show();
+            currentSection = firefox;
         });
     });
     $('#to-spark-page').click(function() {
         currentSection.hide(function() {
             spark.show();
+            currentSection = spark;
         });
     });
     
