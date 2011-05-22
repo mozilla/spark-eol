@@ -40,6 +40,7 @@
 #spark-3 .block-1 li {
     border-bottom:1px solid #666;
     padding:13px 0;
+    position:relative;
 }
 
 .flag {
@@ -122,4 +123,28 @@
     display:block;
     font-size:48px;
     font-family:'LG', 'Arial Narrow', sans-serif;
+}
+
+#spark-3 .block-1 .tooltip {
+    width:200px;
+    left:380px;
+    opacity:0;
+    bottom:-14px;
+    padding:15px;
+    line-height:150%;
+}
+
+#spark-3 .block-1 li:hover .tooltip {
+    opacity:1;
+    left:360px;
+}
+
+.arrow.left {
+    height:12px;
+    width:8px;
+    background:url('../img/spritesheet.png') no-repeat -365px -100px;
+    position:absolute;
+    top:50%;
+    margin-top:-6px;
+    left:-8px;
 }
