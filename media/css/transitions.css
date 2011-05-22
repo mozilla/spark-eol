@@ -66,10 +66,10 @@ header nav .left, header nav .right {
 
 #spark-content aside {-moz-transition:0.5s all ease;-webkit-transition:0.5s all ease;-o-transition:0.5s all ease;}
 
-#spark-content nav li {-moz-transition:0.2s all ease;-webkit-transition:0.2s all ease;-o-transition:0.2s all ease;}
-#spark-content nav li:nth-child(1) {-moz-transition-delay:0.25s;-webkit-transition-delay:0.25s;-o-transition-delay:0.25s;}
-#spark-content nav li:nth-child(2) {-moz-transition-delay:0.4s;-webkit-transition-delay:0.4s;-o-transition-delay:0.4s;}
-#spark-content nav li:nth-child(3) {-moz-transition-delay:0.65s;-webkit-transition-delay:0.65s;-o-transition-delay:0.65s;}
+#spark-content nav li {-moz-transition:0.2s top ease, 0.2s padding ease, 0.2s opacity linear;-webkit-transition:0.2s all ease, 0.2s padding ease, 0.2s opacity linear;-o-transition:0.2s all ease, 0.2s padding ease, 0.2s opacity linear;}
+#spark-content nav li:nth-child(1) {-moz-transition-delay:0.25s, 0s, 0.25s;-webkit-transition-delay:0.25s, 0s, 0.25s;-o-transition-delay:0.25s, 0s, 0.25s;}
+#spark-content nav li:nth-child(2) {-moz-transition-delay:0.4s, 0s, 0.4s;-webkit-transition-delay:0.4s, 0s, 0.4s;-o-transition-delay:0.4s, 0s, 0.4s;}
+#spark-content nav li:nth-child(3) {-moz-transition-delay:0.65s, 0s, 0.65s;-webkit-transition-delay:0.65s, 0s, 0.65s;-o-transition-delay:0.65s, 0s, 0.65s;}
 
 #spark-2 .block-1 li {-moz-transition:0.2s opacity linear;-webkit-transition:0.2s opacity linear;-o-transition:0.2s opacity linear;}
 .spark-2 #spark-2 .block-1 li.one {-moz-transition-delay:0s;-webkit-transition-delay:0s;-o-transition-delay:0s;}

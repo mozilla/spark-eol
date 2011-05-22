@@ -89,7 +89,6 @@ header nav div.right {
 /* Spark Hidden State */
 #spark-content aside {
     position:relative;
-    left:-60px;
     opacity:0;
 }
 
@@ -108,7 +107,6 @@ header nav div.right {
 /* Spark Visible State */
 
 .spark #spark-content aside {
-    left:0px;
     opacity:1;
 }
 
