@@ -73,7 +73,6 @@ header nav div.right {
 
 #main-copy {
     opacity:0;
-    top:-30px;
 }
 
 /* Home Visible state */
@@ -82,7 +81,6 @@ header nav div.right {
 }
 
 .home #main-copy {
-    top:0;
     opacity:1;
 }
 
