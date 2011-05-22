@@ -11,6 +11,7 @@ urlpatterns = patterns('',
 
     url(r'^m/$', redirect_to, {'url': 'eol.home_mobile'}),
     url(r'^m/home$', views.home_mobile, name='eol.home_mobile'),
-    url(r'^m/spark$', views.spark_mobile, name='eol.spark_mobile'),
-    url(r'^m/firefox$', views.firefox_mobile, name='eol.firefox_mobile'),
+    url(r'^m/sharing-the-spark$', views.spark_sharing, name='eol.sharing'),
+    url(r'^m/around-the-globe$', views.spark_around, name='eol.around'),
+    url(r'^m/hall-of-fame$', views.spark_hall, name='eol.hall'),
 )

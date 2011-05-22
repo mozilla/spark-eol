@@ -1,0 +1,11 @@
+{% extends 'eol/mobile/base.html' %}
+
+{% block content %}
+{% include "eol/mobile/includes/header.html" %}
+
+{% include 'eol/mobile/includes/nav.html' %}
+{% block pagecontent %}{% endblock %}
+{% include 'eol/mobile/includes/nav.html' %}
+
+{% include "eol/mobile/includes/footer.html" %}
+{% endblock %}

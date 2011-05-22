@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ LANG }}" dir="{{ DIR }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; maximum-scale=1; initial-scale=1; user-scalable=no">
+		{# L10n: Page title #}
+		<title>{{ _('Spark powered by Firefox for mobile') }}
+		    {% if False %}
+		    {{ _('{title} | Spark powered by Firefox for mobile')|f(title=title) }}
+		    {% endif %}
+	    </title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{ MEDIA_URL}}img/favicon.png">
+		<link rel="apple-touch-icon" href="{{ MEDIA_URL}}img/apple-touch-icon.png">
+        <meta property="og:title" content="{{ _('Spark powered by Firefox for mobile') }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://spark.mozilla.org/">
+
+        <meta property="og:image" content="https://demos.mozilla.org/media/img/facebook_like_500x312.png">
+        <meta property="og:site_name" content="{{ _('Spark powered by Firefox for mobile') }}">
+        <meta property="og:description"
+              content="Want to see what the Web is really capable of? Explore the Web o' Wonder demo gallery and prepare to be amazed!">
+		{% block site_css %}
+	      {{ css('mobile') }}
+	    {% endblock %}
+        <!--[if lte IE 7]>
+            <link rel="stylesheet" href="{{ MEDIA_URL }}css/ie6-7.css">
+        <![endif]-->
+		<!--[if IE 6]>
+	        {{ js('pngfix') }}
+	        <script>
+	          DD_belatedPNG.fix('.png');
+	        </script>
+	    <![endif]-->
+	    
+	    {% if LANG != 'en-US' %}
+    	    <style>
+    	    {# L10n: DO NOT LOCALIZE! You can use this string to put custom CSS rules to fix any design issues. https://developer.mozilla.org/en/css #}
+            {% if _('custom-css') and _('custom-css') != 'custom-css' %}
+                {{ _('custom-css') }}
+            {% endif %}
+
+            </style>
+        {% endif %}
+	</head>
+	
+	<body>
+	    <div id="wrapper">
+		    {% block content %}{% endblock %}
+	    </div>
+
+        {% if not debug %}
+            {% include "includes/webtrends.html" %}
+        {% endif %}
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        {{ js('mobile') }}
+	</body>
+</html>

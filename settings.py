@@ -163,7 +163,13 @@ MINIFY_BUNDLES = {
             'css/states.css',
         ),
         'mobile': (
-            'css/mobile.css',
+            'css/reset.css',
+            'css/fonts.css',
+            'css/mobile/base.css',
+            'css/mobile/home.css',
+            'css/mobile/sharing.css',
+            'css/mobile/around.css',
+            'css/mobile/hall.css',
         )
     },
     'js': {
@@ -176,6 +182,8 @@ MINIFY_BUNDLES = {
             'js/desktop/widgets.js',
             'js/desktop/popups.js',
             'js/desktop/main.js',
+        ),
+        'mobile': (
         ),
         'pngfix': (
             'js/libs/DD_belatedPNG_0.0.8a.min.js',

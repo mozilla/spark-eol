@@ -17,9 +17,11 @@ def home_mobile(request):
     return jingo.render(request, 'eol/mobile/home.html')
 
 
-def spark_mobile(request):
-    return jingo.render(request, 'eol/mobile/spark.html')
+def spark_sharing(request):
+    return jingo.render(request, 'eol/mobile/sharing.html')
 
-
-def firefox_mobile(request):
-    return jingo.render(request, 'eol/mobile/firefox.html')
+def spark_around(request):
+    return jingo.render(request, 'eol/mobile/around.html')
+    
+def spark_hall(request):
+    return jingo.render(request, 'eol/mobile/hall.html')    
