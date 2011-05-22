@@ -5,9 +5,9 @@ body section {
 }
 
 header nav .left, header nav .right {
-    -moz-transition:0.5s all ease;
-    -webkit-transition:0.5s all ease;
-    -o-transition:0.5s all ease;
+    -moz-transition:0.5s all ease 0.5s;
+    -webkit-transition:0.5s all ease 0.5s;
+    -o-transition:0.5s all ease 0.5s;
 }
 
 .block {
