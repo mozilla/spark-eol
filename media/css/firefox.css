@@ -97,10 +97,10 @@
     z-index:200;
 }
 
-.layer-1 #separator .arrow {top:47px;}
-.layer-2 #separator .arrow {top:165px;}
-.layer-3 #separator .arrow {top:287px;}
-.layer-4 #separator .arrow {top:407px;}
+#separator .arrow.layer-1  {top:47px;}
+#separator .arrow.layer-2  {top:165px;}
+#separator .arrow.layer-3  {top:287px;}
+#separator .arrow.layer-4  {top:407px;}
 
 #firefox-content article h1 {
     font-family:'LG', 'Arial Narrow', sans-serif;

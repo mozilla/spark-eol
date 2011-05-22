@@ -96,7 +96,7 @@ header nav div.right {
     position:relative;
 }
 
-#spark-1 .block-1 .number {top:20px;opacity:0;}
+#spark-1 .block-1 .number {opacity:0;}
 
 #spark-2 .block-1 li {opacity:0;}
 
@@ -113,7 +113,7 @@ header nav div.right {
     opacity:1;
 }
 
-.spark-1 #spark-1 .block-1 .number {top:0;opacity:1;}
+.spark-1 #spark-1 .block-1 .number {opacity:1;}
 
 .spark-2 #spark-2 .block-1 li {opacity:1;}
 

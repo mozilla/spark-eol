@@ -54,15 +54,19 @@ $(document).ready(function() {
     // Firefox menu
     $('#firefox-content #phone-layer-1').click(function() {
         firefox.changePage('layer-1');
+        $('#separator .arrow').removeClass().addClass('arrow layer-1');
     });
     $('#firefox-content #phone-layer-2').click(function() {
         firefox.changePage('layer-2');
+        $('#separator .arrow').removeClass().addClass('arrow layer-2');
     });
     $('#firefox-content #phone-layer-3').click(function() {
         firefox.changePage('layer-3');
+        $('#separator .arrow').removeClass().addClass('arrow layer-3');
     });
     $('#firefox-content #phone-layer-4').click(function() {
         firefox.changePage('layer-4');
+        $('#separator .arrow').removeClass().addClass('arrow layer-4');
     });
     
     // Prevent some elements from firing 'transitionend' events
