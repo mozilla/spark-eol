@@ -13,13 +13,16 @@
                 {# L10n: Title above the newsletter sign up input field. #}
                 {{ _('Stay Updated') }}
             </h3>
-            <form>
+            <form action="{{ url('eol.newsletter') }}" method="post">
                 <span style="display:none">
                     {{ _('Be the first to hear the latest news about Firefox for mobile.') }}
                 </span>
-                <input type="email" placeholder="{{ _('Your Email Address') }}">
+                {{ csrf() }}
+                <input name="email" type="email" placeholder="{{ _('Your Email Address') }}">
                 <input type="submit" class="submit" value="">
             </form>
+            <span class="error"></span>
+            <span class="success">Thanks for signing up!</span>
         </div>
         <div id="go-mobile" class="footer-section">
             <h3>

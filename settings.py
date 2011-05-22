@@ -178,10 +178,12 @@ MINIFY_BUNDLES = {
             'js/libs/class.js',
             'js/libs/tween.js',
             'js/libs/minpubsub.js',
+            'js/libs/jquery.form.js',
             'js/desktop/utils.js',
             'js/desktop/sections.js',
             'js/desktop/widgets.js',
             'js/desktop/popups.js',
+            'js/desktop/newsletter.js',
             'js/desktop/main.js',
         ),
         'mobile': (
@@ -254,6 +256,7 @@ TOWER_ADD_HEADERS = True
 # handles the extraction. The Tower library expects this.
 DOMAIN_METHODS = {
     'results': [
+        ('apps/eol/forms.py', 'ignore'),
         ('vendor/**', 'ignore'),
         ('apps/**.py',
             'tower.management.commands.extract.extract_tower_python'),
@@ -286,8 +289,7 @@ DEFAULT_FROM_EMAIL = 'test@localhost.spark'
 
 # Responsys: dev/stage key
 RESPONSYS_ID = 'X0Gzc2X%3DUQpglLjHJlTQTtQ1vQ2rQ0bQQzgQvQy8KVwjpnpgHlpgneHmgJoXX0Gzc2X%3DUQpglLjHJlTQTtQ1vQ2rQ0aQQGQvQwPD'
-MOZILLA_CAMPAIGN = 'MOZILLA_AND_YOU'
-SPARK_CAMPAIGN = 'SPARK_2011'
+MOBILE_NEWSLETTER = 'TEST'
 RESPONSYS_URL = 'http://awesomeness.mozilla.org/pub/rf'
 
 # Mobile detection (django-mobility middleware)

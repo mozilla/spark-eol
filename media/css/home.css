@@ -182,3 +182,7 @@ h1 .third-line {
     top:4px;
     box-shadow:none;
 }
+
+.success {
+    display:none;
+}

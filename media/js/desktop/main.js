@@ -134,4 +134,6 @@ $(document).ready(function() {
     $mask.click(function() {
         hidePlayer();
     });
+    
+    initNewsletterForm();
 });

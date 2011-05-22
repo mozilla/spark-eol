@@ -6,6 +6,7 @@ from . import views
 urlpatterns = patterns('',
     url(r'^$', redirect_to, {'url': 'eol.home'}),
     url(r'^home$', views.home, name='eol.home'),
+    url(r'^newsletter', views.newsletter, name='eol.newsletter'),
     url(r'^spark$', views.spark, name='eol.spark'),
     url(r'^firefox$', views.firefox, name='eol.firefox'),
 
