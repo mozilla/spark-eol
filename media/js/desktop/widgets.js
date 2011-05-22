@@ -167,6 +167,7 @@ var LineChart = Widget.extend({
     init: function(divId, width, height, color, duration, points) {
         var self = this,
             $element = $(divId),
+            $tooltip = $element.find('.tooltip'),
             currentPoint;
 
         this._super($element);
@@ -184,18 +185,14 @@ var LineChart = Widget.extend({
             var chartPos = $(this).offset(),
                 mx = event.pageX - chartPos.left,
         	    my = event.pageY - chartPos.top,
-        	    p = Math.round(mx / self.pointOffset),
-        	    updateTooltip = function() {
-        	        //console.log('x:'+Math.round(self.tooltip.x)+' y:'+Math.round(self.tooltip.y));
-        	        // TODO: Change tooltip position
-        	    };
+        	    p = Math.round(mx / self.pointOffset);
         	
         	if(p !== currentPoint) {
         	    currentPoint = p;
-        	    // TODO: Change tooltip content
-        	    new TWEEN.Tween(self.tooltip).to({x: p * self.pointOffset, y: self.height - self.points[p]}, 300)
-        	                                 .onUpdate(updateTooltip)
-        	                                 .start();
+        	    var x = Math.round(p * self.pointOffset),
+    	            y = Math.round(self.points[p] + 15);
+    	        $tooltip.css('left', x);
+    	        $tooltip.css('bottom', y);
         	}
         });
     },
