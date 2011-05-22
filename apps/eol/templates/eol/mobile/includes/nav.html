@@ -1,0 +1,28 @@
+<nav class="page-nav">
+    <div class="left">
+        <a href="{{ url('eol.home_mobile') }}" class="left">
+            {# L10n: Navigation link to previous page #}
+            {{ _('Back') }}
+            <div class="arrow left"></div>
+        </a>
+    </div>
+    <div class="middle">
+        <ul>
+            <li class="one active"></li>
+            <li class="two"></li>
+            <li class="three"></li>
+        </ul>
+    </div>
+    <div class="right">
+        <a href="" class="right">
+            {# L10n: Navigation link to next page #}
+            {{ _('Next') }}
+            <div class="arrow right"></div>
+        </a>
+    </div>
+</nav>
+
+{% if False %}
+{# L10n: Navigation link to homepage #}
+{{ _('Home') }}
+{% endif %}

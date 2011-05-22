@@ -1,0 +1,31 @@
+#sharing h1 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    color:#ede0ab;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#sharing h1 em {
+    color:#ddd;
+}
+
+#sharing h1 span {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    text-transform:none;
+    font-size:0.5em;
+    position:relative;
+    top:-0.5em;
+}
+
+@media screen and (orientation:portrait) {
+    #sharing h1 {
+        font-size:4em;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #sharing h1 {
+        font-size:5.8em;
+    }
+}

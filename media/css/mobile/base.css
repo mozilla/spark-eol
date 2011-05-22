@@ -1,10 +1,96 @@
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+
 html, body {
     background:#302f2e;
     color:#ddd;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
 }
 
 #wrapper {
     max-width:400px;
     margin:0 auto;
     padding:0 15px;
+}
+
+.page-nav {
+    overflow:auto;
+    text-align:center;
+    padding:20px 0;
+}
+
+.page-nav div.left, .page-nav div.middle, .page-nav div.right {
+    width:33.33%;
+    float:left;
+}
+
+.page-nav a {
+    display: block;
+    background:#1b1b1b;
+    min-width:32px;
+    border-bottom:1px solid #504f4e;
+    border-radius:5px;
+    color:#ddd;
+    text-decoration:none;
+    font-family:'Museo500', 'Trebuchet MS', arial, sans-serif;
+    text-transform:uppercase;
+    font-size:12px;
+    position:relative;
+}
+
+.page-nav ul {
+    width:60px;
+    text-align:center;
+    margin:0 auto;
+}
+
+.page-nav ul li {
+    float:left;
+    display:block;
+    width:8px;
+    height:8px;
+    border:1px solid #909090;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    margin:5px 0 0 10px;
+}
+
+.page-nav ul li.one  {
+    margin-left:0;
+}
+
+.page-nav ul li.active {
+    background:#1b1b1b;
+    border-bottom:1px solid #909090;
+    border-top:1px solid transparent;
+    border-left:0 solid transparent;
+    border-right:0 solid transparent;
+}
+
+.page-nav a.left {
+    float:left;
+    text-align:right;
+    padding:6px 12px 6px 20px;
+}
+
+.page-nav a.right {
+    float:right;
+    text-align:left;
+    padding:6px 20px 6px 12px;
+}
+
+.page-nav a .arrow {
+    width:16px;
+    height:28px;
+    position:absolute;
+    top:0;
+}
+
+.page-nav a .arrow.left {
+    left:0;
+    background:url('../../img/mobile/spritesheet.png') no-repeat 0 0;
+}
+
+.page-nav a .arrow.right {
+    right:0;
+    background:url('../../img/mobile/spritesheet.png') no-repeat -16px 0;
 }
