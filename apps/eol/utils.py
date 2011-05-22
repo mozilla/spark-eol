@@ -1,3 +1,4 @@
+from tower import ugettext_lazy as _lazy
 
 # Sharing the Spark
 
