@@ -71,16 +71,17 @@ $(document).ready(function() {
         new CountUp($(this));
     });
     
-    // Initialize the pie chart widget
+    // Initialize several chart widgets
     new PieChart('#spark-1 .block-2', 75, 75, 75, 1000, [{start: -90, end: 70, color: '#ee3939'},
                                                          {start: 70, end: 200, color: '#ec5f39'},
                                                          {start: 200, end: 270, color: '#fbad46'}]);
     
-    // Initialize the ring chart widget
     new RingChart('#spark-3 .block-2', 63, 63, 50, 1000, [{start: -90, end: 45, color: '#ee3939'},
-                                                             {start: 45, end: 135, color: '#ec5f39'},
-                                                             {start: 135, end: 225, color: '#fbad46'},
-                                                             {start: 225, end: 270, color: '#f7e35f'}]);
+                                                          {start: 45, end: 135, color: '#ec5f39'},
+                                                          {start: 135, end: 225, color: '#fbad46'},
+                                                          {start: 225, end: 270, color: '#f7e35f'}]);
+    
+    new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 1000, [0, 70, 35, 45, 87, 56, 104, 116]);
     
     // Sharing popups
     function tweetPopup(url) {

@@ -138,3 +138,90 @@ var RingChart = PieChart.extend({
     	ctx.stroke();
     }
 });
+
+
+var LineChart = Widget.extend({
+    init: function(divId, width, height, color, duration, points) {
+        var self = this,
+            $element = $(divId),
+            currentPoint;
+
+        this._super($element);
+        this.$canvas = $element.find('canvas');
+        this.ctx = this.$canvas[0].getContext("2d");
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.duration = duration;
+        this.points = points;
+        this.pointOffset = this.width / (points.length - 1);
+	    this.tooltip = {x: 0, y: 0};
+
+        $(divId).mousemove(function(event) {
+            var chartPos = $(this).offset(),
+                mx = event.pageX - chartPos.left,
+        	    my = event.pageY - chartPos.top,
+        	    p = Math.round(mx / self.pointOffset),
+        	    updateTooltip = function() {
+        	        console.log('x:'+Math.round(self.tooltip.x)+' y:'+Math.round(self.tooltip.y));
+        	        // TODO: Change tooltip position
+        	    };
+        	
+        	if(p !== currentPoint) {
+        	    currentPoint = p;
+        	    // TODO: Change tooltip content
+        	    new TWEEN.Tween(self.tooltip).to({x: p * self.pointOffset, y: self.height - self.points[p]}, 300)
+        	                                 .onUpdate(updateTooltip)
+        	                                 .start();
+        	}
+        });
+    },
+    
+    drawBackground: function() {
+        var x = 0;
+
+        ctx = this.ctx;
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#555';
+        for(var i = 0, nb = this.points.length; i < nb; i++) {
+            x = Math.round(i * this.pointOffset);
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, this.height);
+        }
+        ctx.moveTo(0, this.height);
+        ctx.lineTo(this.width, this.height);
+        ctx.stroke();
+    },
+    
+    animate: function() {
+        var self = this,
+            nbPoints = self.points.length,
+            animatedPoints = [],
+            ctx = this.ctx,
+            update = function() {
+                var x, y;
+                
+                ctx.clearRect(0, 0, self.width, self.height);
+                self.drawBackground();
+                ctx.lineWidth = 5;
+            	ctx.strokeStyle = self.color;
+                ctx.beginPath();
+                ctx.moveTo(0, animatedPoints[0].value);
+                for(var i = 1; i < nbPoints; i++) {
+                    x = i * self.pointOffset;
+                    y = animatedPoints[i].value;
+                    ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            };
+        
+        for(var i = 0; i < nbPoints; i++) {
+            var point = {value: this.height};
+            new TWEEN.Tween(point).to({value: this.height - this.points[i]}, this.duration+(i*(this.duration/nbPoints)))
+                                  .easing(TWEEN.Easing.Quartic.EaseOut)
+                                  .onUpdate(update)
+                                  .start();
+            animatedPoints.push(point);
+        }
+    }
+});
