@@ -5,5 +5,70 @@
     <h1>
         {{ _('<em>Sharing</em> <span>the</span> Spark') }}
     </h1>
+    
+    <div class="block block-1">
+        <div>
+            <span class="number">132,850</span>
+            <span class="title">
+                {# L10n: Preceded by the number of shares. #}
+                {{ _('Total Shares') }}
+            </span>
+        </div>
+        <div class="sprite" id="total-shares-img"></div>
+    </div>
+    <div class="block block-2">
+        <span class="title">
+            {{ _('<em>How people shared</em> their Spark') }}
+        </span>
+        <canvas width="150" height="150"></canvas>
+        <ol class="breakdown">
+            <li>
+                46%
+            </li>
+            <li>
+                34%
+            </li>
+            <li>
+                20%
+            </li>
+        </ol>
+        <ul class="legend">
+            <li><div class="color"></div>{{ _('via Facebook') }}</li>
+            <li><div class="color"></div>{{ _('via Twitter') }}</li>
+            <li><div class="color"></div>{{ _('via QR Code') }}</li>
+        </ul>
+    </div>
+    
+    <div class="block block-3">
+        <span class="title">
+            {{ _('<em>Shares</em> over time') }}
+        </span>
+        <ol id="share-history">
+            <li><span class="week">Week #1</span><span class="number">4,500</span></li>
+            <li><span class="week">Week #2</span><span class="number">8,500</span></li>
+            <li><span class="week">Week #3</span><span class="number">7,500</span></li>
+            <li><span class="week">Week #4</span><span class="number">3,500</span></li>
+            <li><span class="week">Week #5</span><span class="number">1,500</span></li>
+            <li><span class="week">Week #6</span><span class="number">500</span></li>
+            <li><span class="week">Week #7</span><span class="number">2,200</span></li>
+            <li><span class="week">Week #8</span><span class="number">1,800</span></li>
+        </ol>
+    </div>
+    
+    <div class="block block-4">
+        <div class="img"></div>
+        <span class="title">{{ _('<em>Shares</em> via Twitter') }}</span>
+        <div class="number">
+            3,189
+        </div>
+    </div>
+    
+    <div class="block block-5 countup">
+        <div class="img"></div>
+        <span class="title">{{ _('<em>Shares</em> via Facebook') }}</span>
+        <div class="number">
+            8,235
+        </div>
+    </div>
 </section>
 {% endblock %}

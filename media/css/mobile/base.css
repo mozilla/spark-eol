@@ -4,6 +4,7 @@ html, body {
     background:#302f2e;
     color:#ddd;
     font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    text-align:center;
 }
 
 #wrapper {
@@ -16,6 +17,7 @@ html, body {
     overflow:auto;
     text-align:center;
     padding:20px 0;
+    clear:both;
 }
 
 .page-nav div.left, .page-nav div.middle, .page-nav div.right {
@@ -93,4 +95,61 @@ html, body {
 .page-nav a .arrow.right {
     right:0;
     background:url('../../img/mobile/spritesheet.png') no-repeat -16px 0;
+}
+
+footer {
+    padding:30px 0;
+    background:#222;
+}
+
+footer .title {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:2em;
+    text-transform:uppercase;
+    display:block;
+}
+
+footer #social-media {
+    margin:0 auto;
+    width:50%;
+}
+
+footer #social-media a {
+    display:inline-block;
+    width:35px;
+    height:34px;
+    margin:20px 10px;
+}
+
+footer a.twitter-icon {
+    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -150px;
+}
+
+footer a.facebook-icon {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -50px -150px;
+}
+
+footer #legal {
+    border-top:1px solid #444;
+    margin:0 30px;
+    padding:20px 0 0;
+}
+
+footer #legal a {
+    text-decoration:none;
+    line-height:200%;
+    color:#bbb;
+}
+
+footer #legal small {
+    text-align:left;
+    font-size:0.8em;
+    color:#666;
+    margin-top:20px;
+    display:block;
+    line-height:150%;
+}
+
+footer #legal small a {
+    line-height:normal;
 }
