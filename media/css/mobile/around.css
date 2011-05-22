@@ -1,0 +1,164 @@
+#around .block .title {
+    color:#ddd;
+}
+
+#around .block .title em {
+    color:#ede0ab;
+}
+
+#around h1 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    color:#ede0ab;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#around h1 em {
+    color:#ddd;
+}
+
+#around h1 span {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    text-transform:none;
+    font-size:0.5em;
+    position:relative;
+    top:-0.5em;
+}
+
+#around .number {
+    font-size:5em;
+    display:block;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+}
+
+#around .title {
+    text-transform:uppercase;
+    color:#ede0ab;
+    font-size:1.2em;
+}
+
+@media screen and (orientation:portrait) {
+    #around h1 {
+        font-size:4em;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #around h1 {
+        font-size:5.8em;
+    }
+}
+
+#active-cities-img {
+    height:68px;
+    width:70px;
+    background:url('../../img/mobile/spritesheet.png') no-repeat -100px -150px;
+    margin:20px auto 0;
+}
+
+#active-cities ol {
+    width:90%;
+    margin:0 auto;
+}
+
+#active-cities ol li {
+    padding:10px 10px;
+    text-align:left;
+}
+
+#active-cities ol li:nth-child(even) {
+    background:rgba(255,255,255,0.05);
+}
+
+#active-cities .rank {
+    float:left;
+    width:30px;
+}
+
+#active-cities .country {
+    float:right;
+}
+
+#active-cities .city {
+    color:#ede0ab;
+}
+
+#continents ol {
+    text-align:left;
+    width:90%;
+    margin:0 auto;
+}
+
+#continents ol li {
+    padding:8px 0;
+}
+
+#continents .continent {
+    padding-bottom:5px;
+    text-transform:uppercase;
+    font-size:0.8em;
+}
+
+#continents .bar, #continents .percentage {
+    float:left;
+}
+
+#continents .bar {
+    background:#69aacf;
+    width:300px;
+    height:15px;
+    margin-right:10px;
+}
+
+#continents li:nth-child(1) .bar {width:80%;}
+#continents li:nth-child(2) .bar {width:64%;}
+#continents li:nth-child(3) .bar {width:52%;}
+#continents li:nth-child(4) .bar {width:31%;}
+#continents li:nth-child(5) .bar {width:25%;}
+#continents li:nth-child(6) .bar {width:11%;}
+
+#around .block-3 .title, #around .block-4 .title {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    text-transform:none;
+}
+
+#around .block-3 .title em, #around .block-4 .title em {
+    font-style:normal;
+    text-transform:uppercase;
+    display:block;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+}
+
+#active-countries {
+    overflow:auto;
+}
+
+#active-countries li {
+    float:left;
+    width:33.33%;
+}
+
+#active-countries li .country {
+    height:100px;
+    width:100px;
+    margin:0 auto;
+}
+
+#active-countries li:nth-child(1) .country {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -350px 0;
+}
+
+#active-countries li:nth-child(2) .country {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -250px 0;
+}
+
+#active-countries li:nth-child(3) .country {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -250px -100px;
+}
+
+#active-countries li span {
+    font-size:0.8em;
+    text-transform:uppercase;
+}
