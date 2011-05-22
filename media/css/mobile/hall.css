@@ -1,0 +1,202 @@
+#hall .block .title {
+    color:#ddd;
+}
+
+#hall .block .title em {
+    color:#ede0ab;
+}
+
+#hall h1 {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    color:#ede0ab;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#hall h1 em {
+    color:#ddd;
+}
+
+#hall h1 span {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    text-transform:none;
+    font-size:0.5em;
+    position:relative;
+    top:-0.5em;
+}
+
+#hall .number {
+    font-size:5em;
+    display:block;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+}
+
+#hall .title {
+    text-transform:uppercase;
+    color:#ede0ab;
+    font-size:1.2em;
+}
+
+@media screen and (orientation:portrait) {
+    #hall h1 {
+        font-size:4em;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #hall h1 {
+        font-size:5.8em;
+    }
+}
+
+#leaderboard {
+    width:90%;
+    margin:20px auto;
+}
+
+#leaderboard li {
+    padding:10px 10px;
+    text-align:left;
+    border-bottom:1px solid #444;
+}
+
+#leaderboard .star {
+    height:19px;
+    width:20px;
+    background:url('../../img/mobile/spritesheet.png') no-repeat -200px -150px;
+    margin:-3px 3px 0 0;
+}
+
+#leaderboard .star, #leaderboard .shares {
+    float:right;
+}
+
+.flag {
+	width: 16px;
+	height: 11px;
+	background:url('../../img/flags.png') no-repeat;
+	float:left;
+	margin:1px 10px 0 0;
+}
+
+#hall .block-1 p {
+    text-align:left;
+    line-height:150%;
+    width:90%;
+    margin:0 auto;
+    color:#bbb;
+}
+
+#hall .block-2 {
+    overflow:auto;
+}
+
+#hall .block-2 canvas {
+    display:block;
+    margin:20px auto;
+    background:#444;
+}
+
+#hall .block-2 .breakdown {
+    height:126px;
+    margin:-146px auto 0;
+    position:relative;
+    width:126px;
+    overflow:visible;
+}
+
+#hall .block-2 .breakdown li {
+    position:absolute;
+}
+
+#hall .block-2 .breakdown li:nth-child(1) {top:20px;left:140px;}
+#hall .block-2 .breakdown li:nth-child(2) {top:80px;left:140px;}
+#hall .block-2 .breakdown li:nth-child(3) {top:20px;left:-35px;}
+#hall .block-2 .breakdown li:nth-child(4) {top:80px;left:-35px;}
+
+#hall .legend {
+    margin:20px auto 0;
+    width:60%;
+}
+
+#hall .block-2 .legend li {
+    padding:5px 0;
+    text-align:center;
+    float:left;
+    width:50%;
+    text-transform:uppercase;
+    font-size:0.8em;
+}
+
+#hall .block-2 .legend li:nth-child(3) {
+    clear:left;
+}
+
+#hall .block-2 .legend li .color {
+    height:15px;
+    width:15px;
+    margin:0 10px 0 0;
+    display:inline-block;
+    position:relative;
+    top:3px;
+}
+
+#hall .block-2 li:nth-child(1) .color {background:#ee3939;}
+#hall .block-2 li:nth-child(2) .color {background:#ec5f39;}
+#hall .block-2 li:nth-child(3) .color {background:#fbad46;}
+#hall .block-2 li:nth-child(4) .color {background:#f7e35e;}
+
+#hall .block-4 {
+    overflow:auto;
+}
+
+#hall .block-4 li {
+    clear:both;
+    margin-top:20px;
+    overflow:auto;
+}
+
+#hall .block-4 .percentage {
+    display:block;
+    text-align:left;
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:3em;
+    float:left;
+    line-height:50px;
+    padding-right:10px;
+    border-right:1px solid #444;
+    margin-right:10px;
+}
+
+#hall .block-4 .badge-img {
+    height:70px;
+    width:70px;
+    float:left;
+    margin-right:20px;
+}
+
+#hall .block-4 li:nth-child(1) .badge-img {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -350px -100px;
+}
+
+#hall .block-4 li:nth-child(2) .badge-img {
+    background:url('../../img/mobile/spritesheet.png') no-repeat -350px -200px;
+}
+
+#hall .block-4 .desc {
+    text-align:left;
+    padding-top:10px;
+    line-height:120%;
+}
+
+#hall .block-4 .badge-name {
+    color:#ede0ab;
+}
+
+#hall .block-4 .badge-desc {
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    color:#bbb;
+}
+

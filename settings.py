@@ -170,6 +170,7 @@ MINIFY_BUNDLES = {
             'css/mobile/sharing.css',
             'css/mobile/around.css',
             'css/mobile/hall.css',
+            'css/flags.css',
         )
     },
     'js': {
