@@ -125,9 +125,30 @@
 }
 
 #share-history-graph {
-    width:500px;
-    height:120px;
     margin-top:10px;
+    position:relative;
+}
+
+#share-history-graph .tooltip {
+    width:118px;
+    margin-left:-60px;
+    bottom:auto;
+    color:#ddd;
+    margin-top:-80px;
+}
+
+#share-history-graph .tooltip .number {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    font-size:24px;
+    font-style:normal;
+}
+
+#share-history-graph .tooltip span {
+    text-transform:none;
+}
+
+#share-history-graph:hover .tooltip {
+    opacity:1;
 }
 
 #spark-1 .block-4 {
