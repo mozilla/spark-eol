@@ -47,6 +47,7 @@
 	    <div id="wrapper">
 		    {% block content %}{% endblock %}
 	    </div>
+        {% include "eol/mobile/includes/footer.html" %}
 
         {% if not debug %}
             {% include "includes/webtrends.html" %}
