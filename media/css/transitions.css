@@ -109,4 +109,4 @@ header nav .left, header nav .right {
 
 #ff-preview {-moz-transition:0.25s opacity linear;-webkit-transition:0.25s opacity linear;-o-transition:0.25s opacity linear;}
 
-#home .tooltip {-moz-transition:1s all ease-out;-webkit-transition:1s all ease-out;-o-transition:1s all ease-out;}
+#home .tooltip {-moz-transition:0.5s all ease-out;-webkit-transition:0.5s all ease-out;-o-transition:0.5s all ease-out;}

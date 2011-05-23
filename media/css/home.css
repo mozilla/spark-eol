@@ -228,7 +228,7 @@ h1 .third-line {
     width:178px;
     margin-left:-90px;
     bottom:auto;
-    top:-20px;
+    top:-80px;
     opacity:0;
     text-align:center;
     background:#262626;
@@ -237,7 +237,7 @@ h1 .third-line {
     padding:15px;
     box-shadow:0px 3px 5px rgba(0,0,0,0.25);
     border-radius:8px;
-    z-index:10000;
+    z-index:-100;
     pointer-events:auto;
 }
 
@@ -257,6 +257,7 @@ h1 .third-line {
 #home .tooltip.active {
     opacity:1;
     top:-130px;
+    z-index:10000;
 }
 
 #home .tooltip:hover {
