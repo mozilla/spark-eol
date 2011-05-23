@@ -177,6 +177,31 @@ $(document).ready(function() {
     
     initNewsletterForm();
 
+    // Canvas animations on homepage
     lights = new Lights('particles', '/media/img/particle.png', 13, 380, 350);
     sparkAnimation = new Spark('spark', 200, 300);
+    
+    // Tooltips on homepage
+    var $tooltips = [];
+    $tooltips.push($('#home .tooltip:eq(0)'));
+    $tooltips.push($('#home .tooltip:eq(1)'));
+    $tooltips.push($('#home .tooltip:eq(2)'));
+    var t = 0, display = true;
+    setInterval(function() {
+        if(display) {
+            $tooltips[t].addClass('active');
+
+            if(t < 2) {
+                t += 1;
+            } else {
+                t = 0;
+            }
+            display = false;
+        } else {
+            for(var i = 0; i < 3; i += 1) {
+                $tooltips[i].removeClass('active');
+            }
+            display = true;
+        }
+    }, 2500);
 });
