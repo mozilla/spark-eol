@@ -32,7 +32,7 @@
     font-family:'LG', 'Arial Narrow', sans-serif;
 }
 
-#hall .title {
+#wrapper #hall .title {
     text-transform:uppercase;
     color:#ede0ab;
     font-size:1.2em;
@@ -95,7 +95,7 @@
 #hall .block-2 canvas {
     display:block;
     margin:20px auto;
-    background:#444;
+    background:url('../../img/mobile/spritesheet.png') no-repeat -150px -250px;
 }
 
 #hall .block-2 .breakdown {

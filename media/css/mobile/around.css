@@ -32,7 +32,7 @@
     font-family:'LG', 'Arial Narrow', sans-serif;
 }
 
-#around .title {
+#wrapper #around .title {
     text-transform:uppercase;
     color:#ede0ab;
     font-size:1.2em;

@@ -60,7 +60,7 @@ html, body {
     margin-left:0;
 }
 
-.page-nav ul li.active {
+#sharing .page-nav ul li:first-child, #around .page-nav ul li:nth-child(2), #hall .page-nav ul li:nth-child(3) {
     background:#1b1b1b;
     border-bottom:1px solid #909090;
     border-top:1px solid transparent;

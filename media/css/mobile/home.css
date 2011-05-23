@@ -94,3 +94,11 @@ a.button em {
     text-transform:uppercase;
     display:block;
 }
+
+#home footer a.button {
+    display:none;
+}
+
+#home a.button {
+    margin-bottom:50px;
+}

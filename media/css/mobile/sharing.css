@@ -24,7 +24,7 @@
     font-family:'LG', 'Arial Narrow', sans-serif;
 }
 
-#sharing .title {
+#wrapper .title {
     text-transform:uppercase;
     color:#ede0ab;
     font-size:1.2em;
@@ -85,7 +85,7 @@
     margin:20px auto 0;
     height:150px;
     width:150px;
-    background:#000;
+    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -250px;
 }
 
 #sharing .block-2 .breakdown {
