@@ -4,19 +4,19 @@ $(document).ready(function() {
         spark = new Section('spark', '#spark-content', 'spark-1'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection,
-        lights, spark;
+        lights, sparkAnimation;
 
     TWEEN.start();
     
     home.onHide(function() {
         lights.pause();
-        spark.pause();
+        sparkAnimation.pause();
     });
     
     home.onShow(function() {
         setTimeout(function() {
             lights.play();
-            spark.play();
+            sparkAnimation.play();
         }, 400);
     });
 
@@ -178,5 +178,5 @@ $(document).ready(function() {
     initNewsletterForm();
 
     lights = new Lights('particles', '/media/img/particle.png', 13, 380, 350);
-    spark = new Spark('spark', 200, 300);
+    sparkAnimation = new Spark('spark', 200, 300);
 });
