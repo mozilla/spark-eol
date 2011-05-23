@@ -28,9 +28,13 @@
     height:40px;
     width:48px;
     float:left;
-    background:#444;
     margin-right:10px;
 }
+
+#layer-1 .block-2 .icon {background:url('../img/sprites-firefox.png') no-repeat -200px -250px;}
+#layer-1 .block-3 .icon {background:url('../img/sprites-firefox.png') no-repeat -250px -250px;}
+#layer-1 .block-4 .icon {background:url('../img/sprites-firefox.png') no-repeat -350px -250px;}
+#layer-1 .block-5 .icon {background:url('../img/sprites-firefox.png') no-repeat -300px -250px;}
 
 #layer-1 .block-6 {
     text-align:center;
