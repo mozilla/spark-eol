@@ -10,6 +10,8 @@ $(document).ready(function() {
             this.firstPage = firstPage;
             this.currentPage = null;
             this.isChangingPage = false;
+            this.onHideCallback = null;
+            this.onShowCallback = null;
         },
         
         hide: function(callback) {
@@ -19,6 +21,10 @@ $(document).ready(function() {
                 this.currentPage = null;
             }
             onTransitionEndOnce($(this.transEndTrigger), callback);
+            
+            if(this.onHideCallback) {
+                this.onHideCallback();
+            }
         },
         
         show: function() {
@@ -30,6 +36,9 @@ $(document).ready(function() {
                 onTransitionEndOnce($(this.transEndTrigger), function() {
                     self.changePage(self.firstPage);
                 });
+            }
+            if(this.onShowCallback) {
+                this.onShowCallback();
             }
         },
         
@@ -51,6 +60,15 @@ $(document).ready(function() {
                 }
                 this.currentPage = pageName;
             }
+        },
+        
+        
+        onHide: function(callback) {
+            this.onHideCallback = callback;
+        },
+        
+        onShow: function(callback) {
+            this.onShowCallback = callback;
         }
     });
 });

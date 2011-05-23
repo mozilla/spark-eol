@@ -3,9 +3,20 @@ $(document).ready(function() {
         home = new Section('home', '#phone-wrapper'),
         spark = new Section('spark', '#spark-content', 'spark-1'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
-        currentSection;
+        currentSection,
+        lightParticles;
 
     TWEEN.start();
+    
+    home.onHide(function() {
+        lightParticles.pause();
+    });
+    
+    home.onShow(function() {
+        setTimeout(function() {
+            lightParticles.play();
+        }, 400);
+    });
 
     // Homepage buttons
     $('#spark-button').click(function() {
@@ -139,8 +150,6 @@ $(document).ready(function() {
         hidePlayer();
     });
     
-    initNewsletterForm();
-    
     // Home buttons
     $('#firefox-button').hover(
         function() {
@@ -157,4 +166,8 @@ $(document).ready(function() {
             $('#phone-wrapper').toggleClass('spark-preview');
         }
     );
+    
+    initNewsletterForm();
+
+    lightParticles = new ParticleSystem('light', '/media/img/particle.png', 40, 250, 366, 20);
 });

@@ -184,6 +184,7 @@ MINIFY_BUNDLES = {
             'js/desktop/widgets.js',
             'js/desktop/popups.js',
             'js/desktop/newsletter.js',
+            'js/desktop/particles.js',
             'js/desktop/main.js',
         ),
         'mobile': (

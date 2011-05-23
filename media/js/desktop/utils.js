@@ -22,6 +22,10 @@ var rad2deg = function(radians) {
     return radians * 180 / Math.PI;
 };
 
+var rand = function(min, max) {
+    return min + (Math.random() * (max - min));
+};
+
 /**
  * Based on: http://www.mredkj.com/javascript/numberFormat.html#addcommas
  */
@@ -35,4 +39,11 @@ var addThousandsSeparator = function addCommas(str, separator) {
 		x1 = x1.replace(rgx, '$1' + separator + '$2');
 	}
 	return x1 + x2;
+};
+
+// Array Remove - By John Resig (MIT Licensed)
+Array.prototype.remove = function(from, to) {
+  var rest = this.slice((to || from) + 1 || this.length);
+  this.length = from < 0 ? this.length + from : from;
+  return this.push.apply(this, rest);
 };
