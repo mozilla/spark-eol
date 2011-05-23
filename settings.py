@@ -161,6 +161,7 @@ MINIFY_BUNDLES = {
             'css/firefox-4.css',
             'css/transitions.css',
             'css/states.css',
+            'css/fallback.css',
         ),
         'mobile': (
             'css/reset.css',
@@ -192,6 +193,9 @@ MINIFY_BUNDLES = {
         ),
         'pngfix': (
             'js/libs/DD_belatedPNG_0.0.8a.min.js',
+        ),
+        'modernizr': (
+            'js/libs/modernizr-1.6.min.js',
         ),
     }
 }
