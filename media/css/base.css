@@ -385,3 +385,14 @@ header nav a {
     margin-left:-320px;
     display:none;
 }
+
+.no-js {
+    padding:10px 0;
+    color:#eee;
+    background:#ee3939;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-family:'Museo500', 'Trebuchet MS', arial, sans-serif;
+}
