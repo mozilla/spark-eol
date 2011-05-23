@@ -14,6 +14,7 @@ var initNewsletterForm = function() {
         			});
         		} else if(data.status === 'success') {
         		    $form.hide();
+        		    $errorMessage.text('');
         		    $successMessage.show();
         		}
             }
