@@ -14,9 +14,10 @@
                 {{ _('Stay Updated') }}
             </h3>
             <form action="{{ url('eol.newsletter') }}" method="post">
-                <span style="display:none">
+                <div class="tooltip">
+                    <div class="arrow bottom"></div>
                     {{ _('Be the first to hear the latest news about Firefox for mobile.') }}
-                </span>
+                </div>
                 {{ csrf() }}
                 <input name="email" type="email" placeholder="{{ _('Your Email Address') }}">
                 <input type="submit" class="submit" value="">
