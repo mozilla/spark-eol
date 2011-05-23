@@ -54,6 +54,7 @@
 
 #layer-4 .block-3 ul li {
     padding:10px 0;
+    position:relative;
 }
 
 #layer-4 .block-3 .icon {
@@ -70,14 +71,101 @@
 }
 
 #cutting-edge-illu {
-    height:115px;
-    background:#444;
-    margin-top:10px;
+    height:110px;
+    width:151px;
+    background:url('../img/sprites-firefox.png') no-repeat -205px -100px;
+    margin:15px 0 0 0;
 }
 
 #location-illu {
     width:213px;
-    height:107px;
+    height:98px;
     background:url('../img/sprites-firefox.png') no-repeat -158px 0;
-    margin-bottom:-20px;
+    margin-bottom:-10px;
+}
+
+/*Tooltips*/
+
+#layer-4 .block-3 .tooltip {
+    position:absolute;
+    width:198px;
+    margin-left:-115px;
+    text-align:center;
+    font-size:12px;
+    background:#262626;
+    border:1px solid #555;
+    left:50%;
+    padding:15px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    border-radius:4px;
+    z-index:10000;
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    opacity:0;
+    pointer-events:none;
+    top:25px;
+    line-height:150%;
+}
+
+#layer-4 .block-3 li:hover .tooltip {
+    opacity:1;
+    top:45px;
+}
+
+#layer-4 .block-3 li:hover {
+    cursor:default;
+}
+
+#cutting-edge-illu ul {
+    position:relative;
+}
+
+#cutting-edge-illu li {
+    position:absolute;
+    height:30px;
+    width:30px;
+    overflow:visible;
+}
+
+#cutting-edge-illu li.one {top:1px;left:90px;}
+#cutting-edge-illu li.two {top:44px;left:77px;}
+#cutting-edge-illu li.three {top:48px;left:12px;}
+#cutting-edge-illu li.four {top:1px;left:27px;}
+#cutting-edge-illu li.five {top:17px;left:129px;}
+#cutting-edge-illu li.six {top:62px;left:124px;}
+
+#cutting-edge-illu li .tooltip {
+    position:absolute;
+    min-height:28px;
+    margin-top:-45px;
+    text-align:left;
+    font-size:12px;
+    background:#262626;
+    border:1px solid #555;
+    left:50px;
+    padding:15px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    border-radius:4px;
+    z-index:10000;
+    font-family:Georgia, 'Times New Roman', serif;
+    opacity:0;
+    pointer-events:none;
+    top:50%;
+    line-height:150%;
+    min-width:300px;
+}
+
+#cutting-edge-illu li:hover .tooltip {
+    left:40px;
+    opacity:1;
+}
+
+#cutting-edge-illu .tooltip h3 {
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    text-transform:uppercase;
+}
+
+#cutting-edge-illu .tooltip p {
+    margin:0;
+    font-style:italic;
 }

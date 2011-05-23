@@ -23,46 +23,52 @@
             <li>
                 <div class="icon"></div>
                 <span class="title">{{ _('Find in page') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Quickly find text on a website') }}
-                </p>
+                </div>
             </li>
             <li>
                 <div class="icon"></div>
                 <span class="title">{{ _('Save to PDF') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Capture important websites, like directions or a boarding pass, to view offline') }}
-                </p>
+                </div>
             </li>
             <li>
                 <div class="icon"></div>                
                 <span class="title">{{ _('Share page') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Share websites via apps like email, Facebook, Twitter, Google Reader and more') }}
-                </p>
+                </div>
             </li>
         </ul>
         <ul>
             <li>
                 <div class="icon"></div>
                 <span class="title">{{ _('Forget password') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Tell a website to forget your password') }}
-                </p>
+                </div>
             </li>
             <li>
                 <div class="icon"></div>
                 <span class="title">{{ _('Add search engine') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Customize your search engine list') }}
-                </p>
+                </div>
             </li>
             <li>
                 <div class="icon"></div>
                 <span class="title">{{ _('Clear site preferences') }}</span>
-                <p>
+                <div class="tooltip">
+                    <div class="arrow top"></div>
                     {{ _('Manage site-specific preferences like blocking pop-ups and opting to never save a password') }}
-                </p>
+                </div>
             </li>
         </ul>
     </div>
@@ -73,36 +79,71 @@
             {{ _('The Cutting Edge') }}
         </span>
         <div id="cutting-edge-illu">
-            
+            <ul>
+                <li class="one">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        <h3>{{ _('HTML5') }}</h3>
+                        <p>
+                            {{ _('Firefox uses open Web standards like HTML5, CSS and JavaScript so developers can create fast, powerful and beautiful add-ons and applications.') }}
+                        </p>
+                    </div>
+                </li>
+                <li class="two">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        <h3>{{ _('Multi-process') }}</h3>
+                        <p>
+                            {{ _('Firefox takes advantage of new multi-core CPUs by running the browser in multiple processes.') }}
+                        </p>
+                    </div>
+                </li>
+                <li class="three">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        {# L10n: Refers to the Firefox browser interface running in a separate process from the rendering one. #}
+                        <h3>{{ _('Electrolysis') }}</h3>
+                        <p>
+                            {{ _('The browser interface runs in a separate process from the one rendering Web content, resulting in a much more stable and responsive browser.') }}
+                        </p>
+                    </div>
+                </li>
+                <li class="four">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        {# L10n: JaegerMonkey is Mozilla's JavaScript engine. #}
+                        <h3>{{ _('JaegerMonkey') }}</h3>
+                        <p>
+                            {% trans %}
+                            Firefox includes a superfast JavaScript engine that uses Mozilla's "JaegerMonkey" just-in-time compiler and is optimized for ARM processors.
+                            {% endtrans %}
+                        </p>
+                    </div>
+                </li>
+                <li class="five">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        {# L10n: Refers to the layers technology improving graphic performance on Firefox for mobile. #}
+                        <h3>{{ _('Layers') }}</h3>
+                        <p>
+                            {{ _('Layers technology helps improve graphic performance for swifter and slicker scrolling, zooming and animations.') }}
+                        </p>
+                    </div>
+                </li>
+                <li class="six">
+                    <div class="tooltip">
+                        <div class="arrow left"></div>
+                        <h3>{{ _('Offline Browsing') }}</h3>
+                        <p>
+                            {{ _("Offline browsing in Firefox lets you have a Web connection even if your mobile device doesn't have one.") }}
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
         <p>
             {{ _('Firefox for Android includes the newest Web technologies for a modern browsing experience on your phone.') }}
         </p>
-
-        <div class="tooltips">
-            {{ _('HTML5') }}
-            {{ _('Firefox uses open Web standards like HTML5, CSS and JavaScript so developers can create fast, powerful and beautiful add-ons and applications.') }}
-
-            {{ _('Multi-process') }}
-            {{ _('Firefox takes advantage of new multi-core CPUs by running the browser in multiple processes.') }}
-
-            {# L10n: Refers to the Firefox browser interface running in a separate process from the rendering one. #}
-            {{ _('Electrolysis') }}
-            {{ _('The browser interface runs in a separate process from the one rendering Web content, resulting in a much more stable and responsive browser.') }}
-
-            {# L10n: JaegerMonkey is Mozilla's JavaScript engine. #}
-            {{ _('JaegerMonkey') }}
-            {% trans %}
-            Firefox includes a superfast JavaScript engine that uses Mozilla's "JaegerMonkey" just-in-time compiler and is optimized for ARM processors.
-            {% endtrans %}
-
-            {# L10n: Refers to the layers technology improving graphic performance on Firefox for mobile. #}
-            {{ _('Layers') }}
-            {{ _('Layers technology helps improve graphic performance for swifter and slicker scrolling, zooming and animations.') }}
-
-            {{ _('Offline Browsing') }}
-            {{ _("Offline browsing in Firefox lets you have a Web connection even if your mobile device doesn't have one.") }}
-        </div>
     </div>
 
 
