@@ -11,12 +11,15 @@ from responsys import responsys
 from .forms import NewsletterForm
 from .utils import TWITTER, FACEBOOK
 
+
+def sharing_messages():
+    return {'twitter_msg': urlquote(unicode(TWITTER)),
+            'facebook_msg': unicode(FACEBOOK)}
+
+
 def home(request):
-    data = {
-        'spark_url': 'https://spark.mozilla.org',
-        'twitter_msg': urlquote(unicode(TWITTER)),
-        'facebook_msg': unicode(FACEBOOK)
-    }
+    data = {'spark_url': 'https://spark.mozilla.org'}
+    data.update(sharing_messages())
     return jingo.render(request, 'eol/desktop/home.html', data)
 
 
@@ -38,10 +41,11 @@ def newsletter(request):
     else:
         return {'status': 'error',
                 'errors': dict(form.errors.iteritems())}
-                
+
 
 def home_mobile(request):
     data = {'page': 'home'}
+    data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/home.html', data)
 
 
@@ -49,6 +53,7 @@ def spark_sharing(request):
     data = {'page': 'sharing',
             'prev': reverse('eol.home_mobile'),
             'next': reverse('eol.around')}
+    data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/sharing.html', data)
 
 
@@ -56,10 +61,12 @@ def spark_around(request):
     data = {'page': 'around',
             'prev': reverse('eol.sharing'),
             'next': reverse('eol.hall')}
+    data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/around.html', data)
 
 
 def spark_hall(request):
     data = {'page': 'hall',
             'prev': reverse('eol.around')}
+    data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/hall.html', data)
