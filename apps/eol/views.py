@@ -4,6 +4,7 @@ from django.conf import settings
 from django.utils.http import urlquote
 
 from commons.decorators import post_required, ajax_required, json_view
+from commons.urlresolvers import reverse
 
 from responsys import responsys
 
@@ -37,25 +38,28 @@ def newsletter(request):
     else:
         return {'status': 'error',
                 'errors': dict(form.errors.iteritems())}
-
-
-def spark(request):
-    return jingo.render(request, 'eol/desktop/spark.html')
-    
-
-def firefox(request):
-    return jingo.render(request, 'eol/desktop/firefox.html')
-
+                
 
 def home_mobile(request):
-    return jingo.render(request, 'eol/mobile/home.html')
+    data = {'page': 'home'}
+    return jingo.render(request, 'eol/mobile/home.html', data)
 
 
 def spark_sharing(request):
-    return jingo.render(request, 'eol/mobile/sharing.html')
+    data = {'page': 'sharing',
+            'prev': reverse('eol.home_mobile'),
+            'next': reverse('eol.around')}
+    return jingo.render(request, 'eol/mobile/sharing.html', data)
+
 
 def spark_around(request):
-    return jingo.render(request, 'eol/mobile/around.html')
+    data = {'page': 'around',
+            'prev': reverse('eol.sharing'),
+            'next': reverse('eol.hall')}
+    return jingo.render(request, 'eol/mobile/around.html', data)
+
 
 def spark_hall(request):
-    return jingo.render(request, 'eol/mobile/hall.html')
+    data = {'page': 'hall',
+            'prev': reverse('eol.around')}
+    return jingo.render(request, 'eol/mobile/hall.html', data)

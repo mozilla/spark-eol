@@ -1,11 +1,13 @@
 <nav class="page-nav">
+    {% if prev %}
     <div class="left">
-        <a href="{{ url('eol.home_mobile') }}" class="left">
+        <a href="{{ prev }}" class="left">
             {# L10n: Navigation link to previous page #}
             {{ _('Back') }}
             <div class="arrow left"></div>
         </a>
     </div>
+    {% endif %}
     <div class="middle">
         <ul>
             <li class="one active"></li>
@@ -13,13 +15,15 @@
             <li class="three"></li>
         </ul>
     </div>
+    {% if next %}
     <div class="right">
-        <a href="" class="right">
+        <a href="{{ next }}" class="right">
             {# L10n: Navigation link to next page #}
             {{ _('Next') }}
             <div class="arrow right"></div>
         </a>
     </div>
+    {% endif %}
 </nav>
 
 {% if False %}
