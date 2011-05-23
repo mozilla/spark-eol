@@ -69,8 +69,15 @@
     margin-top:20px;
 }
 
-#cutting-edge-illu, #location-illu {
+#cutting-edge-illu {
     height:115px;
     background:#444;
     margin-top:10px;
+}
+
+#location-illu {
+    width:213px;
+    height:107px;
+    background:url('../img/sprites-firefox.png') no-repeat -158px 0;
+    margin-bottom:-20px;
 }

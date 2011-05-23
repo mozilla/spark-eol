@@ -157,4 +157,12 @@ $(document).ready(function() {
             $('#phone-wrapper').toggleClass('spark-preview');
         }
     );
+    
+    // Home tooltips
+    $('#home .tooltip').click(function() {
+        home.hide(function() {
+            spark.show();
+            currentSection = spark;
+        }); 
+    });
 });

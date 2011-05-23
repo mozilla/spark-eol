@@ -38,6 +38,24 @@
         </article>
         <div id="small-phones"></div>
         <div id="phone-wrapper">
+            <div class="tooltip">
+                <div class="arrow bottom"></div>
+                <span class="number">132,850</span>
+                <span class="title">
+                    {# L10n: Preceded by the number of shares. #}
+                    {{ _('Total Shares') }}
+                </span>
+            </div>
+            <div class="tooltip">
+                <div class="arrow bottom"></div>
+                <span class="number">31,245</span>
+                <span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
+            </div>
+            <div class="tooltip">
+                <div class="arrow bottom"></div>
+                <span class="number">162</span>
+                <span class="title">{{ _('<em>Countries</em> Sparked') }}</span>
+            </div>
             <canvas id="particles" height="380" width="350"></canvas>
             <div id="light-ray"></div>
             <canvas id="spark"></canvas>
