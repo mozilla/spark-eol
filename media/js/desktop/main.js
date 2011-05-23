@@ -54,12 +54,18 @@ $(document).ready(function() {
     // Spark menu
     $('#spark-content nav li:eq(0)').click(function() {
         spark.changePage('spark-1');
+        $('#spark-content nav li').removeClass('active');
+        $(this).addClass('active');
     });
     $('#spark-content nav li:eq(1)').click(function() {
         spark.changePage('spark-2');
+        $('#spark-content nav li').removeClass('active');
+        $(this).addClass('active');
     });
     $('#spark-content nav li:eq(2)').click(function() {
         spark.changePage('spark-3');
+        $('#spark-content nav li').removeClass('active');
+        $(this).addClass('active');
     });
     
     // Firefox menu

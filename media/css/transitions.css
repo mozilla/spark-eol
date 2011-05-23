@@ -56,12 +56,6 @@ header nav .left, header nav .right {
     -o-transition:0.25s top ease, 0.25s opacity linear;
 }
 
-#home-wrapper {
-    -moz-transition:0.5s all ease;
-    -webkit-transition:0.5s all ease;
-    -o-transition:0.5s all ease;
-}
-
 /* spark */
 
 #spark-content aside {-moz-transition:0.5s all ease;-webkit-transition:0.5s all ease;-o-transition:0.5s all ease;}
@@ -90,6 +84,8 @@ header nav .left, header nav .right {
 #spark-1 .block-1 .number {-moz-transition:0.25s all ease-in;-webkit-transition:0.25s all ease-in;-o-transition:0.25s all ease-in;}
 
 /* firefox */
+#separator {-moz-transition:0.5s opacity ease 0.25s;-webkit-transition:0.5s opacity ease 0.25s;-o-transition:0.5s opacity ease 0.25s;}
+
 #separator .arrow {
     -moz-transition:0.35s top ease, 0.35s opacity ease 0.25s;
     -webkit-transition:0.35s top ease, 0.35s opacity ease 0.25s;
@@ -111,4 +107,6 @@ header nav .left, header nav .right {
 #small-phones {-moz-transition:0.5s opacity linear 0s;-webkit-transition:0.5s opacity linear 0s;-o-transition:0.5s opacity linear 0s;}
 #light-ray {-moz-transition:0.25s opacity linear 0s;-webkit-transition:0.25s opacity linear 0s;-o-transition:0.25s opacity linear 0s;}
 
-#ff-preview {-moz-transition:0.5s opacity linear;-webkit-transition:0.5s opacity linear;-o-transition:0.5s opacity linear;}
+#ff-preview {-moz-transition:0.25s opacity linear;-webkit-transition:0.25s opacity linear;-o-transition:0.25s opacity linear;}
+
+#home .tooltip {-moz-transition:1s all ease-out;-webkit-transition:1s all ease-out;-o-transition:1s all ease-out;}

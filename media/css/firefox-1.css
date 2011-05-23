@@ -68,8 +68,15 @@
 }
 
 #layer-1 .video-thumbnail {
-    height:105px;
+    height:100px;
     width:155px;
-    background:#444;
+    background:url('../img/sprites-firefox.png') no-repeat 0 0;
     margin-top:5px;
+    border:3px solid #777;
+}
+
+#layer-1 .video-thumbnail:hover {
+    background:url('../img/sprites-firefox.png') no-repeat 0 -100px;
+    cursor:pointer;
+    border:3px solid #999;
 }
