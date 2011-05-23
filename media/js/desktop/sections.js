@@ -9,6 +9,7 @@ $(document).ready(function() {
             this.transEndTrigger = transEndTrigger;
             this.firstPage = firstPage;
             this.currentPage = null;
+            this.isChangingPage = false;
         },
         
         hide: function(callback) {
@@ -22,6 +23,8 @@ $(document).ready(function() {
         
         show: function() {
             var self = this;
+            this.isChangingPage = false;
+            this.currentPage = null;
             $body.addClass(this.name);
             if(this.firstPage) {
                 onTransitionEndOnce($(this.transEndTrigger), function() {
@@ -35,9 +38,11 @@ $(document).ready(function() {
                 doChangePage = function() {
                     $body.addClass(pageName);
                     publish("pagechange", [pageName]);
+                    self.isChangingPage = false;
                 };
             
-            if(pageName !== this.currentPage) {
+            if(pageName !== this.currentPage && !this.isChangingPage) {
+                this.isChangingPage = true;
                 if(this.currentPage) {
                     $body.removeClass(this.currentPage);
                     onTransitionEndOnce($('#'+this.currentPage), doChangePage);
