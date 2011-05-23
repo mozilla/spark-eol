@@ -65,6 +65,19 @@ header nav div.right {
     opacity:1;
 }
 
+/*Gradients*/
+.spark #spark-content .container {
+    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+}
+
+.firefox #firefox-content .container {
+    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+}
+
+.home #home .container {
+    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);    
+}
+
 /* Home Hidden state */
 #phone-wrapper {
     opacity:0;

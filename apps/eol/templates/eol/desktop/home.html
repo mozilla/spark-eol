@@ -2,49 +2,47 @@
 
 {% block content %}
 <section id="home">
-    <div id="home-wrapper">
-        <div class="container">
-            <article id="main-copy">
-                <h1>
-                    <span class="first-line">
-                        {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
-                        {{ _('Spark') }}
-                    </span>
-                    <span class="second-line">
-                        <img src="{{ MEDIA_URL }}img/line.png" alt="">
-                        {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
-                        {{ _('powered by') }}
-                        <img src="{{ MEDIA_URL }}img/line.png" alt="">
-                    </span>
-                    <span class="third-line">
-                        {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
-                        {{ _('Firefox for mobile') }}
-                    </span>
-                </h1>
-                <h2>
-                    {{ _('Spark is now over. Thanks to all participants!') }}
-                </h2>
-                <p>
-                    {{ _("Check out the game's results &amp; learn more about Firefox for Android.") }}
-                </p>
-                
-                <div id="ctas">
-                    <a href="#spark-results" id="spark-button">
-                        {{ _('See the complete <em>Game Results</em>') }}
-                    </a>
-                    <a id="firefox-button">
-                        {{ _('Take a look inside <em>Firefox <span>for</span> Android</em>') }}
-                    </a>
-                </div>
-            </article>
-            <div id="small-phones"></div>
-            <div id="phone-wrapper">
-                <canvas id="particles" height="380" width="350"></canvas>
-                <div id="light-ray"></div>
-                <canvas id="spark"></canvas>
-                <div id="phone">
-                    <div id="ff-preview"></div>
-                </div>
+    <div class="container">
+        <article id="main-copy">
+            <h1>
+                <span class="first-line">
+                    {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
+                    {{ _('Spark') }}
+                </span>
+                <span class="second-line">
+                    <img src="{{ MEDIA_URL }}img/line.png" alt="">
+                    {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
+                    {{ _('powered by') }}
+                    <img src="{{ MEDIA_URL }}img/line.png" alt="">
+                </span>
+                <span class="third-line">
+                    {# L10n: This is part of the headline: "Spark powered by Firefox for mobile" #}
+                    {{ _('Firefox for mobile') }}
+                </span>
+            </h1>
+            <h2>
+                {{ _('Spark is now over. Thanks to all participants!') }}
+            </h2>
+            <p>
+                {{ _("Check out the game's results &amp; learn more about Firefox for Android.") }}
+            </p>
+            
+            <div id="ctas">
+                <a href="#spark-results" id="spark-button">
+                    {{ _('See the complete <em>Game Results</em>') }}
+                </a>
+                <a id="firefox-button">
+                    {{ _('Take a look inside <em>Firefox <span>for</span> Android</em>') }}
+                </a>
+            </div>
+        </article>
+        <div id="small-phones"></div>
+        <div id="phone-wrapper">
+            <canvas id="particles" height="380" width="350"></canvas>
+            <div id="light-ray"></div>
+            <canvas id="spark"></canvas>
+            <div id="phone">
+                <div id="ff-preview"></div>
             </div>
         </div>
     </div>
