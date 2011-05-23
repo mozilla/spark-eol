@@ -45,7 +45,7 @@ header nav .left, header nav .right {
 
 /* home */
 #phone-wrapper {
-    -moz-transition:0.5s opacity ease;
+    -moz-transition:0.5s opacity ease 0.3s;
     -webkit-transition:0.5s opacity ease;
     -o-transition:0.5s opacity ease;
     }
@@ -107,3 +107,6 @@ header nav .left, header nav .right {
     -webkit-transition:0.2s all ease;
     -o-transition:0.2s all ease;
 }
+
+#small-phones {-moz-transition:0.5s opacity linear 0s;-webkit-transition:0.5s opacity linear 0s;-o-transition:0.5s opacity linear 0s;}
+#light-ray {-moz-transition:0.25s opacity linear 0.4s;-webkit-transition:0.25s opacity linear 0.4s;-o-transition:0.25s opacity linear 0.4s;}

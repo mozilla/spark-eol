@@ -25,7 +25,6 @@ header nav div.right {
 #spark-content, #firefox-content, #home {
     pointer-events:none;
     z-index:100;
-    opacity:0;
 }
 
 #spark-content {
@@ -139,6 +138,9 @@ header nav div.right {
 
 /* Firefox Visible State */
 
+.firefox #separator {opacity:1;}
+#separator {opacity:0;}
+
 .firefox #phone-wrapper {opacity:0;}
 .firefox #layers li {opacity:1;}
 .firefox #phone-layer-1 {top:0px;}
@@ -151,3 +153,8 @@ header nav div.right {
 }
 
 .transit #spark-content article {opacity:0;}
+
+/*Home states*/
+
+.home #small-phones {opacity:1;}
+#small-phones {opacity:0;}
