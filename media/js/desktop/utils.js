@@ -1,17 +1,31 @@
 var TRANSITION_END = 'transitionend webkitTransitionEnd oTransitionEnd';
 
+var transitionsEnabled = Modernizr.csstransitions;
+
 var onTransitionEnd = function($element, callback) {
-    $element.bind(TRANSITION_END, callback);
+    if(transitionsEnabled) {
+        $element.bind(TRANSITION_END, callback);
+    } else {
+        if(callback) {
+            callback();
+        }
+    }
 };
 
 var onTransitionEndOnce = function($element, callback) {
-    var transitionEndWrapper = function() {
-            if(callback) {
-                callback();
-            }
-            $element.unbind(TRANSITION_END, transitionEndWrapper);
-        };
-    $element.bind(TRANSITION_END, transitionEndWrapper);
+    if(transitionsEnabled) {
+        var transitionEndWrapper = function() {
+                if(callback) {
+                    callback();
+                }
+                $element.unbind(TRANSITION_END, transitionEndWrapper);
+            };
+        $element.bind(TRANSITION_END, transitionEndWrapper);
+    } else {
+        if(callback) {
+            callback();
+        }
+    }
 };
 
 var deg2rad = function(degrees) {

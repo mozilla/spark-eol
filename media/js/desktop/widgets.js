@@ -26,14 +26,14 @@ var Widget = Class.extend({
 var CountUp = Widget.extend({
     init: function($element) {
         var numberStr, regexp;
-        
-        this._super($element);
+
         this.duration = 350;
-        this.$number = this.$el.find('.number');
+        this.$number = $element.find('.number');
         numberStr = this.$number.text();
         this.thousandsSeparator = numberStr.indexOf(',') >= 0 ? ',': ' ';
         regexp = this.thousandsSeparator === ',' ? /,+/g : /\s+/g;
         this.maxValue = parseInt(numberStr.replace(regexp, ''));
+        this._super($element);
     },
     
     animate: function() {
@@ -52,7 +52,7 @@ var PieChart = Widget.extend({
         var self = this,
             $element = $(divId);
         
-        this._super($element);
+
         this.initContext($element);
         this.cx = cx,
         this.cy = cy,
@@ -63,6 +63,7 @@ var PieChart = Widget.extend({
         this.slices = slices;
         
         this.setupHitTest($element);
+        this._super($element);
     },
     
     initContext: function($element) {
@@ -135,12 +136,13 @@ var PieChart = Widget.extend({
 
 var RingChart = PieChart.extend({
     init: function(divId, cx, cy, radius, duration, thickness, slices) {
+        this.thickness = thickness;
         this._super(divId, cx, cy, radius, duration, slices);
-        this.ctx.lineWidth = thickness;
     },
     
     drawSlice: function(startAngle, endAngle, color) {
         var ctx = this.ctx;
+        ctx.lineWidth = this.thickness;
         ctx.strokeStyle = color;
     	ctx.lineCap = 'butt';
         ctx.beginPath();
@@ -170,7 +172,6 @@ var LineChart = Widget.extend({
             $tooltip = $element.find('.tooltip'),
             currentPoint;
 
-        this._super($element);
         this.$canvas = $element.find('canvas');
         this.ctx = this.$canvas[0].getContext("2d");
         this.width = width;
@@ -195,6 +196,8 @@ var LineChart = Widget.extend({
     	        $tooltip.css('bottom', y);
         	}
         });
+
+        this._super($element);
     },
     
     drawBackground: function() {
