@@ -187,3 +187,27 @@ h1 .third-line {
 .success {
     display:none;
 }
+
+#small-phones {
+    height:178px;
+    width:424px;
+    background:url('../img/small-phones.png') no-repeat 0 0;
+    margin:0 0 -178px -40px;
+}
+
+#light-ray {
+    height:366px;
+    width:250px;
+    background:url('../img/light.png') no-repeat 0 0;
+    position:absolute;
+    left:32px;
+    top:-125px;
+    z-index:500;
+}
+
+#particles {
+    position:absolute;
+    left:32px;
+    top:-140px;
+    z-index:600;
+}
