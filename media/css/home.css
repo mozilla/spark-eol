@@ -19,13 +19,27 @@
 }
     
 #phone {
-    height:278px; 
-    width:305px; 
-    background:url('../img/phone.png');
-    position:relative;
-    z-index:10;
-    top:0;
-    left:0;
+    background: url("../img/phone.png") no-repeat scroll 0 0 transparent;
+    height: 194px;
+    left: 0;
+    position: relative;
+    top: 85px;
+    width: 305px;
+    z-index: 10;
+}
+
+#ff-preview {
+    width:231px;
+    height:134px;
+    position:absolute;
+    background:url('../img/ff-preview.png') no-repeat 0 0;
+    top:18px;
+    left:41px;
+    opacity:0;
+}
+
+.ff-preview #ff-preview {
+    opacity:1;
 }
 
 #spark {
@@ -203,6 +217,7 @@ h1 .third-line {
     left:32px;
     top:-125px;
     z-index:500;
+    opacity:1;
 }
 
 #particles {

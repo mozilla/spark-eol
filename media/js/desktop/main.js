@@ -140,4 +140,21 @@ $(document).ready(function() {
     });
     
     initNewsletterForm();
+    
+    // Home buttons
+    $('#firefox-button').hover(
+        function() {
+            $('#phone-wrapper').toggleClass('ff-preview');
+        }, function() {
+            $('#phone-wrapper').toggleClass('ff-preview');
+        }
+    );
+    
+    $('#spark-button').hover(
+        function() {
+            $('#phone-wrapper').toggleClass('spark-preview');
+        }, function() {
+            $('#phone-wrapper').toggleClass('spark-preview');
+        }
+    );
 });

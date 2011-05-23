@@ -158,3 +158,11 @@ header nav div.right {
 
 .home #small-phones {opacity:1;}
 #small-phones {opacity:0;}
+
+.ff-preview #light-ray, .ff-preview #spark {
+    opacity:0;
+}
+
+.ff-preview #ff-preview {
+    opacity:1;
+}
