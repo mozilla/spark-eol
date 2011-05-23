@@ -64,6 +64,14 @@ html, body {
     font-style:normal;
 }
 
+#download-arrow {
+    float:left;
+    width:14px;
+    height:12px;
+    background:url('../img/spritesheet.png') no-repeat -250px -150px;
+    margin:4px 10px 0 0;
+}
+
 #ff-download-copy {
     float:right;
     clear:right;
@@ -119,6 +127,19 @@ footer .container {
 
 #go-mobile {
     width:350px;
+    color:#777;
+}
+
+#go-mobile .img {
+    width:51px;
+    height:43px;
+    background:url('../img/spritesheet.png') no-repeat -300px -150px;
+    float:right;
+    margin-top:-20px;
+}
+
+#go-mobile span {
+    color:#6eb8cc;
 }
 
 .footer-section {

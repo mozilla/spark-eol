@@ -116,12 +116,11 @@
 
 #spark-1 .block-3 {
     clear:both;
-    margin-top:60px;
     text-transform:uppercase;
     color:#ede0ab;
     font-size:14px;
     text-align:left;
-    margin-bottom:60px;
+    margin:40px 0;
 }
 
 #share-history-graph {
