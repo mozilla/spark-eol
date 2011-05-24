@@ -1,7 +1,8 @@
 <article id="spark-1">
     <div class="block block-1 trigger countup">
         <div>
-            <span class="number silent">132,850</span>
+            {% set total_shares = 132850 %}
+            <span class="number silent">{{ total_shares|numberfmt }}</span>
             <span class="small-text">
                 {# L10n: Preceded by the number of shares. #}
                 {{ _('Total Shares') }}
@@ -60,14 +61,16 @@
     <div class="block block-4 countup">
         <div class="sprite" id="twitter-shares-img"></div>
         <div class="number silent">
-            3,189
+            {% set twitter_shares = 3189 %}
+            {{ twitter_shares|numberfmt }}
         </div>
         <span>{{ _('<em>Shares</em> via Twitter') }}</span>
     </div>
     <div class="block block-5 countup">
         <div class="sprite" id="facebook-shares-img"></div>
         <div class="number">
-            8,235
+            {% set fb_shares = 8235 %}
+            {{ fb_shares|numberfmt }}
         </div>
         <span>{{ _('<em>Shares</em> via Facebook') }}</span>
     </div>

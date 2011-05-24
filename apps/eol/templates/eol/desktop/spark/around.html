@@ -96,8 +96,9 @@
     </div>
 
     <div class="block block-3 countup">
+        {% set total_sparks = 31245 %}
         {# L10n: Preceded by the number of sparks #}
-        <span class="big-number number">31,245</span><span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
+        <span class="big-number number">{{ total_sparks|numberfmt }}</span><span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
     </div>
 
     <div class="block block-4 countup">
