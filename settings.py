@@ -189,8 +189,6 @@ MINIFY_BUNDLES = {
             'js/desktop/spark.js',
             'js/desktop/main.js',
         ),
-        'mobile': (
-        ),
         'pngfix': (
             'js/libs/DD_belatedPNG_0.0.8a.min.js',
         ),
