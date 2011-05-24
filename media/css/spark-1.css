@@ -168,7 +168,7 @@
 
 #spark-1 .block-4 .number, #spark-1 .block-5 .number {
     float:left;
-    width:55px;
+    min-width:55px;
 }
 
 #spark-1 .block-4 span, #spark-1 .block-5 span {
