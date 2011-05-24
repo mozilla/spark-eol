@@ -105,7 +105,7 @@
 #firefox-content article h1 {
     font-family:'LG', 'Arial Narrow', sans-serif;
     font-size:48px;
-    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #666;
+    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #555;
     text-transform:uppercase;
 }
 

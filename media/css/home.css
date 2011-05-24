@@ -75,7 +75,7 @@ h1 .first-line {
     font-size:80px;
     line-height:80%;
     color:#f7e35f;
-    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #666;
+    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #555;
 }
 
 h1 .second-line {
@@ -96,7 +96,7 @@ h1 .second-line img {
 h1 .third-line {
     font-size:40px;
     line-height:120%;
-    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #666;
+    text-shadow:2px -1px 0px #302f2e, 3px -3px 0px #555;
 }
 
 #main-copy {

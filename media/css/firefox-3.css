@@ -67,11 +67,11 @@
     background:url('../img/sprites-firefox.png') no-repeat -250px -650px;
 }
 
-#layer-3 .block-6 span {
+#layer-3 .block-6 .video-tooltip {
     padding:15px 0;
     background:#232323;
     box-shadow:0px 2px 5px rgba(0,0,0,0.25);
-    border:1px solid #666;
+    border:1px solid #555;
     border-radius:4px;
     font-size:14px;
     font-style:italic;
@@ -79,4 +79,15 @@
     margin-top:20px;
     display:block;
     text-align:center;
+    position:relative;
+}
+
+#layer-3 .video-tooltip .arrow.top {
+    width:12px;
+    height:8px;
+    background:url('../img/spritesheet.png') no-repeat -350px -111px;
+    position:absolute;
+    left:50%;
+    top:-8px;
+    margin-left:-6px;
 }

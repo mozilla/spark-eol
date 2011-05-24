@@ -118,6 +118,10 @@
     top:45px;
 }
 
+#layer-4 .block-3 .tooltip .arrow.top {
+    left:26px;
+}
+
 #layer-4 .block-3 li:hover {
     cursor:default;
 }
