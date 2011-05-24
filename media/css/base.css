@@ -399,6 +399,19 @@ header nav a {
     display:none;
 }
 
+.popup .close {
+    height:36px;
+    width:36px;
+    position:absolute;
+    top:-19px;
+    right:-19px;
+    background:url('../img/spritesheet.png') no-repeat -150px 0;
+}
+
+.popup .close:hover {
+    cursor:pointer;
+}
+
 .no-js {
     padding:10px 0;
     color:#eee;

@@ -158,6 +158,10 @@ $(document).ready(function() {
         hidePlayer();
     });
     
+    $('.popup .close').click(function() {
+        hidePlayer();
+    });
+    
     // Home buttons
     $('#firefox-button').hover(
         function() {
