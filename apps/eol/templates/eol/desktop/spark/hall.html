@@ -86,34 +86,15 @@
         <span class="title">{{ _('<em>Levels</em> Breakdown') }}</span>
         <canvas width="126" height="126"></canvas>
         <ol class="breakdown silent">
+            {% for level, percentage in levels %}
             <li>
                 <div class="tooltip">
                     <div class="arrow top"></div>
-                    <strong>46%</strong>
-                    <span>Level 1</span>
+                    <strong>{{percentage}}%</strong>
+                    <span>{{level}}</span>
                 </div>
             </li>
-            <li>
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    <strong>23%</strong>
-                    <span>Level 2</span>
-                </div>
-            </li>
-            <li>
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    <strong>12%</strong>
-                    <span>Level 3</span>
-                </div>
-            </li>
-            <li>
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    <strong>2%</strong>
-                    <span>Level 4</span>
-                </div>
-            </li>
+            {% endfor %}
         </ol>
     </div>
 

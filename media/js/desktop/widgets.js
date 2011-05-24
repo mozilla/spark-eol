@@ -170,6 +170,8 @@ var LineChart = Widget.extend({
         var self = this,
             $element = $(divId),
             $tooltip = $element.find('.tooltip'),
+            $textSpan = $tooltip.find('span'),
+            weekText = $textSpan.text(),
             currentPoint;
 
         this.$canvas = $element.find('canvas');
@@ -192,6 +194,8 @@ var LineChart = Widget.extend({
         	    currentPoint = p;
         	    var x = Math.round(p * self.pointOffset),
     	            y = Math.round(self.points[p] + 15);
+    	        
+    	        $textSpan.text(weekText.replace('0', p+1));
     	        $tooltip.css('left', x);
     	        $tooltip.css('bottom', y);
         	}

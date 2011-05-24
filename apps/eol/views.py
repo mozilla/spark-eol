@@ -9,7 +9,7 @@ from commons.urlresolvers import reverse
 from responsys import responsys
 
 from .forms import NewsletterForm
-from .utils import TWITTER, FACEBOOK
+from .utils import TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER
 
 
 def sharing_messages():
@@ -17,8 +17,15 @@ def sharing_messages():
             'facebook_msg': unicode(FACEBOOK)}
 
 
+def level_distribution():
+    percentages = [43, 25, 12, 2]
+    return [(unicode(LEVEL) % dict(num=i+1), p)  for i, p in enumerate(percentages)]
+
+
 def home(request):
-    data = {'spark_url': 'https://spark.mozilla.org'}
+    data = {'spark_url': 'https://spark.mozilla.org',
+            'levels': level_distribution(),
+            'week_number': unicode(WEEK_NUMBER) % dict(num=0)}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/desktop/home.html', data)
 
