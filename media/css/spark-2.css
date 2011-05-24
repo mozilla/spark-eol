@@ -111,15 +111,15 @@
     text-align:center;
 }
 
-#active-countries li:nth-child(1) {
+#active-countries li.one {
     background:url('../img/sprites-spark.png') no-repeat -200px -150px;
 }
 
-#active-countries li:nth-child(2) {
+#active-countries li.two {
     background:url('../img/sprites-spark.png') no-repeat -150px -300px;
 }
 
-#active-countries li:nth-child(3) {
+#active-countries li.three {
     background:url('../img/sprites-spark.png') no-repeat 0px -300px;
 }
 
@@ -205,9 +205,9 @@
     margin-top:62px;
 }
 
-#active-countries li:nth-child(1) .number {margin-left:-35px;}
-#active-countries li:nth-child(2) .number {margin-left:-4px;}
-#active-countries li:nth-child(3) .number {margin-left:25px;}
+#active-countries li.one .number {margin-left:-35px;}
+#active-countries li.two .number {margin-left:-4px;}
+#active-countries li.three .number {margin-left:25px;}
 
 #active-countries .tooltip {
     opacity:0;
@@ -222,8 +222,8 @@
     font-family:'Museo500', 'Trebuchet MS', sans-serif;
 }
 
-#active-countries li:nth-child(1) .tooltip {left:35%;}
-#active-countries li:nth-child(3) .tooltip {left:65%;}
+#active-countries li.one .tooltip {left:35%;}
+#active-countries li.three .tooltip {left:65%;}
 
 #active-countries li:hover .tooltip {
     opacity:1;

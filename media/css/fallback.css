@@ -21,12 +21,24 @@
 .no-opacity .layer-3 #layer-4,
 .no-opacity .layer-4 #layer-1,
 .no-opacity .layer-4 #layer-2,
-.no-opacity .layer-4 #layer-3 {
+.no-opacity .layer-4 #layer-3,
+.no-opacity .tooltip {
     visibility:hidden;
 }
 
-.no-opacity .tooltip {
-    visibility:hidden;
+.no-opacity #share-history-graph:hover .tooltip,
+.no-opacity #bar-chart li:hover .tooltip,
+.no-opacity #active-countries li:hover .tooltip,
+.no-opacity #spark-2 .block-1 li:hover .tooltip,
+.no-opacity #spark-3 .block-1 li:hover .tooltip,
+.no-opacity #spark-3 #badges li:hover .tooltip,
+.no-opacity #spark-1 .block-2 .tooltip.active,
+.no-opacity #spark-3 .block-2 .tooltip.active,
+.no-opacity #layer-4 .block-3 li:hover .tooltip,
+.no-opacity #cutting-edge-illu li:hover .tooltip,
+.no-opacity #newsletter form:hover .tooltip
+ {
+    visibility:visible;
 }
 
 .no-cssgradients #spark-button {

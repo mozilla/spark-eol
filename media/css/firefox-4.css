@@ -65,12 +65,12 @@
     margin-top:-5px;
 }
 
-#layer-4 .block-3 ul:nth-child(1) li:nth-child(1) .icon {background:url('../img/sprites-firefox.png') no-repeat 0 -300px;}
-#layer-4 .block-3 ul:nth-child(1) li:nth-child(2) .icon {background:url('../img/sprites-firefox.png') no-repeat -25px -300px;}
-#layer-4 .block-3 ul:nth-child(1) li:nth-child(3) .icon {background:url('../img/sprites-firefox.png') no-repeat -50px -300px;}
-#layer-4 .block-3 ul:nth-child(2) li:nth-child(1) .icon {background:url('../img/sprites-firefox.png') no-repeat -75px -300px;}
-#layer-4 .block-3 ul:nth-child(2) li:nth-child(2) .icon {background:url('../img/sprites-firefox.png') no-repeat -100px -300px;}
-#layer-4 .block-3 ul:nth-child(2) li:nth-child(3) .icon {background:url('../img/sprites-firefox.png') no-repeat -125px -300px;}
+#layer-4 .block-3 ul.one li.one .icon {background:url('../img/sprites-firefox.png') no-repeat 0 -300px;}
+#layer-4 .block-3 ul.one li.two .icon {background:url('../img/sprites-firefox.png') no-repeat -25px -300px;}
+#layer-4 .block-3 ul.one li.three .icon {background:url('../img/sprites-firefox.png') no-repeat -50px -300px;}
+#layer-4 .block-3 ul.two li.one .icon {background:url('../img/sprites-firefox.png') no-repeat -75px -300px;}
+#layer-4 .block-3 ul.two li.two .icon {background:url('../img/sprites-firefox.png') no-repeat -100px -300px;}
+#layer-4 .block-3 ul.two li.three .icon {background:url('../img/sprites-firefox.png') no-repeat -125px -300px;}
 
 #layer-4 .block-4, #layer-4 .block-5 {
     margin-top:20px;

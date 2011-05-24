@@ -140,7 +140,7 @@ footer .container {
 }
 
 #go-mobile span {
-    color:#6eb8cc;
+    color:#ddd;
 }
 
 .footer-section {
@@ -240,7 +240,7 @@ footer aside {
 }
 
 footer aside a {
-    color:inherit;
+    color:#ddd;
     text-decoration:none;
 }
 
@@ -254,6 +254,10 @@ footer aside ul li {
     border-left:1px solid #ddd;
 }
 
+footer aside ul li a:hover {
+    color:#75d0ff;
+}
+
 footer aside ul li:first-child {
     padding-left:0;
     border-left:0;
@@ -261,10 +265,18 @@ footer aside ul li:first-child {
 
 footer aside p {
     float:right;
-    color:#bbb;
+    color:#777;
     font-size:10px;
     max-width:350px;
     line-height:150%;
+}
+
+footer aside p a {
+    color:#ddd;
+}
+
+footer aside p a:hover {
+    color:#75d0ff;
 }
 
 body section {
