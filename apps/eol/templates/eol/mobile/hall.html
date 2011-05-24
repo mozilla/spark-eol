@@ -61,16 +61,16 @@
                <li>2%</li>
            </ol>
            <ul class="legend">
-               <li><div class="color"></div>Level 1</li>
-               <li><div class="color"></div>Level 2</li>
-               <li><div class="color"></div>Level 3</li>
-               <li><div class="color"></div>Level 4</li>
+               {% for level, p in levels %}
+               <li><div class="color"></div>{{ level }}</li>
+               {% endfor %}
            </ul>
        </div>
        
        <div class="block block-3">
+           {% set total_badges = 42190 %}
            {# L10n: Preceded by the number of badges #}
-           <span class="number">42,190</span><span class="title">{{ _('Total Earned <em>Badges</em>') }}</span>
+           <span class="number">{{ total_badges|numberfmt }}</span><span class="title">{{ _('Total Earned <em>Badges</em>') }}</span>
        </div>
        
        <div class="block block-4">

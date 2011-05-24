@@ -12,6 +12,8 @@ from .forms import NewsletterForm
 from .utils import TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER
 
 
+share_history =  [0, 1200, 2653, 4500, 1523, 458, 987, 5968]
+
 def sharing_messages():
     return {'twitter_msg': urlquote(unicode(TWITTER)),
             'facebook_msg': unicode(FACEBOOK)}
@@ -26,7 +28,7 @@ def home(request):
     data = {'spark_url': 'https://spark.mozilla.org',
             'levels': level_distribution(),
             'week_number': unicode(WEEK_NUMBER) % dict(num=0),
-            'share_history': [0, 1200, 2653, 4500, 1523, 458, 987, 5968]}
+            'share_history': share_history}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/desktop/home.html', data)
 
@@ -60,7 +62,8 @@ def home_mobile(request):
 def spark_sharing(request):
     data = {'page': 'sharing',
             'prev': reverse('eol.home_mobile'),
-            'next': reverse('eol.around')}
+            'next': reverse('eol.around'),
+            'share_history': [(unicode(WEEK_NUMBER) % dict(num=i+1), v) for i, v in enumerate(share_history)]}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/sharing.html', data)
 
@@ -75,6 +78,7 @@ def spark_around(request):
 
 def spark_hall(request):
     data = {'page': 'hall',
-            'prev': reverse('eol.around')}
+            'prev': reverse('eol.around'),
+            'levels': level_distribution()}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/hall.html', data)
