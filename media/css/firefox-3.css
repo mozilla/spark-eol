@@ -25,9 +25,9 @@
 /*Content*/
 
 #sync-main-illu {
-    height:200px;
+    height:132px;
     width:200px;
-    background:#444;
+    background:url('../img/sprites-firefox.png') no-repeat 0 -500px;
 }
 
 #layer-3 .title {
@@ -42,18 +42,29 @@
     line-height:16px;
 }
 
-#layer-3 .block-4, #layer-3 .block-5, #layer-3 .block-6 {
+#layer-3 .block-4 {
+    margin-top:40px;
+}
+
+#layer-3 .block-5 {
     margin-top:20px;
 }
 
 #layer-3 .block-6 {
-    margin-top:-70px;
+    margin-top:-195px;
 }
 
 #layer-3 .block-6 .video-thumbnail {
-    height:150px;
+    height:129px;
     width:200px;
-    background:#444;
+    background:url('../img/sprites-firefox.png') no-repeat -250px -500px;
+    border:3px solid #777;
+}
+
+#layer-3 .block-6 .video-thumbnail:hover {
+    cursor:pointer;
+    border:3px solid #999;
+    background:url('../img/sprites-firefox.png') no-repeat -250px -650px;
 }
 
 #layer-3 .block-6 span {

@@ -56,19 +56,31 @@
 }
 
 #layer-1 .block-6 .cta {
-    font-family:Georgia, 'Times New Roman', sans-serif;
-    font-style:italic;
-    text-decoration:underline;
-    margin-top:10px;
-    color:#bbb;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    text-decoration:none;
+    margin-top:15px;
+    color:#75D0FF;
+    margin:5px auto 0;
+    padding:6px 8px;
+    display:block;
+    max-width:45%;
+    border-radius:4px;
+}
+
+#layer-1 .block-6 .cta:hover {
+    color:#9EDEFF;
+}
+
+#millions {
+    margin-left:-30px;
 }
 
 #millions-illustration {
-    height:63px;
-    width:115px;
+    height:51px;
+    width:109px;
     margin:0 auto;
-    background:#444;
-    margin-bottom:20px;
+    background:url('../img/sprites-firefox.png') no-repeat 0 -650px;
+    margin-bottom:25px;
 }
 
 #layer-1 .video-thumbnail {

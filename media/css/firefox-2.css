@@ -25,15 +25,16 @@
     clear:left;
 }
 
-#layer-2 .block-6, #layer-2 .block-7, #layer-2 .block-8, #layer-2 .block-9 {
+#layer-2 .block-8, #layer-2 .block-9 {
     margin-top:20px;
 }
 
 /*Content*/
 
 #layer-2 .block-2 {
-    height:100px;
-    background:#444;
+    height:120px;
+    margin-top:-30px;
+    background:url('../img/sprites-firefox.png') no-repeat 0 -350px;
     margin-bottom:20px;
 }
 
@@ -93,4 +94,13 @@
 
 #layer-2 .block p {
     clear:left;
+}
+
+#layer-2 .block-5 {
+    color:#ede0ab;
+    padding-bottom:5px;
+}
+
+#layer-2 .block-5 em {
+    color:#ddd;
 }
