@@ -9,10 +9,22 @@ from commons.urlresolvers import reverse
 from responsys import responsys
 
 from .forms import NewsletterForm
-from .utils import TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER
+from .utils import TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER, LEADERBOARD_TOOLTIP
 
 
 share_history =  [0, 1200, 2653, 4500, 1523, 458, 987, 5968]
+
+top_players = [('Batman', 169, 31, 'us'),
+               ('Jack', 69, 27, 'es'),
+               ('Michael', 43, 22, 'fr'),
+               ('Leeroy', 30, 14, 'gb'),
+               ('James', 28, 12, 'br'),
+               ('firefoxuser', 25, 13, 'de'),
+               ('Guigui', 19, 9, 'cn'),
+               ('Bob', 14, 8, 'ru'),
+               ('Miguel', 11, 5, 'ar'),
+               ('Franck', 10, 4, 'ca')]
+
 
 def sharing_messages():
     return {'twitter_msg': urlquote(unicode(TWITTER)),
@@ -21,14 +33,27 @@ def sharing_messages():
 
 def level_distribution():
     percentages = [43, 25, 12, 2]
-    return [(unicode(LEVEL) % dict(num=i+1), p)  for i, p in enumerate(percentages)]
+    return [(unicode(LEVEL) % dict(num=i+1), p) for i, p in enumerate(percentages)]
+
+
+def player_tooltips():
+    tooltips = {}
+    for name, num_shares, num_badges, cc in top_players:
+        tooltips[name] = unicode(LEADERBOARD_TOOLTIP) % dict(username=name, 
+                                                             city='?',
+                                                             country='?',
+                                                             num_shares=num_shares,
+                                                             num_badges=num_badges)
+    return tooltips
 
 
 def home(request):
     data = {'spark_url': 'https://spark.mozilla.org',
             'levels': level_distribution(),
             'week_number': unicode(WEEK_NUMBER) % dict(num=0),
-            'share_history': share_history}
+            'share_history': share_history,
+            'top_players': top_players,
+            'player_tooltips': player_tooltips()}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/desktop/home.html', data)
 
@@ -79,6 +104,7 @@ def spark_around(request):
 def spark_hall(request):
     data = {'page': 'hall',
             'prev': reverse('eol.around'),
-            'levels': level_distribution()}
+            'levels': level_distribution(),
+            'top_players': top_players}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/mobile/hall.html', data)

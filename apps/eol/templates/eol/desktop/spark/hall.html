@@ -4,76 +4,15 @@
         <span class="title">{{ _('Spark <em>Leaderboard</em>') }}</span>
         
         <ol class="silent">
-            <li><div class="flag flag-us"></div>1. Batman
-                <div class="shares">169</div><div class="star"></div>
+            {% for name, num_shares, num_badges, cc in top_players %}
+            <li><div class="flag flag-{{cc}}"></div>{{ loop.index }}. {{ name }}
+                <div class="shares">{{ num_shares }}</div><div class="star"></div>
                 <div class="tooltip">
                     <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
+                    {{ player_tooltips[name] }}
                 </div>
             </li>
-            <li><div class="flag flag-es"></div>2. Jack
-                <div class="shares">69</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-fr"></div>3. Michael Jackson
-                <div class="shares">43</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-gb"></div>4. Leeroy Jenkins
-                <div class="shares">30</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-br"></div>5. Dark Vador
-                <div class="shares">28</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-de"></div>6. Guigui
-                <div class="shares">25</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-cn"></div>7. Franck
-                <div class="shares">19</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-ru"></div>8. Bob
-                <div class="shares">14</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-ar"></div>9. Superman
-                <div class="shares">11</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
-            <li><div class="flag flag-ca"></div>10. Miguel
-                <div class="shares">10</div><div class="star"></div>
-                <div class="tooltip">
-                    <div class="arrow left"></div>
-                    Batman, from Paris, France shared 169 times and unlocked 31 badges.
-                </div>
-            </li>
+            {% endfor %}
         </ol>
         
         <p>
@@ -82,7 +21,7 @@
     </div>
 
     <div class="block block-2">
-        {# L10n: Title of a ring chart showing player level repartition. #}
+        {# L10n: Title of a ring chart showing player level distribution. #}
         <span class="title">{{ _('<em>Levels</em> Breakdown') }}</span>
         <canvas width="126" height="126"></canvas>
         <ol class="breakdown silent">
