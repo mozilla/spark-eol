@@ -68,33 +68,6 @@
     text-align:left;
 }
 
-a.button {
-    color:#302f2e;
-    text-decoration:none;
-    padding:10px;
-    border-radius:4px;
-    display:block;
-    max-width:240px;
-    background:-moz-linear-gradient(90deg, #f7e35e, #ffed6e);
-    background:-webkit-gradient(linear, center bottom, center top, from(#f7e35e), to(#ffed6e));
-    box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
-    -webkit-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
-    -o-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
-    font-family:'Georgia', 'Times New Roman', serif;
-    font-size:12px;
-    font-style:italic;
-    text-align:center;
-    margin:20px auto;
-}
-
-a.button em {
-    font-family:'LG', 'Arial Narrow', sans-serif;
-    font-size:30px;
-    font-style:normal;
-    text-transform:uppercase;
-    display:block;
-}
-
 #home footer a.button {
     display:none;
 }

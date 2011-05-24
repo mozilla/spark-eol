@@ -34,7 +34,6 @@
 
 #wrapper #around .title {
     text-transform:uppercase;
-    color:#ede0ab;
     font-size:1.2em;
 }
 
@@ -118,13 +117,14 @@
 #continents li:nth-child(5) .bar {width:25%;}
 #continents li:nth-child(6) .bar {width:11%;}
 
-#around .block-3 .title, #around .block-4 .title {
+#wrapper #around .block-3 .title, #wrapper #around .block-4 .title {
     font-family:Georgia, 'Times New Roman', serif;
     font-style:italic;
     text-transform:none;
+    color:#ddd;
 }
 
-#around .block-3 .title em, #around .block-4 .title em {
+#wrapper #around .block-3 .title em, #wrapper #around .block-4 .title em {
     font-style:normal;
     text-transform:uppercase;
     display:block;
