@@ -29,16 +29,13 @@ var Spark = Class.extend({
         
         for(var i = 0, nb = this.shapes.length; i < nb; i += 1) {
             s = this.shapes[i];
-            dice = rand(1, 20);
 
-            s.moveFactor = 1-(i / 6);
-
-            if(Math.abs(s.angle) > (s.maxAngle - s.arcAngle) || Math.abs(s.angle) < s.minAngle || dice === 6) {
+            if(Math.abs(s.angle) > (s.maxAngle - s.arcAngle) || Math.abs(s.angle) < s.minAngle) {
                 s.angleStep *= -1;
             } 
             s.angle += s.angleStep * rand(1, 2);
 
-            if(s.scale > s.maxScale || s.scale < s.minScale || dice === 1) {
+            if(s.scale > s.maxScale || s.scale < s.minScale) {
                 s.scaleStep *= -1;
             }
             s.scale += s.scaleStep * rand(1, 2);
