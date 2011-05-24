@@ -45,9 +45,14 @@
         <div id="share-history-graph">
             <canvas width="500" height="120">
             </canvas>
+            <ol>
+            {% for n in share_history %}
+            <li>{{ n|numberfmt }}</li>
+            {% endfor %}
+            </ol>
             <div class="tooltip silent">
                 <div class="arrow bottom"></div>
-                <div class="number">4,500</div>
+                <div class="number"></div>
                 <span>{{week_number}}</span>
             </div>
         </div>

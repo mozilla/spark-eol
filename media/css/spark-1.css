@@ -128,6 +128,10 @@
     position:relative;
 }
 
+#share-history-graph ol {
+    display:none;
+}
+
 #share-history-graph .tooltip {
     width:118px;
     margin-left:-60px;

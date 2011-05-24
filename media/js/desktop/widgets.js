@@ -171,6 +171,8 @@ var LineChart = Widget.extend({
             $element = $(divId),
             $tooltip = $element.find('.tooltip'),
             $textSpan = $tooltip.find('span'),
+            $number = $tooltip.find('div.number'),
+            values = [],
             weekText = $textSpan.text(),
             currentPoint;
 
@@ -183,6 +185,10 @@ var LineChart = Widget.extend({
         this.points = points;
         this.pointOffset = this.width / (points.length - 1);
 	    this.tooltip = {x: 0, y: 0};
+	    
+        $element.find('li').each(function(i, elem) {
+            values.push($(elem).text());
+        });
 
         $(divId).mousemove(function(event) {
             var chartPos = $(this).offset(),
@@ -194,8 +200,9 @@ var LineChart = Widget.extend({
         	    currentPoint = p;
         	    var x = Math.round(p * self.pointOffset),
     	            y = Math.round(self.points[p] + 15);
-    	        
+
     	        $textSpan.text(weekText.replace('0', p+1));
+    	        $number.text(values[p]);
     	        $tooltip.css('left', x);
     	        $tooltip.css('bottom', y);
         	}

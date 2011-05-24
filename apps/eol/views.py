@@ -25,7 +25,8 @@ def level_distribution():
 def home(request):
     data = {'spark_url': 'https://spark.mozilla.org',
             'levels': level_distribution(),
-            'week_number': unicode(WEEK_NUMBER) % dict(num=0)}
+            'week_number': unicode(WEEK_NUMBER) % dict(num=0),
+            'share_history': [0, 1200, 2653, 4500, 1523, 458, 987, 5968]}
     data.update(sharing_messages())
     return jingo.render(request, 'eol/desktop/home.html', data)
 
