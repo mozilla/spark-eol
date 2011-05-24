@@ -173,6 +173,8 @@ a.button {
     box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
     -webkit-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
     -o-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -ms-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -moz-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
     font-family:'Georgia', 'Times New Roman', serif;
     font-size:16px;
     font-style:italic;

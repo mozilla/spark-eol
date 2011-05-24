@@ -68,14 +68,17 @@ header nav div.right {
 /*Gradients*/
 .spark #spark-content .container {
     background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+    background: -webkit-gradient(radial, 600 50%, 0, 600 50%, 300, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.0)));
 }
 
 .firefox #firefox-content .container {
     background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+    background: -webkit-gradient(radial, 600 50%, 0, 600 50%, 300, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.0)));
 }
 
 .home #home .container {
-    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);    
+    background: -moz-radial-gradient(600px center, circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.0) 40%);
+    background: -webkit-gradient(radial, 600 50%, 0, 600 50%, 300, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.0)));
 }
 
 /* Home Hidden state */

@@ -128,6 +128,9 @@ h1 .third-line {
     text-decoration:none;
     padding:10px;
     border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -o-border-radius:4px;
 }
 
 #spark-button {
@@ -137,6 +140,10 @@ h1 .third-line {
     background:-moz-linear-gradient(90deg, #f7e35e, #ffed6e);
     background:-webkit-gradient(linear, center bottom, center top, from(#f7e35e), to(#ffed6e));
     box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -moz-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -o-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
+    -ms-box-shadow:0px 4px 0px #ad9d35, 0px 2px 8px rgba(0,0,0,0.6);
 }
 
 #spark-button:hover {
@@ -151,6 +158,10 @@ h1 .third-line {
     background:-moz-linear-gradient(90deg, #5398bc, #88bdd9);
     background:-webkit-gradient(linear, center bottom, center top, from(#5398bc), to(#88bdd9));
     box-shadow:0px 4px 0px #346b88, 0px 2px 8px rgba(0,0,0,0.6);
+    -moz-box-shadow:0px 4px 0px #346b88, 0px 2px 8px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0px 4px 0px #346b88, 0px 2px 8px rgba(0,0,0,0.6);
+    -o-box-shadow:0px 4px 0px #346b88, 0px 2px 8px rgba(0,0,0,0.6);
+    -ms-box-shadow:0px 4px 0px #346b88, 0px 2px 8px rgba(0,0,0,0.6);
 }
 
 #firefox-button:hover {
@@ -192,6 +203,10 @@ h1 .third-line {
     position:relative;
     top:4px;
     box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    -ms-box-shadow:none;
 }
 
 .success {
@@ -236,6 +251,10 @@ h1 .third-line {
     left:40%;
     padding:15px;
     box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    -o-box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    -ms-box-shadow:0px 3px 5px rgba(0,0,0,0.25);
     border-radius:8px;
     z-index:-100;
     pointer-events:none;

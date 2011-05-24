@@ -6,6 +6,7 @@ html, body {
 #wrapper {
     border-top:3px solid #696969;
     background:-moz-linear-gradient(-90deg, #222 0px, #302f2e 300px);
+    background:-webkit-gradient(linear, center top, center 300, from(#222), to(#302f2e));
 }
 
 .container {
@@ -375,6 +376,7 @@ header nav a {
     height:1000px;
     width:100%;
     background:-moz-radial-gradient(rgba(0,0,0,0.25) 50%, rgba(0,0,0,1));
+    background:-webkit-gradient(radial, center center, 500, center center, 1000, from(rgba(0,0,0,0.25)), to(rgba(0,0,0,1)));
     top:0;
     left:0;
     z-index:20000;
@@ -393,6 +395,10 @@ header nav a {
     background:#262626;
     border:1px solid #555;
     box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+    -o-box-shadow:0px 5px 5px rgba(0,0,0,0.25);
+    -ms-box-shadow:0px 5px 5px rgba(0,0,0,0.25);
     z-index:20000;
     margin-top:-182px;
     margin-left:-320px;
