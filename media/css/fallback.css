@@ -1,3 +1,54 @@
-.no-opacity .home #spark-content, .no-opacity .home #firefox-content {
+.no-opacity .home #spark-content, 
+.no-opacity .home #firefox-content,
+.no-opacity .spark #firefox-content,
+.no-opacity .spark #home,
+.no-opacity .firefox #spark-content,
+.no-opacity .firefox #home,
+.no-opacity .spark-1 #spark-2,
+.no-opacity .spark-1 #spark-3,
+.no-opacity .spark-2 #spark-1,
+.no-opacity .spark-2 #spark-3,
+.no-opacity .spark-3 #spark-1,
+.no-opacity .spark-3 #spark-2,
+.no-opacity .layer-1 #layer-2,
+.no-opacity .layer-1 #layer-3,
+.no-opacity .layer-1 #layer-4,
+.no-opacity .layer-2 #layer-1,
+.no-opacity .layer-2 #layer-3,
+.no-opacity .layer-2 #layer-4,
+.no-opacity .layer-3 #layer-1,
+.no-opacity .layer-3 #layer-2,
+.no-opacity .layer-3 #layer-4,
+.no-opacity .layer-4 #layer-1,
+.no-opacity .layer-4 #layer-2,
+.no-opacity .layer-4 #layer-3 {
     visibility:hidden;
+}
+
+.no-opacity .tooltip {
+    visibility:hidden;
+}
+
+.no-cssgradients #spark-button {
+    background:url('../img/fallbacks/yellow-bg.png') repeat-x 0 0;
+}
+
+.no-cssgradients #firefox-button {
+    background:url('../img/fallbacks/blue-bg.png') repeat-x 0 0;
+}
+
+.no-cssgradients #ff-download {
+    background:url('../img/fallbacks/green-bg.png') repeat-x 0 0;
+}
+
+.no-boxshadow #spark-button {
+    border-bottom:3px solid #ad9d35;
+}
+
+.no-boxshadow #firefox-button {
+    border-bottom:3px solid #346b88;
+}
+
+.no-boxshadow #ff-download {
+    border-bottom:3px solid #779c00;
 }
