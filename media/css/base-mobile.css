@@ -89,12 +89,12 @@ html, body {
 
 .page-nav a .arrow.left {
     left:0;
-    background:url('../../img/mobile/spritesheet.png') no-repeat 0 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat 0 0;
 }
 
 .page-nav a .arrow.right {
     right:0;
-    background:url('../../img/mobile/spritesheet.png') no-repeat -16px 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat -16px 0;
 }
 
 footer {
@@ -122,11 +122,11 @@ footer #social-media a {
 }
 
 footer a.twitter-icon {
-    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -150px;
+    background:url('../img/mobile/spritesheet.png') no-repeat 0 -150px;
 }
 
 footer a.facebook-icon {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -50px -150px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -50px -150px;
 }
 
 footer #legal {

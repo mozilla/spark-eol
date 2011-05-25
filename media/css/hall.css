@@ -63,7 +63,7 @@
 #leaderboard .star {
     height:19px;
     width:20px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat -200px -150px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -200px -150px;
     margin:-3px 3px 0 0;
 }
 
@@ -74,7 +74,7 @@
 .flag {
 	width: 16px;
 	height: 11px;
-	background:url('../../img/flags.png') no-repeat;
+	background:url('../img/flags.png') no-repeat;
 	float:left;
 	margin:1px 10px 0 0;
 }
@@ -94,7 +94,7 @@
 #hall .block-2 canvas {
     display:block;
     margin:20px auto;
-    background:url('../../img/mobile/spritesheet.png') no-repeat -150px -250px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -150px -250px;
 }
 
 #hall .block-2 .breakdown {
@@ -176,11 +176,11 @@
 }
 
 #hall .block-4 li:nth-child(1) .badge-img {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -350px -100px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -350px -100px;
 }
 
 #hall .block-4 li:nth-child(2) .badge-img {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -350px -200px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -350px -200px;
 }
 
 #hall .block-4 .desc {

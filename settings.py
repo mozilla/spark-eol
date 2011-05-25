@@ -166,11 +166,11 @@ MINIFY_BUNDLES = {
         'mobile': (
             'css/reset.css',
             'css/fonts.css',
-            'css/mobile/base.css',
-            'css/mobile/home.css',
-            'css/mobile/sharing.css',
-            'css/mobile/around.css',
-            'css/mobile/hall.css',
+            'css/base-mobile.css',
+            'css/home-mobile.css',
+            'css/sharing.css',
+            'css/around.css',
+            'css/hall.css',
             'css/flags.css',
         )
     },

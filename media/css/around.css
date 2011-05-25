@@ -52,7 +52,7 @@
 #active-cities-img {
     height:68px;
     width:70px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat -100px -150px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -100px -150px;
     margin:20px auto 0;
 }
 
@@ -147,15 +147,15 @@
 }
 
 #active-countries li:nth-child(1) .country {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -350px 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat -350px 0;
 }
 
 #active-countries li:nth-child(2) .country {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -250px 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat -250px 0;
 }
 
 #active-countries li:nth-child(3) .country {
-    background:url('../../img/mobile/spritesheet.png') no-repeat -250px -100px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -250px -100px;
 }
 
 #active-countries li span {

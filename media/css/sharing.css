@@ -33,7 +33,7 @@
 #total-shares-img {
     height:115px;
     width:200px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat -50px 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat -50px 0;
     margin:20px auto;
 }
 
@@ -85,7 +85,7 @@
     margin:20px auto 0;
     height:150px;
     width:150px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -250px;
+    background:url('../img/mobile/spritesheet.png') no-repeat 0 -250px;
 }
 
 #sharing .block-2 .breakdown {
@@ -169,14 +169,14 @@
 #sharing .block-4 .img {
     height:19px;
     width:27px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -50px;
+    background:url('../img/mobile/spritesheet.png') no-repeat 0 -50px;
     margin:0 auto;
 }
 
 #sharing .block-5 .img {
     height:24px;
     width:25px;
-    background:url('../../img/mobile/spritesheet.png') no-repeat 0 -100px;
+    background:url('../img/mobile/spritesheet.png') no-repeat 0 -100px;
     margin:0 auto;
 }
 
