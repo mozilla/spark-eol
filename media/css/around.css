@@ -37,18 +37,6 @@
     font-size:1.2em;
 }
 
-@media screen and (orientation:portrait) {
-    #around h1 {
-        font-size:4em;
-    }
-}
-
-@media screen and (orientation:landscape) {
-    #around h1 {
-        font-size:5.8em;
-    }
-}
-
 #active-cities-img {
     height:68px;
     width:70px;

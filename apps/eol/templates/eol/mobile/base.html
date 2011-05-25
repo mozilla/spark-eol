@@ -31,6 +31,36 @@
 	          DD_belatedPNG.fix('.png');
 	        </script>
 	    <![endif]-->
+
+	    <style>
+	       @media screen and (orientation:portrait) {
+               #sharing h1 {
+                   font-size:4em;
+               }
+               
+               #around h1 {
+                   font-size:4em;
+               }
+               
+               #hall h1 {
+                   font-size:4em;
+               }
+           }
+
+           @media screen and (orientation:landscape) {
+               #sharing h1 {
+                   font-size:5.8em;
+               }
+               
+               #around h1 {
+                   font-size:5.8em;
+               }
+               
+               #hall h1 {
+                   font-size:5.8em;
+               }
+           }
+	    </style>
 	    
 	    {% if LANG != 'en-US' %}
     	    <style>
@@ -52,8 +82,5 @@
         {% if not debug %}
             {% include "includes/webtrends.html" %}
         {% endif %}
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        {{ js('mobile') }}
 	</body>
 </html>

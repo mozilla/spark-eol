@@ -37,30 +37,6 @@
     margin:20px auto;
 }
 
-@media screen and (orientation:portrait) {
-    #sharing h1 {
-        font-size:4em;
-    }
-}
-
-@media screen and (orientation:landscape) {
-    #sharing h1 {
-        font-size:5.8em;
-    }
-    
-    #sharing .block-2 canvas, #sharing .block-2 .breakdown, #sharing .block-2 .legend {
-        float:left;
-    }
-    
-    #sharing .block-2 .breakdown {
-        margin:0 0 0 -150px;
-    }
-    
-    #sharing .block-2 .legend {
-        margin:0 0 0 40px;
-    }
-}
-
 #sharing .block-2 em {
     color:#ede0ab;
     text-transform:uppercase;

@@ -37,18 +37,6 @@
     font-size:1.2em;
 }
 
-@media screen and (orientation:portrait) {
-    #hall h1 {
-        font-size:4em;
-    }
-}
-
-@media screen and (orientation:landscape) {
-    #hall h1 {
-        font-size:5.8em;
-    }
-}
-
 #leaderboard {
     width:90%;
     margin:20px auto;
