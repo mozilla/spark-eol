@@ -3,7 +3,7 @@ import jingo
 from django.conf import settings
 from django.utils.http import urlquote
 
-from commons.decorators import post_required, ajax_required, json_view
+from commons.decorators import post_required, ajax_required, json_view, mobile_view
 from commons.urlresolvers import reverse
 
 from responsys import responsys
@@ -47,6 +47,7 @@ def player_tooltips():
     return tooltips
 
 
+@mobile_view('eol.home_mobile')
 def home(request):
     data = {'spark_url': 'https://spark.mozilla.org',
             'levels': level_distribution(),
