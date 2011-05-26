@@ -3,8 +3,8 @@
     <div class="left">
         <a href="{{ prev }}" class="left">
             {# L10n: Navigation link to previous page #}
-            {{ _('Back') }}
-            <div class="arrow left"></div>
+            <span class="arrow left"></span>
+            <span class="nav">{{ _('Back') }}</span>
         </a>
     </div>
     {% endif %}
@@ -19,8 +19,8 @@
     <div class="right">
         <a href="{{ next }}" class="right">
             {# L10n: Navigation link to next page #}
-            {{ _('Next') }}
-            <div class="arrow right"></div>
+            <span class="nav">{{ _('Next') }}</span>
+            <span class="arrow right"></span>
         </a>
     </div>
     {% endif %}

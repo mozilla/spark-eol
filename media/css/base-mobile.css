@@ -25,7 +25,11 @@ html, body {
     float:left;
 }
 
-.page-nav a {
+.page-nav div.middle {
+    margin-top:3px;
+}
+
+.page-nav a span.nav {
     display: block;
     background:#1b1b1b;
     min-width:32px;
@@ -68,23 +72,53 @@ html, body {
     border-right:0 solid transparent;
 }
 
+.page-nav a {
+    position:relative;
+    top:-2px;
+    text-decoration:none;
+}
+
 .page-nav a.left {
     float:left;
     text-align:right;
-    padding:6px 12px 6px 20px;
+    padding:2px 2px 2px 0;
+}
+
+.page-nav a.left span {
+    float:left;
+    padding:8px 12px 6px 4px;
+}
+
+.page-nav a.right span {
+    float:left;
+    padding:8px 4px 6px 12px;
 }
 
 .page-nav a.right {
     float:right;
     text-align:left;
-    padding:6px 20px 6px 12px;
+    padding:2px 0 2px 2px;
 }
 
-.page-nav a .arrow {
-    width:16px;
-    height:28px;
-    position:absolute;
+.page-nav .left .nav {
+    border-radius:0 5px 5px 0;
+    line-height:15px;
+}
+
+.page-nav .right .nav {
+    border-radius:5px 0 0 5px;
+    line-height:15px;
+}
+
+.page-nav a span.arrow {
+    width:18px;
+    height:30px;
     top:0;
+    pointer-events:none;
+    display:block;
+    padding:0;
+    margin:none;
+    border:0;
 }
 
 .page-nav a .arrow.left {
@@ -94,7 +128,7 @@ html, body {
 
 .page-nav a .arrow.right {
     right:0;
-    background:url('../img/mobile/spritesheet.png') no-repeat -16px 0;
+    background:url('../img/mobile/spritesheet.png') no-repeat -18px 0;
 }
 
 footer {
