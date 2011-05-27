@@ -76,3 +76,38 @@
 #home a.button {
     margin-bottom:50px;
 }
+
+#home .nav-link {
+    text-decoration:none;
+    border-bottom:1px solid #777;
+    border-top:1px solid #777;
+    padding:15px 0px;
+    max-width:260px;
+    margin:20px auto 40px;
+    display:block;
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    color:#ede0ab;
+    font-family:'Georgia', 'Times New Roman', serif;
+    position:relative;
+}
+
+#home .nav-link .arrow {
+    height:13px;
+    width:12px;
+    background:url('../img/mobile/spritesheet.png') no-repeat -300px -250px;
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-6px;
+    display:block;
+}
+
+#home .nav-link em {
+    font-family:'LG', 'Arial Narrow', sans-serif;
+    text-transform:uppercase;
+    display:block;
+    font-size:2em;
+    font-style:normal;
+    line-height:130%;
+}
