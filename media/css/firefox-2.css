@@ -85,12 +85,33 @@
     width:30px;
     float:left;
     margin:5px 10px 0 0;
+    display:block;
+}
+
+#layer-2 .arrow {
+    height:13px;
+    width:13px;
+    background:url('../img/spritesheet.png') no-repeat -200px 0px;
+    display:inline-block;
+    margin-left:9px;
 }
 
 #layer-2 .block-6 .icon {background:url('../img/sprites-firefox.png') no-repeat 0 -250px;}
 #layer-2 .block-7 .icon {background:url('../img/sprites-firefox.png') no-repeat -50px -250px;}
 #layer-2 .block-8 .icon {background:url('../img/sprites-firefox.png') no-repeat -100px -250px;}
 #layer-2 .block-9 .icon {background:url('../img/sprites-firefox.png') no-repeat -150px -250px;}
+
+#layer-2 .block-6 a, #layer-2 .block-7 a, #layer-2 .block-8 a, #layer-2 .block-9 a {
+    color:inherit;
+}
+
+#layer-2 .block-6 p a {
+    color:#75D0FF;
+}
+
+#layer-2 .block-6 a:hover, #layer-2 .block-7 a:hover, #layer-2 .block-8 a:hover, #layer-2 .block-9 a:hover {
+    color:#9EDEFF;
+}
 
 #layer-2 .block p {
     clear:left;
