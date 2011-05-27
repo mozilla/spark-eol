@@ -31,7 +31,11 @@
             {{ _('Easy set up') }}
         </span>
         <p>
+            {% if LANG == 'en-US' %}
+            {{ _('Take a minute to <a href="{url}" target="_blank">set up a Sync account</a> and synchronize your Firefoxes.')|fe(url='http://www.mozilla.com/mobile/sync/') }}
+            {% else %}
             {{ _('Take a minute to set up a Sync account and synchronize your Firefoxes.') }}
+            {% endif %}
         </p>
     </div>
 
