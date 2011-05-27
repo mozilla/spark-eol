@@ -28,10 +28,16 @@
     </h1>
     
     <p>
-        {% trans %}
-        Spark was created to celebrate the release of Firefox for Android and encouraged sharing the browser with friends across the globe. 
-        Together we helped the flame of the mobile Web glow bright. See how well everyone has performed!
-        {% endtrans %} 
+        {% if _("Spark celebrated the release of Firefox for Android, making the mobile Web glow bright. Enjoy the game's results!") == "Spark celebrated the release of Firefox for Android, making the mobile Web glow bright. Enjoy the game's results!" %}
+            {% trans %}
+            Spark celebrated the release of Firefox for Android, making the mobile Web glow bright. Enjoy the game's results!
+            {% endtrans %}
+        {% else %}
+            {% trans %}
+            Spark was created to celebrate the release of Firefox for Android and encouraged sharing the browser with friends across the globe. 
+            Together we helped the flame of the mobile Web glow bright. See how well everyone has performed!
+            {% endtrans %}
+        {% endif %}
     </p>
 </section>
 

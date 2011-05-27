@@ -66,6 +66,7 @@
 #main-copy p {
     line-height:133%;
     text-align:left;
+    margin:0 20px;
 }
 
 #home footer a.button {
