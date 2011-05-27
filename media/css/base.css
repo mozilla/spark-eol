@@ -61,7 +61,7 @@ html, body {
     top:3px;
 }
 
-#ff-download em {
+#ff-download em, #ff-download strong {
     font-style:normal;
 }
 
