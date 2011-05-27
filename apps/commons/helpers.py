@@ -15,10 +15,14 @@ from babel import Locale, localedata
 from babel.support import Format
 from babel.dates import format_date, format_time, format_datetime
 from babel.numbers import format_decimal
-from tower import ungettext as _ungettext
+from tower import ugettext as _, ungettext as _ungettext
 
 from .urlresolvers import reverse
 
+
+@register.function
+def is_translated(msg, locale):
+    return _(msg) != msg or locale == 'en-US'
 
 # Most of these functions are taken from kitsune
 
