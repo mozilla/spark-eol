@@ -33,12 +33,12 @@ var Spark = Class.extend({
             if(Math.abs(s.angle) > (s.maxAngle - s.arcAngle) || Math.abs(s.angle) < s.minAngle) {
                 s.angleStep *= -1;
             } 
-            s.angle += s.angleStep * rand(1, 2);
+            s.angle += s.angleStep;
 
             if(s.scale > s.maxScale || s.scale < s.minScale) {
                 s.scaleStep *= -1;
             }
-            s.scale += s.scaleStep * rand(1, 2);
+            s.scale += s.scaleStep;
         }
     },
 
@@ -49,14 +49,12 @@ var Spark = Class.extend({
             shape = this.shapes[i];
 
          	ctx.save();
-                ctx.shadowBlur = 30;
-                ctx.shadowColor = "rgba(0, 0, 0, 0.1)";
     	    	ctx.fillStyle = "rgba("+shape.rgb+", 0.8)";
     		    ctx.translate(this.w / 2, this.h);
     	        ctx.rotate(deg2rad(shape.angle));
     	        ctx.beginPath();
     	        ctx.moveTo(0, 0);
-    	        ctx.arc(0, 0, 100 * shape.scale, 0, -deg2rad(shape.arcAngle), true);
+    	        ctx.arc(0, 0, 75 * shape.scale, 0, -deg2rad(shape.arcAngle), true);
     	        ctx.fill();
     	    ctx.restore();
         }

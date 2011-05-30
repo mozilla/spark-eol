@@ -39,13 +39,15 @@
 }
 
 #spark {
-    -moz-transform: skewX(-45deg) rotate(20deg) scaleY(0.4) scaleX(0.7);
-    -webkit-transform: skewX(-45deg) rotate(20deg) scaleY(0.4) scaleX(0.7);
+    -moz-transform: skewX(-45deg) rotate(20deg) scaleY(0.5) scaleX(0.9);
+    -webkit-transform: skewX(-45deg) rotate(20deg) scaleY(0.5) scaleX(0.9);
+    -ms-transform: skewX(-45deg) rotate(20deg) scaleY(0.5) scaleX(0.9);
+    -o-transform: skewX(-45deg) rotate(20deg) scaleY(0.5) scaleX(0.9);
+    transform: skewX(-45deg) rotate(20deg) scaleY(0.5) scaleX(0.9);
     position: absolute;
     z-index: 15;
-    left:32px;
-    top:51px;
-    -moz-transition:0.5s all ease;
+    left:87px;
+    top:116px;
 }
 
 #home {

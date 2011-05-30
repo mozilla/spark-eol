@@ -183,7 +183,7 @@ $(document).ready(function() {
 
     // Canvas animations on homepage
     lights = new Lights('particles', '/media/img/particle.png', 13, 380, 350);
-    sparkAnimation = new Spark('spark', 200, 300);
+    sparkAnimation = new Spark('spark', 100, 150);
     
     // Tooltips on homepage
     var $tooltips = [];
