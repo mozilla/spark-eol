@@ -249,9 +249,9 @@ a.button em {
     border: 0 none;
     border-radius: 4px 4px 4px 4px;
     font-size: 1em;
-    height: 10px;
+    height: 20px;
     margin: 0 10px 0 0;
-    padding: 10px 13px;
+    padding: 5px 13px;
     width: 70%;
     color:#262626;
 }
@@ -275,6 +275,7 @@ a.button em {
 
 #newsletter .error {
     color:#e83939;
+    height:0;
 }
 
 footer a.button {
