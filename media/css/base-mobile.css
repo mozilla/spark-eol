@@ -21,8 +21,15 @@ html, body {
 }
 
 .page-nav div.left, .page-nav div.middle, .page-nav div.right {
-    width:33.33%;
     float:left;
+}
+
+.page-nav div.left, .page-nav div.right {
+    width:42.5%;
+}
+
+.page-nav div.middle {
+    width:15%;
 }
 
 .page-nav div.middle {
