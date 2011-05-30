@@ -8,6 +8,22 @@
         <a class="twitter-icon" href="http://twitter.com/share?url=https//spark.mozilla.org/&amp;text={{twitter_msg}}&amp;via=mozmobile"></a>
         <a class="facebook-icon" href="http://www.facebook.com/share.php?u=https://spark.mozilla.org/"></a>
     </div>
+    <div id="newsletter">
+        <span class="title">
+            {# L10n: Title above the newsletter sign up input field. #}
+            {{ _('Stay Updated') }}
+        </span>
+        <p>
+            {{ _('Be the first to hear the latest news about Firefox for mobile.') }}
+        </p>
+        <form action="{{ url('eol.newsletter') }}" method="post">
+            {{ csrf() }}
+            <input name="email" type="email" placeholder="{{ _('Your Email Address') }}">
+            <input type="submit" class="submit" value="">
+        </form>
+        <span class="error"></span>
+        <span class="success">Thanks for signing up!</span>
+    </div>
     <div id="legal">
         <ul>
             <li><a href="http://www.mozilla.com/privacy-policy.html">{{ _('Privacy Policy') }}</a></li>
