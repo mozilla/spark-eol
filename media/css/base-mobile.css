@@ -267,8 +267,10 @@ a.button em {
     clear:both;
     display:block;
     padding:10px 0 0;
+}
+
+#newsletter .success {
     display:none;
-    margin-bottom:-40px;
 }
 
 #newsletter .error {

@@ -184,10 +184,15 @@ MINIFY_BUNDLES = {
             'js/desktop/sections.js',
             'js/desktop/widgets.js',
             'js/desktop/popups.js',
-            'js/desktop/newsletter.js',
             'js/desktop/particles.js',
             'js/desktop/spark.js',
+            'js/commons/newsletter.js',
             'js/desktop/main.js',
+        ),
+        'mobile': (
+            'js/libs/jquery.form.js',
+            'js/commons/newsletter.js',
+            'js/mobile/main.js',
         ),
         'pngfix': (
             'js/libs/DD_belatedPNG_0.0.8a.min.js',
