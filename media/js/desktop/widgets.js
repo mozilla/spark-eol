@@ -30,8 +30,17 @@ var CountUp = Widget.extend({
         this.duration = 350;
         this.$number = $element.find('.number');
         numberStr = this.$number.text();
-        this.thousandsSeparator = numberStr.indexOf(',') >= 0 ? ',': ' ';
-        regexp = this.thousandsSeparator === ',' ? /,+/g : /\s+/g;
+        if(numberStr.indexOf(',') >= 0) {
+            this.thousandsSeparator = ',';
+            regexp = /,+/g;
+        } else if(numberStr.indexOf('.') >= 0) {
+            this.thousandsSeparator = '.';
+            regexp = /\.+/g;
+        } else {
+            this.thousandsSeparator = ' ';
+            regexp = /\s+/g;
+        }
+
         this.maxValue = parseInt(numberStr.replace(regexp, ''));
         this._super($element);
     },
