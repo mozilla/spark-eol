@@ -82,13 +82,13 @@
     margin-left:-40px;
 }
 
-#spark-3 .block-2 .breakdown li:nth-child(1) .tooltip {bottom:-10px;left:82%;}
+#spark-3 .block-2 .breakdown li:nth-child(1) .tooltip {bottom:-10px;left:90%;}
 #spark-3 .block-2 .breakdown li:nth-child(1) .tooltip.active {bottom:10px;}
-#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip {bottom:-60px;}
-#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip.active {bottom:-40px;}
-#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip {bottom:-10px;left:17%;}
-#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip.active {bottom:10px;}
-#spark-3 .block-2 .breakdown li:nth-child(4) .tooltip {bottom:30px;left:38%;}
+#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip {bottom:-20px;left:12%;}
+#spark-3 .block-2 .breakdown li:nth-child(2) .tooltip.active {bottom:0px;}
+#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip {bottom:30px;left:49%;}
+#spark-3 .block-2 .breakdown li:nth-child(3) .tooltip.active {bottom:50px;}
+#spark-3 .block-2 .breakdown li:nth-child(4) .tooltip {bottom:30px;left:50%;}
 #spark-3 .block-2 .breakdown li:nth-child(4) .tooltip.active {bottom:50px;}
 
 #spark-3 .block-2 .tooltip.active {

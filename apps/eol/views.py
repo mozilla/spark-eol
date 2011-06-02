@@ -12,7 +12,7 @@ from .forms import NewsletterForm
 from .utils import TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER, LEADERBOARD_TOOLTIP
 
 
-share_history =  [0, 1200, 2653, 4500, 1523, 458, 987, 5968]
+share_history =  [1382, 427, 249, 277, 569, 615, 421, 351]
 
 top_players = [('Batman', 169, 31, 'us'),
                ('Jack', 69, 27, 'es'),
@@ -32,7 +32,7 @@ def sharing_messages():
 
 
 def level_distribution():
-    percentages = [43, 25, 12, 2]
+    percentages = [45, 55, '< 1', '< 1']
     return [(unicode(LEVEL) % dict(num=i+1), p) for i, p in enumerate(percentages)]
 
 

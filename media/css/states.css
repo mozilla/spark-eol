@@ -133,16 +133,16 @@ header nav div.right {
 .spark-2 #spark-2 .block-1 li {opacity:1;}
 
 .spark-2 #bar-chart li span {opacity:1;}
-.spark-2 #bar-chart li.one span {bottom:14px;}
-.spark-2 #bar-chart li.one div.bar {height:6px;}
-.spark-2 #bar-chart li.two span {bottom:32px;}
-.spark-2 #bar-chart li.two div.bar {height:24px;}
-.spark-2 #bar-chart li.three span {bottom:45px;}
-.spark-2 #bar-chart li.three div.bar {height:37px;}
-.spark-2 #bar-chart li.four span {bottom:66px;}
-.spark-2 #bar-chart li.four div.bar {height:58px;}
-.spark-2 #bar-chart li.five span {bottom:94px;}
-.spark-2 #bar-chart li.five div.bar {height:86px;}
+.spark-2 #bar-chart li.one span {bottom:12px;}
+.spark-2 #bar-chart li.one div.bar {height:4px;}
+.spark-2 #bar-chart li.two span {bottom:14px;}
+.spark-2 #bar-chart li.two div.bar {height:6px;}
+.spark-2 #bar-chart li.three span {bottom:18px;}
+.spark-2 #bar-chart li.three div.bar {height:10px;}
+.spark-2 #bar-chart li.four span {bottom:42px;}
+.spark-2 #bar-chart li.four div.bar {height:34px;}
+.spark-2 #bar-chart li.five span {bottom:58px;}
+.spark-2 #bar-chart li.five div.bar {height:50px;}
 .spark-2 #bar-chart li.six span {bottom:103px;}
 .spark-2 #bar-chart li.six div.bar {height:95px;}
 

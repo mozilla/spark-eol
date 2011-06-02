@@ -97,19 +97,18 @@ $(document).ready(function() {
     });
     
     // Initialize several chart widgets
-    new PieChart('#spark-1 .block-2', 75, 75, 75, 1000, [{start: -90, end: 70, color: '#ee3939'},
-                                                         {start: 70, end: 200, color: '#ec5f39'},
-                                                         {start: 200, end: 270, color: '#fbad46'}]);
+    new PieChart('#spark-1 .block-2', 75, 75, 75, 1000, [{start: -90, end: 180, color: '#ee3939'},
+                                                         {start: 180, end: 230, color: '#ec5f39'},
+                                                         {start: 230, end: 270, color: '#fbad46'}]);
     
-    new RingChart('#spark-3 .block-2', 63, 63, 50, 1000, 15, [{start: -90, end: 45, color: '#ee3939'},
-                                                              {start: 45, end: 135, color: '#ec5f39'},
-                                                              {start: 135, end: 225, color: '#fbad46'},
-                                                              {start: 225, end: 270, color: '#f7e35f'}]);
+    new RingChart('#spark-3 .block-2', 63, 63, 50, 1000, 15, [{start: -90, end: 71, color: '#ee3939'},
+                                                              {start: 71, end: 265, color: '#ec5f39'},
+                                                              {start: 265, end: 270, color: '#fbad46'}]);
     
-    new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 500, [0, 70, 35, 45, 87, 56, 104, 116]);
+    new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 500, [115, 36, 21, 23, 47, 51, 35, 29]);
     
-    new BadgeChart('#spark-3 .block-4', 'one', 40, 40, 35, 1000, 10, [{start: -90, end: 205, color: '#fbad46'}]);
-    new BadgeChart('#spark-3 .block-4', 'two', 40, 40, 35, 1000, 10, [{start: -90, end: 70, color: '#fbad46'}]);
+    new BadgeChart('#spark-3 .block-4', 'one', 40, 40, 35, 1000, 10, [{start: -90, end: 65, color: '#fbad46'}]);
+    new BadgeChart('#spark-3 .block-4', 'two', 40, 40, 35, 1000, 10, [{start: -90, end: 32, color: '#fbad46'}]);
     
     // Sharing popups
     function tweetPopup(url) {

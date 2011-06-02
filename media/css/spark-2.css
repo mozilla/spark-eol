@@ -116,11 +116,11 @@
 }
 
 #active-countries li.two {
-    background:url('../img/sprites-spark.png') no-repeat -150px -300px;
+    background:url('../img/sprites-spark.png') no-repeat 0px -300px;
 }
 
 #active-countries li.three {
-    background:url('../img/sprites-spark.png') no-repeat 0px -300px;
+    background:url('../img/sprites-spark.png') no-repeat -150px -300px;
 }
 
 #spark-2 .block-1 li:hover {

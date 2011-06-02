@@ -1,7 +1,7 @@
 <article id="spark-1">
     <div class="block block-1 trigger countup">
         <div>
-            {% set total_shares = 132850 %}
+            {% set total_shares = 4616 %}
             <span class="number silent">{{ total_shares|numberfmt }}</span>
             <span class="small-text">
                 {# L10n: Preceded by the number of shares. #}
@@ -17,24 +17,24 @@
         <canvas width="150" height="150"></canvas>
         <ol class="breakdown silent">
             <li>
-                46%
+                75%
+                <div class="tooltip">
+                    <div class="arrow top"></div>
+                    {{ _('via QR Code') }}
+                </div>
+            </li>
+            <li>
+                14%
                 <div class="tooltip">
                     <div class="arrow top"></div>
                     {{ _('via Facebook') }}
                 </div>
             </li>
             <li>
-                34%
+                11%
                 <div class="tooltip">
                     <div class="arrow top"></div>
                     {{ _('via Twitter') }}
-                </div>
-            </li>
-            <li>
-                20%
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    {{ _('via QR Code') }}
                 </div>
             </li>
         </ol>
@@ -60,8 +60,8 @@
     </div>
     <div class="block block-4 countup">
         <div class="sprite" id="twitter-shares-img"></div>
-        <div class="number silent">
-            {% set twitter_shares = 3189 %}
+        <div class="number">
+            {% set twitter_shares = 427 %}
             {{ twitter_shares|numberfmt }}
         </div>
         <span>{{ _('<em>Shares</em> via Twitter') }}</span>
@@ -69,7 +69,7 @@
     <div class="block block-5 countup">
         <div class="sprite" id="facebook-shares-img"></div>
         <div class="number">
-            {% set fb_shares = 8235 %}
+            {% set fb_shares = 508 %}
             {{ fb_shares|numberfmt }}
         </div>
         <span>{{ _('<em>Shares</em> via Facebook') }}</span>
