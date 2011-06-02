@@ -30,6 +30,14 @@
     font-size:1.2em;
 }
 
+#wrapper #sharing .block-1 .title {
+    color:#ddd;
+}
+
+#wrapper #sharing .block-1 .title em {
+    color:#ede0ab;
+}
+
 #total-shares-img {
     height:115px;
     width:200px;

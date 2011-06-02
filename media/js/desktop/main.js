@@ -189,19 +189,20 @@ $(document).ready(function() {
     $tooltips.push($('#home .tooltip:eq(0)'));
     $tooltips.push($('#home .tooltip:eq(1)'));
     $tooltips.push($('#home .tooltip:eq(2)'));
+    $tooltips.push($('#home .tooltip:eq(3)'));
     var t = 0, display = true;
     setInterval(function() {
         if(display) {
             $tooltips[t].addClass('active');
 
-            if(t < 2) {
+            if(t < 3) {
                 t += 1;
             } else {
                 t = 0;
             }
             display = false;
         } else {
-            for(var i = 0; i < 3; i += 1) {
+            for(var i = 0; i < 4; i += 1) {
                 $tooltips[i].removeClass('active');
             }
             display = true;

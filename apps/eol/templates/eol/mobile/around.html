@@ -32,10 +32,12 @@
     </div>
     
     <div class="block block-3">
-        {% set total_sparks = 32228 %}
-        {# L10n: Preceded by the number of sparks #}
-        <span class="number">{{ total_sparks|numberfmt }}</span>
-        <span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
+        {% set total_shares = 4616 %}
+        <span class="number">{{ total_shares|numberfmt }}</span>
+        <span class="title">
+            {# L10n: Preceded by the number of shares. #}
+            <em>{{ _('Total Shares') }}</em>
+        </span>
     </div>
 
     <div class="block block-4">

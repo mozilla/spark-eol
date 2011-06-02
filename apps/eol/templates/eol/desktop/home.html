@@ -40,18 +40,26 @@
         <div id="phone-wrapper">
             <div class="tooltip">
                 <div class="arrow bottom"></div>
+                {% set total_sparks = 32228 %}
+                <span class="number">{{ total_sparks|numberfmt }}</span>
+                <span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
+            </div>
+            <div class="tooltip">
+                <div class="arrow bottom"></div>
+                {% set total_badges = 40087 %}
+                <span class="number">{{ total_badges|numberfmt }}</span>
+                <span class="title">
+                    {{ _('Total Earned <em>Badges</em>') }}
+                </span>
+            </div>
+            <div class="tooltip">
+                <div class="arrow bottom"></div>
                 {% set total_shares = 4616 %}
                 <span class="number">{{ total_shares|numberfmt }}</span>
                 <span class="title">
                     {# L10n: Preceded by the number of shares. #}
                     {{ _('Total Shares') }}
                 </span>
-            </div>
-            <div class="tooltip">
-                <div class="arrow bottom"></div>
-                {% set total_sparks = 32228 %}
-                <span class="number">{{ total_sparks|numberfmt }}</span>
-                <span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
             </div>
             <div class="tooltip">
                 <div class="arrow bottom"></div>

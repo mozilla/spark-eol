@@ -98,6 +98,19 @@
     padding-bottom:2px;
 }
 
+#spark-2 .block-3 .title em {
+    display:none;
+}
+
+#spark-2 .block-3 .title strong {
+    display:block;
+    font-family:'Museo500', 'Trebuchet MS', Arial, sans-serif;
+    font-style:normal;
+    text-transform:uppercase;
+    padding-bottom:2px;
+    color:#ede0ab;
+}
+
 #spark-2 .block-2 canvas {
     background:#444;
     height:125px;

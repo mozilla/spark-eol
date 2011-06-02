@@ -29,11 +29,18 @@
 }
 
 #spark-1 .block-1 .small-text {
+    display:block;
+    width:200px;
+    font-style:italic;
+    font-family:'Georgia', 'Times New Roman', serif;
+}
+
+#spark-1 .block-1 .small-text em {
     text-transform:uppercase;
     color:#ede0ab;
     font-size:14px;
-    display:block;
-    width:200px;
+    font-family:'Museo500', 'Trebuchet MS', sans-serif;
+    font-style:normal;
 }
 
 #total-shares-img {
