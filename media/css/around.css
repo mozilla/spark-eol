@@ -99,11 +99,11 @@
 }
 
 #continents li:nth-child(1) .bar {width:80%;}
-#continents li:nth-child(2) .bar {width:64%;}
-#continents li:nth-child(3) .bar {width:52%;}
-#continents li:nth-child(4) .bar {width:31%;}
-#continents li:nth-child(5) .bar {width:25%;}
-#continents li:nth-child(6) .bar {width:11%;}
+#continents li:nth-child(2) .bar {width:42%;}
+#continents li:nth-child(3) .bar {width:28%;}
+#continents li:nth-child(4) .bar {width:8%;}
+#continents li:nth-child(5) .bar {width:5%;}
+#continents li:nth-child(6) .bar {width:3%;}
 
 #wrapper #around .block-3 .title, #wrapper #around .block-4 .title {
     font-family:Georgia, 'Times New Roman', serif;

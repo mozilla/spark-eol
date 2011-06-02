@@ -30,10 +30,9 @@
            <span class="title">{{ _('<em>Levels</em> Breakdown') }}</span>
            <canvas width="126" height="126"></canvas>
            <ol class="breakdown">
-               <li>46%</li>
-               <li>23%</li>
-               <li>12%</li>
-               <li>2%</li>
+               <li>45%</li>
+               <li>55%</li>
+               <li>&lt; 1%</li>
            </ol>
            <ul class="legend">
                {% for level, p in levels %}
@@ -43,7 +42,7 @@
        </div>
        
        <div class="block block-3">
-           {% set total_badges = 42190 %}
+           {% set total_badges = 40087 %}
            {# L10n: Preceded by the number of badges #}
            <span class="number">{{ total_badges|numberfmt }}</span><span class="title">{{ _('Total Earned <em>Badges</em>') }}</span>
        </div>
@@ -54,7 +53,7 @@
                <li class="one">
                    <div class="badge-img"></div>
                    <div class="desc">
-                       <span class="percentage">82%</span>
+                       <span class="percentage">43%</span>
                        <div>
                            <span class="badge-name">On Location</span>
                            <p class="badge-desc">You told us your location, kudos to you!</p>
@@ -64,7 +63,7 @@
                <li class="two">
                    <div class="badge-img"></div>
                    <div class="desc">
-                       <span class="percentage">48%</span>
+                       <span class="percentage">34%</span>
                        <div>
                            <span class="badge-name">Parent trap</span>
                            <p class="badge-desc">You told us where you got your Spark, congrats!</p>

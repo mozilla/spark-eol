@@ -97,9 +97,9 @@
     position:absolute;
 }
 
-#hall .block-2 .breakdown li:nth-child(1) {top:20px;left:140px;}
-#hall .block-2 .breakdown li:nth-child(2) {top:80px;left:140px;}
-#hall .block-2 .breakdown li:nth-child(3) {top:20px;left:-35px;}
+#hall .block-2 .breakdown li:nth-child(1) {top:19px;left:128px;}
+#hall .block-2 .breakdown li:nth-child(2) {top:97px;left:-20px;}
+#hall .block-2 .breakdown li:nth-child(3) {top:12px;left:-20px;}
 #hall .block-2 .breakdown li:nth-child(4) {top:80px;left:-35px;}
 
 #hall .legend {

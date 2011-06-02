@@ -22,21 +22,17 @@
     <div class="block block-2" id="continents">
         <span class="number">6</span><span class="title">{{ _('<em>Continents</em> Sparked') }}</span>
         <ol id="bar-chart">
-            <li>
-                <div class="continent">North America</div>
-                <div class="bar"></div>
-                <span>31%</span>
-            </li>
-            <li><div class="continent">South America</div><div class="bar"></div><span>28%</span></li>
-            <li><div class="continent">Europe</div><div class="bar"></div><span>19%</span></li>
-            <li><div class="continent">Asia</div><div class="bar"></div><span>12%</span></li>
-            <li><div class="continent">Australia</div><div class="bar"></div><span>8%</span></li>
+            <li><div class="continent">North America</div><div class="bar"></div><span>48%</span></li>
+            <li><div class="continent">Europe</div><div class="bar"></div><span>25%</span></li>
+            <li><div class="continent">Asia</div><div class="bar"></div><span>17%</span></li>
+            <li><div class="continent">South America</div><div class="bar"></div><span>5%</span></li>
+            <li><div class="continent">Australia</div><div class="bar"></div><span>3%</span></li>
             <li><div class="continent">Africa</div><div class="bar"></div><span>2%</span></li>
         </ol>
     </div>
     
     <div class="block block-3">
-        {% set total_sparks = 31245 %}
+        {% set total_sparks = 32228 %}
         {# L10n: Preceded by the number of sparks #}
         <span class="number">{{ total_sparks|numberfmt }}</span>
         <span class="title">{{ _('<em>Total Sparks</em> Worldwide') }}</span>
@@ -44,7 +40,7 @@
 
     <div class="block block-4">
         {# L10n: Preceded by the number of countries #}
-        <span class="number">162</span>
+        <span class="number">159</span>
         <span class="title">{{ _('<em>Countries</em> Sparked') }}</span>
     </div>
     
@@ -57,11 +53,11 @@
             </li>
             <li>
                 <div class="country"></div>
-                <span>Germany</span>
+                <span>United Kingdom</span>
             </li>
             <li>
                 <div class="country"></div>
-                <span>India</span>
+                <span>Germany</span>
             </li>
         </ol>
     </div>

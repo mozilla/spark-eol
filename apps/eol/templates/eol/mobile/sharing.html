@@ -8,7 +8,7 @@
     
     <div class="block block-1">
         <div>
-            {% set total_shares = 132850 %}
+            {% set total_shares = 4616 %}
             <span class="number">{{ total_shares|numberfmt }}</span>
             <span class="title">
                 {# L10n: Preceded by the number of shares. #}
@@ -24,19 +24,19 @@
         <canvas width="150" height="150"></canvas>
         <ol class="breakdown">
             <li>
-                46%
+                75%
             </li>
             <li>
-                34%
+                14%
             </li>
             <li>
-                20%
+                11%
             </li>
         </ol>
         <ul class="legend">
+            <li><div class="color"></div>{{ _('via QR Code') }}</li>
             <li><div class="color"></div>{{ _('via Facebook') }}</li>
             <li><div class="color"></div>{{ _('via Twitter') }}</li>
-            <li><div class="color"></div>{{ _('via QR Code') }}</li>
         </ul>
     </div>
     
@@ -55,7 +55,7 @@
         <div class="img"></div>
         <span class="title">{{ _('<em>Shares</em> via Twitter') }}</span>
         <div class="number">
-            {% set twitter_shares = 3189 %}
+            {% set twitter_shares = 427 %}
             {{ twitter_shares|numberfmt }}
         </div>
     </div>
@@ -64,7 +64,7 @@
         <div class="img"></div>
         <span class="title">{{ _('<em>Shares</em> via Facebook') }}</span>
         <div class="number">
-            {% set fb_shares = 8235 %}
+            {% set fb_shares = 508 %}
             {{ fb_shares|numberfmt }}
         </div>
     </div>

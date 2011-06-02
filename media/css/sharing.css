@@ -81,20 +81,20 @@
 
 #sharing .block-2 .breakdown li:nth-child(1) {
     font-size:36px;
-    top:47px;
-    left:91px;
+    top:76px;
+    left:88px;
 }
 
 #sharing .block-2 .breakdown li:nth-child(2) {
-    font-size:30px;
-    top:89px;
-    left:30px;
+    font-size:24px;
+    top:42px;
+    left:21px;
 }
 
 #sharing .block-2 .breakdown li:nth-child(3) {
     font-size:24px;
-    top:24px;
-    left:33px;
+    top:16px;
+    left:47px;
 }
 
 #sharing .legend {
