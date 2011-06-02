@@ -11,7 +11,7 @@
            <span class="title">{{ _('Spark <em>Leaderboard</em>') }}</span>
 
            <ol id="leaderboard">
-               {% for name, num_shares, num_badges, cc in top_players %}
+               {% for name, num_shares, num_badges, cc, city in top_players %}
                <li><div class="flag flag-{{cc}}"></div>
                    {{ loop.index }}. {{ name }}
                    <div class="shares">{{ num_shares }}</div>

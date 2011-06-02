@@ -1,51 +1,20 @@
+{% set numbers = ['one', 'two', 'three', 'four', 'five', 'six'] %}
+
 {# Around the Globe #}
 <article id="spark-2">
     <div class="block block-1">
         <span class="title">{{ _('Most Sparked <em>Cities</em>') }}</span>
         <div id="active-cities">
             <ol>
-                <li class="one">
+                {% for city, country in cities %}
+                <li class="{{ numbers[loop.index - 1] }}">
                     <div class="tooltip">
                         <div class="arrow top"></div>
-                        <strong>New York</strong>
-                        United States
+                        <strong>{{ city }}</strong>
+                        {{ country }}
                     </div>
                 </li>
-                <li class="two">
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        <strong>Atlanta</strong>
-                        United States
-                    </div>
-                </li>
-                <li class="three">
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        <strong>Chicago</strong>
-                        United States
-                    </div>
-                </li>
-                <li class="four">
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        <strong>Detroit</strong>
-                        United States
-                    </div>
-                </li>
-                <li class="five">
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        <strong>Washington</strong>
-                        United States
-                    </div>
-                </li>
-                <li class="six">
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        <strong>San Francisco</strong>
-                        United States
-                    </div>
-                </li>
+                {% endfor %}
             </ol>
         </div>
     </div>
@@ -55,42 +24,14 @@
         <span class="big-number">6</span><span class="title">{{ _('<em>Continents</em> Sparked') }}</span>
         <div id="bar-chart" class="silent">
             <ol>
-                <li class="one"><span>2%</span><div class="bar"></div>
+                {% for continent, percentage in continents %}
+                <li class="{{ numbers[loop.index - 1] }}"><span>{{ percentage }}%</span><div class="bar"></div>
                     <div class="tooltip">
                         <div class="arrow top"></div>
-                        Africa
+                        {{ continent }}
                     </div>
                 </li>
-                <li class="two"><span>3%</span><div class="bar"></div>
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        Australia
-                    </div>
-                </li>
-                <li class="three"><span>5%</span><div class="bar"></div>
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        South America
-                    </div>
-                </li>
-                <li class="four"><span>17%</span><div class="bar"></div>
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        Asia
-                    </div>
-                </li>
-                <li class="five"><span>25%</span><div class="bar"></div>
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        Europe
-                    </div>
-                </li>
-                <li class="six"><span>48%</span><div class="bar"></div>
-                    <div class="tooltip">
-                        <div class="arrow top"></div>
-                        North America
-                    </div>
-                </li>
+                {% endfor %}
             </ol>
         </div>
     </div>
@@ -109,27 +50,15 @@
     <div class="block block-5">
         <span class="title">{{ _('Most Active <em>Countries</em>') }}</span>
         <ol id="active-countries">
-            <li class="one">
-                <span class="number">#1</span>
+            {% for country in countries %}
+            <li class="{{ numbers[loop.index - 1] }}">
+                <span class="number">#{{ loop.index }}</span>
                 <div class="tooltip">
                     <div class="arrow top"></div>
-                    United States
+                    {{ country }}
                 </div>
             </li>
-            <li class="two">
-                <span class="number">#2</span>
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    United Kingdom
-                </div>
-            </li>
-            <li class="three">
-                <span class="number">#3</span>
-                <div class="tooltip">
-                    <div class="arrow top"></div>
-                    Germany
-                </div>
-            </li>
+            {% endfor %}
         </ol>
     </div>
 </article>

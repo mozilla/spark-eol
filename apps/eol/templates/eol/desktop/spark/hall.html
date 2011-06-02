@@ -4,7 +4,7 @@
         <span class="title">{{ _('Spark <em>Leaderboard</em>') }}</span>
         
         <ol class="silent">
-            {% for name, num_shares, num_badges, cc in top_players %}
+            {% for name, num_shares, num_badges, cc, city in top_players %}
             <li><div class="flag flag-{{cc}}"></div>{{ loop.index }}. {{ name }}
                 <div class="shares">{{ num_shares }}</div><div class="star"></div>
                 <div class="tooltip">
@@ -50,8 +50,8 @@
                 <div class="badge-img">
                     <div class="tooltip">
                         <div class="arrow top"></div>
-                        <span class="badge-name">On Location</span>
-                        <p class="badge-desc">You told us your location, kudos to you!</p>
+                        <span class="badge-name">{{ _('On Location') }}</span>
+                        <p class="badge-desc">{{ _('You told us your location, kudos to you!') }}</p>
                     </div>
                     <canvas width="80" height="80"></canvas>
                 </div>
@@ -61,8 +61,8 @@
                 <div class="badge-img">
                     <div class="tooltip">
                         <div class="arrow top"></div>
-                        <span class="badge-name">Parent trap</span>
-                        <p class="badge-desc">You told us where you got your Spark, congrats!</p>
+                        <span class="badge-name">{{ _('Parent trap') }}</span>
+                        <p class="badge-desc">{{ _('You told us where you got your Spark, congrats!') }}</p>
                     </div>
                     <canvas width="80" height="80"></canvas>
                 </div>

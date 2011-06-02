@@ -10,24 +10,22 @@
         <span class="title">{{ _('Most Sparked <em>Cities</em>') }}</span>
         <div id="active-cities-img"></div>
         <ol>
-            <li><span class="rank">1.</span><span class="city">San Francisco</span><span class="country">United States</span></li>
-            <li><span class="rank">2.</span><span class="city">Paris</span><span class="country">France</span></li>
-            <li><span class="rank">3.</span><span class="city">Berlin</span><span class="country">Germany</span></li>
-            <li><span class="rank">4.</span><span class="city">Bangalore</span><span class="country">India</span></li>
-            <li><span class="rank">5.</span><span class="city">New York</span><span class="country">United States</span></li>
-            <li><span class="rank">6.</span><span class="city">Tokyo</span><span class="country">Japan</span></li>
+            {% for city, country in cities %}
+            <li><span class="rank">{{ loop.index }}.</span><span class="city">{{ city }}</span><span class="country">{{ country }}</span></li>
+            {% endfor %}
         </ol>
     </div>
 
     <div class="block block-2" id="continents">
         <span class="number">6</span><span class="title">{{ _('<em>Continents</em> Sparked') }}</span>
         <ol id="bar-chart">
-            <li><div class="continent">North America</div><div class="bar"></div><span>48%</span></li>
-            <li><div class="continent">Europe</div><div class="bar"></div><span>25%</span></li>
-            <li><div class="continent">Asia</div><div class="bar"></div><span>17%</span></li>
-            <li><div class="continent">South America</div><div class="bar"></div><span>5%</span></li>
-            <li><div class="continent">Australia</div><div class="bar"></div><span>3%</span></li>
-            <li><div class="continent">Africa</div><div class="bar"></div><span>2%</span></li>
+            {% for continent, percentage in continents %}
+            <li>
+                <div class="continent">{{ continent }}</div>
+                <div class="bar"></div>
+                <span>{{ percentage }}%</span>
+            </li>
+            {% endfor %}
         </ol>
     </div>
     
@@ -49,18 +47,12 @@
     <div class="block block-5">
         <span class="title">{{ _('Most Active <em>Countries</em>') }}</span>
         <ol id="active-countries">
+            {% for country in countries %}
             <li>
                 <div class="country"></div>
-                <span>United States</span>
+                <span>{{ country }}</span>
             </li>
-            <li>
-                <div class="country"></div>
-                <span>United Kingdom</span>
-            </li>
-            <li>
-                <div class="country"></div>
-                <span>Germany</span>
-            </li>
+            {% endfor %}
         </ol>
     </div>
 {% endblock %}

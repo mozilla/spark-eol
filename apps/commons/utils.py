@@ -28,7 +28,7 @@ def get_city_fullname(city_name, country_code, locale):
     
     country_name = get_country_name(country_code, locale)
     
-    return '%s, %s' % (city_name, country_name)
+    return (city_name, country_name)
 
 
 def get_ua(request):
