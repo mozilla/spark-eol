@@ -22,7 +22,7 @@ top_players = [('Ludovic', 144, 6, 'nl', 'Den Haag'),
                ('Firefox_Freak', 47, 20, 'in', 'Chennai'),
                ('cooljackz', 43, 22, 'ph', 'Davao City'),
                ('PaDrO', 37, 6, 'us', 'New York'),
-               ('sidstamm', 34, 3, '?', '?'),
+               ('sidstamm', 34, 3, 'us', 'Mountain View'),
                ('galaxyk', 27, 19, 'in', 'Pune'),
                ('mInAsUkA', 26, 22, 'mx', 'Mexico City'),
                ('Jsimonetti', 21, 3, 'us', 'Sugarloaf')]
