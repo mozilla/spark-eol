@@ -298,7 +298,7 @@ DEFAULT_FROM_EMAIL = 'test@localhost.spark'
 
 # Responsys: dev/stage key
 RESPONSYS_ID = 'X0Gzc2X%3DUQpglLjHJlTQTtQ1vQ2rQ0bQQzgQvQy8KVwjpnpgHlpgneHmgJoXX0Gzc2X%3DUQpglLjHJlTQTtQ1vQ2rQ0aQQGQvQwPD'
-MOBILE_NEWSLETTER = 'TEST'
+MOBILE_NEWSLETTER = 'ABOUT_MOBILE'
 RESPONSYS_URL = 'http://awesomeness.mozilla.org/pub/rf'
 
 # Mobile detection (django-mobility middleware)
