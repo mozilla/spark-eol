@@ -21,26 +21,25 @@ from commons.utils import is_mobile_request
 
 def handle403(request):
     """A 403 message that looks nicer than the normal Apache forbidden page."""
-    if(is_mobile_request(request)):
+    if is_mobile_request(request):
         template = 'commons/handlers/mobile/403.html'
     else:
         template = 'commons/handlers/desktop/403.html'
     return jingo.render(request, template, status=403)
 
 
-@csrf_protect
 def handle404(request):
-    """A handler for 404s."""
-    if(is_mobile_request(request)):
-        template = 'commons/handlers/mobile/404.html'
+    """Redirect to home"""
+    if is_mobile_request(request):
+        view = reverse('eol.home_mobile')
     else:
-        template = 'commons/handlers/desktop/404.html'
-    return jingo.render(request, template, status=404)
+        view = reverse('eol.home')
+    return HttpResponseRedirect(view)
 
 
 def handle500(request):
     """A 500 message that looks nicer than the normal Apache error page."""
-    if(is_mobile_request(request)):
+    if is_mobile_request(request):
         template = 'commons/handlers/mobile/500.html'
     else:
         template = 'commons/handlers/desktop/500.html'
