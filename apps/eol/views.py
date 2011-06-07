@@ -14,7 +14,7 @@ from .utils import (TWITTER, FACEBOOK, LEVEL, WEEK_NUMBER, LEADERBOARD_TOOLTIP,
                    EUROPE, NORTH_AMERICA, SOUTH_AMERICA, AFRICA, ASIA, AUSTRALIA)
 
 
-share_history =  [1382, 427, 249, 277, 569, 615, 421, 351]
+share_history =  [1382, 1809, 2058, 2335, 2904, 3519, 3940, 4291]
 
 top_players = [('Ludovic', 144, 6, 'nl', 'Den Haag'),
                ('penguinguru', 82, 6, 'us', 'Philadelphia'),
@@ -113,7 +113,7 @@ def home_mobile(request):
 
 def spark_sharing(request):
     data = {'page': 'sharing',
-            'prev': reverse('eol.home_mobile'),
+            'prev': reverse('eol.hall'),
             'next': reverse('eol.around'),
             'share_history': [(unicode(WEEK_NUMBER) % dict(num=i+1), v) for i, v in enumerate(share_history)]}
     data.update(sharing_messages())
@@ -125,7 +125,6 @@ def spark_around(request):
     mobile_continents.reverse()
     data = {'page': 'around',
             'prev': reverse('eol.sharing'),
-            'next': reverse('eol.hall'),
             'cities': most_sparked_cities(request.locale),
             'countries': most_active_countries(request.locale),
             'continents': mobile_continents}
@@ -135,7 +134,8 @@ def spark_around(request):
 
 def spark_hall(request):
     data = {'page': 'hall',
-            'prev': reverse('eol.around'),
+            'prev': reverse('eol.home_mobile'),
+            'next': reverse('eol.sharing'),
             'levels': level_distribution(),
             'top_players': top_players}
     data.update(sharing_messages())

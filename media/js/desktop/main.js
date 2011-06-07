@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var $body = $('body'),
         home = new Section('home', '#phone-wrapper'),
-        spark = new Section('spark', '#spark-content', 'spark-1'),
+        spark = new Section('spark', '#spark-content', 'spark-3'),
         firefox = new Section('firefox', '#firefox-content', 'layer-1'),
         currentSection,
         lights, sparkAnimation;
@@ -55,17 +55,17 @@ $(document).ready(function() {
     
     // Spark menu
     $('#spark-content nav li:eq(0)').click(function() {
-        spark.changePage('spark-1');
+        spark.changePage('spark-3');
         $('#spark-content nav li').removeClass('active');
         $(this).addClass('active');
     });
     $('#spark-content nav li:eq(1)').click(function() {
-        spark.changePage('spark-2');
+        spark.changePage('spark-1');
         $('#spark-content nav li').removeClass('active');
         $(this).addClass('active');
     });
     $('#spark-content nav li:eq(2)').click(function() {
-        spark.changePage('spark-3');
+        spark.changePage('spark-2');
         $('#spark-content nav li').removeClass('active');
         $(this).addClass('active');
     });
@@ -105,7 +105,7 @@ $(document).ready(function() {
                                                               {start: 71, end: 265, color: '#ec5f39'},
                                                               {start: 265, end: 270, color: '#fbad46'}]);
     
-    new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 500, [115, 36, 21, 23, 47, 51, 35, 29]);
+    new LineChart('#spark-1 .block-3', 500, 120, '#4fe377', 500, [37, 48, 55, 63, 78, 94, 106, 115]);
     
     new BadgeChart('#spark-3 .block-4', 'one', 40, 40, 35, 1000, 10, [{start: -90, end: 65, color: '#fbad46'}]);
     new BadgeChart('#spark-3 .block-4', 'two', 40, 40, 35, 1000, 10, [{start: -90, end: 32, color: '#fbad46'}]);
